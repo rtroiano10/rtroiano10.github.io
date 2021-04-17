@@ -1,0 +1,107 @@
+﻿function OCToggle(entryid) {
+    var octr = "oc" + entryid + "tr";
+    var obtr = "ob" + entryid + "tr";
+    var cbtr = "cb" + entryid + "tr";
+
+    if (document.getElementById(octr) != null && document.getElementById(obtr) != null && document.getElementById(cbtr) != null) {
+        if (document.getElementById(octr).style.display == "none") {
+            document.getElementById(octr).style.display = "table-row";
+            document.getElementById(obtr).style.display = "table-row";
+            document.getElementById(cbtr).style.display = "none";
+        }
+        else {
+            document.getElementById(octr).style.display = "none";
+            document.getElementById(obtr).style.display = "none";
+            document.getElementById(cbtr).style.display = "table-row";
+        }
+    }
+}
+
+function OCToggleI(entryid) {
+    var octr = "oc" + entryid + "tr";
+    var ocimg = "oc" + entryid + "img";
+    if (document.getElementById(octr) != null && document.getElementById(ocimg) != null) {
+        if (document.getElementById(octr).style.display == "none") {
+            document.getElementById(octr).style.display = "table-row";
+            document.getElementById(ocimg).src = "/graphics/gray_up.png";
+        }
+        else {
+            document.getElementById(octr).style.display = "none";
+            document.getElementById(ocimg).src = "/graphics/gray_down.png";
+        }
+    }
+}
+
+function OCToggleP(entryid) {
+    var octr = "oc" + entryid + "tr";
+    var ocimg = "oc" + entryid + "img";
+    if (document.getElementById(octr) != null && document.getElementById(ocimg) != null) {
+        if (document.getElementById(octr).style.display == "none") {
+            document.getElementById(octr).style.display = "table-row";
+            document.getElementById(ocimg).src = "/graphics/gray_minus.png";
+        }
+        else {
+            document.getElementById(octr).style.display = "none";
+            document.getElementById(ocimg).src = "/graphics/gray_plus.png";
+        }
+    }
+}
+
+
+function OCToggleD(entryid) {
+    var ocdiv = "oc" + entryid + "div";
+    var ocimg = "oc" + entryid + "img";
+    if (document.getElementById(ocdiv) != null && document.getElementById(ocimg) != null) {
+        if (document.getElementById(ocdiv).style.display == "none") {
+            document.getElementById(ocdiv).style.display = "block";
+            document.getElementById(ocimg).src = "/graphics/gray_minus.png";
+        }
+        else {
+            document.getElementById(ocdiv).style.display = "none";
+            document.getElementById(ocimg).src = "/graphics/gray_plus.png";
+        }
+    }
+}
+
+function setMenuIndices() {
+    //if (document.getElementById("mIndDiv") != null) {
+    //    requestFile('/finance/IndexMenu_Ajax.aspx', 'mIndDiv', 'Y', 'N');
+    //    setTimeout("setMenuIndices()", 900000);
+    //}
+
+}
+
+function loadMenuIndices() {
+    setTimeout("setMenuIndices()", 4000);
+}
+
+var lastSize = "XL";
+
+function kalamazoo() {
+    var tmpname = "kala" + "ma" + "zooif" + "r";
+    var tmpname2 = "kal" + "amaz" + "ooD" + "iv";
+    if (document.getElementById(tmpname2) != null && document.getElementById(tmpname) != null) {
+        var ifrwidth = document.getElementById(tmpname).offsetWidth;
+        //alert(ifrwidth);
+        if (ifrwidth > 727) {
+            if (lastSize != "LG") {
+                document.getElementById(tmpname2).innerHTML = "<if" + "ram" + "e sr" + "c='/a" + "ds/R" + "espo" + "nsiv" + "e_A" + "ds.as" + "px?" + "si" + "ze=L" + "G' i" + "d='k" + "alam" + "azo" + "oif" + "r' c" + "las" + "s='i" + "frc" + "las" + "s' a" + "lig" + "n='m" + "id" + "dl" + "e' f" + "ram" + "ebor" + "der=" + "'0" + "' ma" + "rgi" + "nhe" + "ight" + "='" + "0' m" + "arg" + "inwi" + "dth=" + "'0" + "' sc" + "rolli" + "ng='" + "no'" + "><" + "/" + "if" + "ram" + "e>" + "\n";
+                lastSize = "LG";
+            }
+        }
+        else {
+            if (ifrwidth > 467) {
+                if (lastSize != "MD") {
+                    document.getElementById(tmpname2).innerHTML = "<if" + "ram" + "e sr" + "c='/a" + "ds/R" + "espo" + "nsiv" + "e_A" + "ds.as" + "px?" + "si" + "ze=M" + "D' i" + "d='k" + "alam" + "azo" + "oif" + "r' c" + "las" + "s='i" + "frc" + "las" + "s' a" + "lig" + "n='m" + "id" + "dl" + "e' f" + "ram" + "ebor" + "der=" + "'0" + "' ma" + "rgi" + "nhe" + "ight" + "='" + "0' m" + "arg" + "inwi" + "dth=" + "'0" + "' sc" + "rolli" + "ng='" + "no'" + "><" + "/" + "if" + "ram" + "e>" + "\n";
+                    lastSize = "MD";
+                }
+            }
+            else {
+                if (lastSize != "SM") {
+                    document.getElementById(tmpname2).innerHTML = "<if" + "ram" + "e sr" + "c='/a" + "ds/R" + "espo" + "nsiv" + "e_A" + "ds.as" + "px?" + "si" + "ze=S" + "M' i" + "d='k" + "alam" + "azo" + "oif" + "r' c" + "las" + "s='i" + "frc" + "las" + "s' a" + "lig" + "n='m" + "id" + "dl" + "e' f" + "ram" + "ebor" + "der=" + "'0" + "' ma" + "rgi" + "nhe" + "ight" + "='" + "0' m" + "arg" + "inwi" + "dth=" + "'0" + "' sc" + "rolli" + "ng='" + "no'" + "><" + "/" + "if" + "ram" + "e>" + "\n";
+                    lastSize = "SM";
+                }
+            }
+        }
+    }
+}

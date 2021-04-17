@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://www.ceoexpress.com/UserControls/News_Weather_Responsive_Public.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	News/Weather Page
+</title><link rel="SHORTCUT ICON" href="https://www.ceoexpress.com/favicon.ico"><link rel="apple-touch-icon" href="https://www.ceoexpress.com/apple-touch-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="refresh" content="1200">
+    <style type="text/css">
+        body
+        {
+            border-spacing: 0px;
+            padding: 0px;
+            margin: 0px;
+            border: solid 0px #ffffff;
+            width:100%;
+            background-color: #ffffff;
+            font-family: Arial,Helvetica,sans-serif;
+        }
+        a:link
+        {
+            text-decoration: none;
+            font-size: 13px;
+            color: #386b93;
+        }
+        a:visited
+        {
+            text-decoration: none;
+            font-size: 13px;
+            color: #386b93;
+        }
+        a:active
+        {
+            text-decoration: none;
+            font-size: 13px;
+            color: #386b93;
+        }
+        a:hover
+        {
+            text-decoration: underline;
+            font-size: 13px;
+            color: #386b93;
+        }
+        div
+        {
+            border-spacing: 0px;
+            padding: 0px;
+            margin: 0px;
+            border: solid 0px #ffffff;
+        }
+        
+        .frmaspnet
+        {
+            border-spacing: 0px;
+            padding: 0px;
+            margin: 0px;
+            border: solid 0px #ffffff;
+        }
+        .wrapper
+        {
+            float: none;
+            display: table;
+            border-spacing: 0px;
+            padding: 0px;
+            margin: 0px auto 0px auto;
+            border: solid 0px #0000ff;
+            width: 100%;
+        }
+        
+        .NewsWrapper
+        {
+            float: left;
+            display: inline-block;
+            width: 64%;
+            min-width: 550px;
+            padding: 0px;
+            vertical-align: top;
+            border: solid 0px #ff0000;
+            border-spacing:0px;
+            white-space: normal;
+            margin: 0px;
+            overflow: hidden;
+        }
+        
+        .WeatherWrapper
+        {
+            float: right;
+            display: inline-block;
+            width: 35%;
+            min-width: 250px;
+            height: 40px;
+            padding: 0px;
+            vertical-align: top;
+            border: solid 0px #ff0000;
+            border-spacing:0px;
+            white-space: normal;
+            margin: 0px;
+        }
+
+        .NewsWeatherMiddleWrapper
+        {
+            float: none;
+            display: none;
+            border-spacing: 0px;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .NewsWeatherMiddleHr
+        {
+            float: none;
+            display: none;
+            width: 95%;
+            padding: 0px;
+            margin: 0px auto 0px auto;
+            border: solid 0px #656565;
+            height: 1px;
+            background-color: #656565;
+        }
+        
+        .weatherTable
+        {
+	        width: auto;
+	        height: 40px;
+	        border-spacing: 0px;
+	        margin: 0px 0px 0px auto;
+	        padding: 0px 0px 0px 10px;
+	        border-top: solid 0px #ff0000;
+	        border-right: solid 0px #ff0000;
+	        border-bottom: solid 0px #ff0000;
+	        border-left: solid 1px #ababab;
+	        text-align:center;
+        }
+
+        .weatherIconTd
+        {
+	        width: 27px;
+	        border-spacing: 0px;
+	        padding: 0px;
+	        margin: 0px;
+	        text-align:center;
+	        vertical-align:middle;
+	        white-space:nowrap;
+        }
+
+        .weatherIconUrl
+        {
+	        text-decoration: none;
+        }
+        .weatherIconUrl:link, .weatherIconUrl:visited, .weatherIconUrl:active, .weatherIconUrl:hover
+        {
+	        text-decoration: none;
+        }
+
+        .weatherIcon
+        {
+	        width: 25px;
+	        height: 21px;
+	        border: solid 0px #ffffff;
+	        border-spacing: 0px;
+	        padding: 6px 0px 0px 0px;
+	        margin:0px auto;
+        }
+
+        .weatherConditionsTd
+        {
+	        width: auto;
+	        border-spacing: 0px;
+	        text-align:center;
+	        vertical-align:middle;
+	        white-space:nowrap;
+        }
+
+        .weatherConditionsURL
+        {
+	        text-decoration: none;
+	        font-size: 12px;
+	        font-weight: normal;
+	        color:#386b93;
+        }
+        .weatherConditionsURL:link, .weatherConditionsURL:visited, .weatherConditionsURL:active, .weatherConditionsURL:hover
+        {
+	        text-decoration: none;
+	        font-size: 12px;
+	        font-weight: normal;
+	        color:#386b93;
+        }
+
+        .weatherCityURL
+        {
+	        text-decoration: none;
+	        font-size: 12px;
+	        font-weight: bold;
+	        color:#386b93;
+        }
+        .weatherCityURL:link, .weatherCityURL:visited, .weatherCityURL:active, .weatherCityURL:hover
+        {
+	        text-decoration: none;
+	        font-size: 12px;
+	        font-weight: bold;
+	        color:#386b93;
+        }
+
+        .weatherGearTd
+        {
+	        width:21px;
+	        border-spacing: 0px;
+	        padding: 0px;
+	        margin: 0px;
+	        text-align:right;
+	        vertical-align:middle;
+	        white-space:nowrap;
+        }
+
+        .weatherGearURL
+        {
+	        text-decoration: none;
+        }
+        .weatherGearURL:link, .weatherGearURL:visited, .weatherGearURL:active, .weatherGearURL:hover
+        {
+	        text-decoration: none;
+        }
+
+        .weatherGear
+        {
+	        width: 16px;
+	        height: 16px;
+	        border: solid 0px #ffffff;
+	        border-spacing: 0px;
+	        padding: 6px 0px 0px 0px;
+	        margin:0px;
+        }
+
+
+        .newsTable
+        {
+	        width: auto;
+	        height: 40px;
+	        border-spacing: 0px;
+	        margin: auto auto auto 0px;
+	        padding: 0px;
+	        border: solid 0px #ff0000;
+	        text-align:center;
+        }
+
+        .newsPlayIconTd
+        {
+	        width: 21px;
+	        border-spacing: 0px;
+	        padding: 0px;
+	        margin: 0px;
+	        text-align:left;
+	        vertical-align:middle;
+	        white-space:nowrap;
+        }
+
+        .newsPlayIcon
+        {
+	        width: 17px;
+	        height: 17px;
+	        border: solid 0px #ffffff;
+	        border-spacing: 0px;
+	        padding: 6px 5px 4px 5px;
+	        margin:0px;
+        }
+        
+        .newsCenterTd
+        {
+	        border-spacing: 0px;
+	        padding: 0px 4px 0px 4px;
+	        margin: 0px;
+            color: #656565;
+            font-family: Arial, Verdana, Georgia, Sans-Serif;
+            text-transform: uppercase;
+            font-size: 12px;
+            vertical-align: middle;
+            text-align: center;
+            width: auto;
+            white-space:nowrap;
+        }
+        
+        .newsCenterUrl
+        {
+            border-spacing: 0px;
+            padding: 0px;
+            margin: 0px;
+            color: #656565;
+            font-family: Arial, Verdana, Georgia, Sans-Serif;
+            text-transform: uppercase;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .newsCenterUrl:link, .newsCenterUrl:visited, .newsCenterUrl:active, .newsCenterUrl:hover
+        {
+            color: #656565;
+            font-family: Arial, Verdana, Georgia, Sans-Serif;
+	        text-decoration: none;
+        }
+
+
+        .newsContentTd
+        {
+	        width: 80%;
+	        border-spacing: 0px;
+	        padding: 0px 4px 0px 4px;
+	        margin: 0px;
+	        text-align:center;
+	        vertical-align:middle;
+	        white-space:nowrap;
+            font-size: 12px;
+        }
+
+        .newsHeadlineURL
+        {
+            border-spacing: 0px;
+            padding: 0px;
+            margin: 0px;
+	        text-decoration: none;
+	        font-size: 12px;
+	        font-weight: bold;
+	        color:#386b93;
+        }
+        .newsHeadlineURL:link, .newsHeadlineURL:visited, .newsHeadlineURL:active, .newsHeadlineURL:hover
+        {
+            border-spacing: 0px;
+            padding: 0px;
+            margin: 0px;
+	        text-decoration: none;
+	        font-size: 12px;
+	        font-weight: bold;
+	        color:#386b93;
+        }
+
+        .newsSourceURL
+        {
+            border-spacing: 0px;
+            padding: 0px;
+            margin: 0px;
+	        text-decoration: none;
+	        font-size: 11px;
+	        font-weight: normal;
+	        color:#386b93;
+        }
+        .newsSourceURL:link, .newsSourceURL:visited, .newsSourceURL:active, .newsSourceURL:hover
+        {
+            border-spacing: 0px;
+            padding: 0px;
+            margin: 0px;
+	        text-decoration: none;
+	        font-size: 11px;
+	        font-weight: normal;
+	        color:#386b93;
+        }
+        
+        .newsBFIconTd
+        {
+	        border-spacing: 0px;
+	        padding: 0px 4px 0px 4px;
+	        margin: 0px;
+	        vertical-align: middle;
+	        border-top: solid 0px #ff0000;
+	        border-right: solid 0px #ababab;
+	        border-bottom: solid 0px #ff0000;
+	        border-left: solid 0px #ff0000;
+	        font-size: 2px;
+        }
+
+        .newsBFIconTbl
+        {
+            height: 16px;
+	        border-spacing: 0px;
+	        padding: 0px;
+	        margin: 0px;
+	        vertical-align: middle;
+   	        border: solid 0px #ff0000;
+	        font-size: 2px;
+        }
+
+        .newsBackIconTd
+        {
+            height: 8px;
+	        border-spacing: 0px;
+	        padding: 0px;
+	        margin: 0px;
+	        vertical-align: top;
+	        border: solid 0px #ff0000;
+	        font-size: 2px;
+        }
+
+        .newsFwdIconTd
+        {
+            height: 8px;
+	        border-spacing: 0px;
+	        padding: 0px;
+	        margin: 0px;
+	        vertical-align: bottom;
+  	        border: solid 0px #ff0000;
+	        font-size: 2px;
+        }
+        
+        .newsBackIcon
+        {
+	        width: 9px;
+	        height: 6px;
+	        border: solid 0px #ff0000;
+	        border-spacing: 0px;
+	        padding: 0px;
+	        margin:0px;
+	        border-spacing: 0px;
+	        font-size: 2px;
+	        cursor: pointer;
+        }
+
+        .newsFwdIcon
+        {
+	        width: 9px;
+	        height: 6px;
+	        border: solid 0px #ff0000;
+	        border-spacing: 0px;
+	        padding: 0px;
+	        margin:0px;
+	        border-spacing: 0px;
+	        cursor: pointer;
+	        font-size: 2px;
+        }
+        
+        /* use for screens smaller than 1024 but larger than 768*/
+        @media only screen and (max-width: 1023px)
+        {
+            a:link
+            {
+                text-decoration: none;
+                font-size: 12px;
+                color: #386b93;
+            }
+            a:visited
+            {
+                text-decoration: none;
+                font-size: 12px;
+                color: #386b93;
+            }
+            a:active
+            {
+                text-decoration: none;
+                font-size: 12px;
+                color: #386b93;
+            }
+            a:hover
+            {
+                text-decoration: underline;
+                font-size: 12px;
+                color: #386b93;
+            }
+
+            .wrapper
+            {
+                float: none;
+                display: table;
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px auto 0px auto;
+                border: solid 0px #0000ff;
+                width: 100%;
+            }
+            
+            .NewsWrapper
+            {
+                float: left;
+                display: inline-block;
+                width: 64%;
+                min-width: 400px;
+                padding: 0px;
+                vertical-align: top;
+                border: solid 0px #ff0000;
+                white-space: normal;
+                margin: 0px;
+                overflow: hidden;
+            }
+            
+            .WeatherWrapper
+            {
+                float: right;
+                display: inline-block;
+                width: 35%;
+                min-width: 200px;
+                padding: 0px;
+                vertical-align: top;
+                border: solid 0px #ff0000;
+                white-space: normal;
+                margin: 0px;
+            }
+            
+            .NewsWeatherMiddleWrapper
+            {
+                float: none;
+                display: none;
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            .NewsWeatherMiddleHr
+            {
+                float: none;
+                display: none;
+                width: 95%;
+                padding: 0px;
+                margin: 0px auto 0px auto;
+                border: solid 0px #656565;
+                height: 1px;
+                background-color: #656565;
+            }
+            
+            .weatherTable
+            {
+	            width: auto;
+	            height: 40px;
+	            border-spacing: 0px;
+	            margin: 0px 0px 0px auto;
+	            padding: 0px 0px 0px 10px;
+	            border-top: solid 0px #ff0000;
+	            border-right: solid 0px #ff0000;
+	            border-bottom: solid 0px #ff0000;
+	            border-left: solid 1px #ababab;
+	            text-align:center;
+            }
+
+            .weatherIconTd
+            {
+	            width: 27px;
+	            border-spacing: 0px;
+	            padding: 0px;
+	            margin: 0px;
+	            text-align:center;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .weatherIconUrl
+            {
+	            text-decoration: none;
+            }
+            .weatherIconUrl:link, .weatherIconUrl:visited, .weatherIconUrl:active, .weatherIconUrl:hover
+            {
+	            text-decoration: none;
+            }
+
+            .weatherIcon
+            {
+	            width: 25px;
+	            height: 21px;
+	            border: solid 0px #ffffff;
+	            border-spacing: 0px;
+	            padding: 6px 0px 0px 0px;
+	            margin:0px auto;
+            }
+
+            .weatherConditionsTd
+            {
+	            width: auto;
+	            border-spacing: 0px;
+	            text-align:center;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .weatherConditionsURL
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+            .weatherConditionsURL:link, .weatherConditionsURL:visited, .weatherConditionsURL:active, .weatherConditionsURL:hover
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+
+            .weatherCityURL
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: bold;
+	            color:#386b93;
+            }
+            .weatherCityURL:link, .weatherCityURL:visited, .weatherCityURL:active, .weatherCityURL:hover
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: bold;
+	            color:#386b93;
+            }
+
+            .weatherGearTd
+            {
+	            width:21px;
+	            border-spacing: 0px;
+	            padding: 0px;
+	            margin: 0px;
+	            text-align:right;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .weatherGearURL
+            {
+	            text-decoration: none;
+            }
+            .weatherGearURL:link, .weatherGearURL:visited, .weatherGearURL:active, .weatherGearURL:hover
+            {
+	            text-decoration: none;
+            }
+
+            .weatherGear
+            {
+	            width: 16px;
+	            height: 16px;
+	            border: solid 0px #ffffff;
+	            border-spacing: 0px;
+	            padding: 6px 0px 0px 0px;
+	            margin:0px;
+            }
+
+
+            .newsTable
+            {
+	            width: auto;
+	            border-spacing: 0px;
+	            margin: auto auto auto 0px;
+	            padding: 0px;
+	            border: solid 0px #ff0000;
+	            text-align:center;
+            }
+
+            .newsPlayIconTd
+            {
+	            width: 21px;
+	            border-spacing: 0px;
+	            padding: 0px;
+	            margin: 0px;
+	            text-align:left;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .newsPlayIcon
+            {
+	            width: 17px;
+	            height: 17px;
+	            border: solid 0px #ffffff;
+	            border-spacing: 0px;
+	            padding: 6px 5px 4px 5px;
+	            margin:0px;
+            }
+            
+            .newsCenterTd
+            {
+	            border-spacing: 0px;
+	            padding: 0px 4px 0px 4px;
+	            margin: 0px;
+                color: #656565;
+                font-family: Arial, Verdana, Georgia, Sans-Serif;
+                text-transform: uppercase;
+                font-size: 11px;
+                vertical-align: middle;
+                text-align: center;
+                width: auto;
+                white-space:nowrap;
+            }
+            
+            .newsCenterUrl
+            {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+                color: #656565;
+                font-family: Arial, Verdana, Georgia, Sans-Serif;
+                text-transform: uppercase;
+                font-size: 11px;
+                text-decoration: none;
+            }
+
+            .newsCenterUrl:link, .newsCenterUrl:visited, .newsCenterUrl:active, .newsCenterUrl:hover
+            {
+                color: #656565;
+                font-family: Arial, Verdana, Georgia, Sans-Serif;
+	            text-decoration: none;
+            }
+
+
+            .newsContentTd
+            {
+	            width: 80%;
+	            border-spacing: 0px;
+	            padding: 0px 4px 0px 4px;
+	            margin: 0px;
+	            text-align:center;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .newsHeadlineURL
+            {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: bold;
+	            color:#386b93;
+            }
+            .newsHeadlineURL:link, .newsHeadlineURL:visited, .newsHeadlineURL:active, .newsHeadlineURL:hover
+            {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: bold;
+	            color:#386b93;
+            }
+
+            .newsSourceURL
+            {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 10px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+            .newsSourceURL:link, .newsSourceURL:visited, .newsSourceURL:active, .newsSourceURL:hover
+            {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 10px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+
+        }
+        
+        /* use for screens smaller than 768 but larger than 479*/
+        @media only screen and (max-width: 768px)
+        {
+
+            a:link
+            {
+                text-decoration: none;
+                font-size: 11px;
+                color: #386b93;
+            }
+            a:visited
+            {
+                text-decoration: none;
+                font-size: 11px;
+                color: #386b93;
+            }
+            a:active
+            {
+                text-decoration: none;
+                font-size: 11px;
+                color: #386b93;
+            }
+            a:hover
+            {
+                text-decoration: underline;
+                font-size: 11px;
+                color: #386b93;
+            }
+
+            .wrapper
+            {
+                float: none;
+                display: table;
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px auto 0px auto;
+                border: solid 0px #0000ff;
+                width: 100%;
+            }
+            
+            .NewsWrapper
+            {
+                float: left;
+                display: inline-block;
+                width: 100%;
+                min-width: 400px;
+                padding: 0px;
+                vertical-align: top;
+                border: solid 0px #ff0000;
+                white-space: normal;
+                margin: 0px;
+                overflow: hidden;
+            }
+            
+            .WeatherWrapper
+            {
+                float: left;
+                display: inline-block;
+                width: 100%;
+                min-width: 400px;
+                padding: 0px;
+                vertical-align: top;
+                border: solid 0px #ff0000;
+                white-space: normal;
+                margin: 0px;
+            }
+            
+            .NewsWeatherMiddleWrapper
+            {
+                float: left;
+                display: inline-block;
+                width: 100%;
+                min-width: 400px;
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+                border: solid 0px #ff0000;
+                white-space: normal;
+                vertical-align: top;
+                font-size: 2px;
+            }
+            
+            .NewsWeatherMiddleHr
+            {
+                float: none;
+                display: block;
+                width: 100%;
+                padding: 0px;
+                margin: 0px auto 0px auto;
+                border: solid 0px #656565;
+                height: 1px;
+                background-color: #ababab;
+                border-spacing: 0px;
+                font-size: 2px;
+            }
+            
+            .weatherTable
+            {
+	            width: auto;
+	            height: 33px;
+	            border-spacing: 0px;
+	            margin: 0px auto 0px auto;
+	            padding: 0px;
+	            border: solid 0px #ff0000;
+	            text-align:center;
+            }
+
+            .weatherIconTd
+            {
+	            width: 27px;
+	            border-spacing: 0px;
+	            padding: 0px;
+	            margin: 0px;
+	            text-align:center;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .weatherIconUrl
+            {
+	            text-decoration: none;
+            }
+            .weatherIconUrl:link, .weatherIconUrl:visited, .weatherIconUrl:active, .weatherIconUrl:hover
+            {
+	            text-decoration: none;
+            }
+
+            .weatherIcon
+            {
+	            width: 25px;
+	            height: 21px;
+	            border: solid 0px #ffffff;
+	            border-spacing: 0px;
+	            padding: 6px 0px 0px 0px;
+	            margin:0px auto;
+            }
+
+            .weatherConditionsTd
+            {
+	            width: auto;
+	            border-spacing: 0px;
+	            text-align:center;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .weatherConditionsURL
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+            .weatherConditionsURL:link, .weatherConditionsURL:visited, .weatherConditionsURL:active, .weatherConditionsURL:hover
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+
+            .weatherCityURL
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: bold;
+	            color:#386b93;
+            }
+            .weatherCityURL:link, .weatherCityURL:visited, .weatherCityURL:active, .weatherCityURL:hover
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: bold;
+	            color:#386b93;
+            }
+
+            .weatherGearTd
+            {
+	            width:21px;
+	            border-spacing: 0px;
+	            padding: 0px;
+	            margin: 0px;
+	            text-align:right;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .weatherGearURL
+            {
+	            text-decoration: none;
+            }
+            .weatherGearURL:link, .weatherGearURL:visited, .weatherGearURL:active, .weatherGearURL:hover
+            {
+	            text-decoration: none;
+            }
+
+            .weatherGear
+            {
+	            width: 16px;
+	            height: 16px;
+	            border: solid 0px #ffffff;
+	            border-spacing: 0px;
+	            padding: 6px 0px 0px 0px;
+	            margin:0px;
+            }
+
+
+            .newsTable
+            {
+	            width: auto;
+	            height: 33px;
+	            border-spacing: 0px;
+	            margin: auto auto auto 0px;
+	            padding: 0px;
+	            border: solid 0px #ff0000;
+	            text-align:center;
+            }
+
+            .newsPlayIconTd
+            {
+	            width: 21px;
+	            border-spacing: 0px;
+	            padding: 0px;
+	            margin: 0px;
+	            text-align:left;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .newsPlayIcon
+            {
+	            width: 17px;
+	            height: 17px;
+	            border: solid 0px #ffffff;
+	            border-spacing: 0px;
+	            padding: 6px 5px 4px 5px;
+	            margin:0px;
+            }
+            
+            .newsCenterTd
+            {
+	            border-spacing: 0px;
+	            padding: 0px 4px 0px 4px;
+	            margin: 0px;
+                color: #656565;
+                font-family: Arial, Verdana, Georgia, Sans-Serif;
+                text-transform: uppercase;
+                font-size: 11px;
+                vertical-align: middle;
+                text-align: center;
+                width: auto;
+                white-space:nowrap;
+            }
+            
+            .newsCenterUrl
+            {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+                color: #656565;
+                font-family: Arial, Verdana, Georgia, Sans-Serif;
+                text-transform: uppercase;
+                font-size: 11px;
+                text-decoration: none;
+            }
+
+            .newsCenterUrl:link, .newsCenterUrl:visited, .newsCenterUrl:active, .newsCenterUrl:hover
+            {
+                color: #656565;
+                font-family: Arial, Verdana, Georgia, Sans-Serif;
+	            text-decoration: none;
+            }
+
+
+            .newsContentTd
+            {
+	            width: 80%;
+	            border-spacing: 0px;
+	            padding: 0px 4px 0px 4px;
+	            margin: 0px;
+	            text-align:center;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .newsHeadlineURL
+            {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: bold;
+	            color:#386b93;
+            }
+            .newsHeadlineURL:link, .newsHeadlineURL:visited, .newsHeadlineURL:active, .newsHeadlineURL:hover
+            {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: bold;
+	            color:#386b93;
+            }
+
+            .newsSourceURL
+            {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 10px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+            .newsSourceURL:link, .newsSourceURL:visited, .newsSourceURL:active, .newsSourceURL:hover
+            {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 10px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+
+        }
+        
+        
+                
+        /* use for screens smaller than 479 */
+        @media only screen and (max-width: 479px)
+        {
+
+            a:link
+            {
+                text-decoration: none;
+                font-size: 11px;
+                color: #386b93;
+            }
+            a:visited
+            {
+                text-decoration: none;
+                font-size: 11px;
+                color: #386b93;
+            }
+            a:active
+            {
+                text-decoration: none;
+                font-size: 11px;
+                color: #386b93;
+            }
+            a:hover
+            {
+                text-decoration: underline;
+                font-size: 11px;
+                color: #386b93;
+            }
+
+            .wrapper
+            {
+                float: none;
+                display: table;
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px auto 0px auto;
+                border: solid 0px #0000ff;
+                width: 100%;
+                overflow:hidden;
+            }
+            
+            .NewsWrapper
+            {
+                float: left;
+                display: inline-block;
+                width: 100%;
+                min-width: 100px;
+                padding: 0px;
+                vertical-align: top;
+                border: solid 0px #ff0000;
+                white-space: normal;
+                margin: 0px;
+                overflow: hidden;
+            }
+            
+            .WeatherWrapper
+            {
+                float: left;
+                display: inline-block;
+                width: 100%;
+                min-width: 100px;
+                padding: 0px;
+                vertical-align: top;
+                border: solid 0px #ff0000;
+                white-space: normal;
+                margin: 0px;
+            }
+            
+            .NewsWeatherMiddleWrapper
+            {
+                float: left;
+                display: inline-block;
+                width: 100%;
+                min-width: 100px;
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+                border: solid 0px #ff0000;
+                white-space: normal;
+                vertical-align: top;
+            }
+            
+            .NewsWeatherMiddleHr
+            {
+                float: none;
+                display: block;
+                width: 100%;
+                padding: 0px;
+                margin: 0px auto 0px auto;
+                border: solid 0px #656565;
+                height: 1px;
+                background-color: #ababab;
+                border-spacing: 0px;
+            }
+            
+            .weatherTable
+            {
+	            width: auto;
+	            height: 33px;
+	            border-spacing: 0px;
+	            margin: 0px auto 0px auto;
+	            padding: 0px;
+	            border: solid 0px #ff0000;
+	            text-align:center;
+            }
+
+            .weatherIconTd
+            {
+	            width: 27px;
+	            border-spacing: 0px;
+	            padding: 0px;
+	            margin: 0px;
+	            text-align:center;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .weatherIconUrl
+            {
+	            text-decoration: none;
+            }
+            .weatherIconUrl:link, .weatherIconUrl:visited, .weatherIconUrl:active, .weatherIconUrl:hover
+            {
+	            text-decoration: none;
+            }
+
+            .weatherIcon
+            {
+	            width: 25px;
+	            height: 21px;
+	            border: solid 0px #ffffff;
+	            border-spacing: 0px;
+	            padding: 6px 0px 0px 0px;
+	            margin:0px auto;
+            }
+
+            .weatherConditionsTd
+            {
+	            width: auto;
+	            border-spacing: 0px;
+	            text-align:center;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .weatherConditionsURL
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+            .weatherConditionsURL:link, .weatherConditionsURL:visited, .weatherConditionsURL:active, .weatherConditionsURL:hover
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+
+            .weatherCityURL
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: bold;
+	            color:#386b93;
+            }
+            .weatherCityURL:link, .weatherCityURL:visited, .weatherCityURL:active, .weatherCityURL:hover
+            {
+	            text-decoration: none;
+	            font-size: 11px;
+	            font-weight: bold;
+	            color:#386b93;
+            }
+
+            .weatherGearTd
+            {
+	            width:21px;
+	            border-spacing: 0px;
+	            padding: 0px;
+	            margin: 0px;
+	            text-align:right;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .weatherGearURL
+            {
+	            text-decoration: none;
+            }
+            .weatherGearURL:link, .weatherGearURL:visited, .weatherGearURL:active, .weatherGearURL:hover
+            {
+	            text-decoration: none;
+            }
+
+            .weatherGear
+            {
+	            width: 16px;
+	            height: 16px;
+	            border: solid 0px #ffffff;
+	            border-spacing: 0px;
+	            padding: 6px 0px 0px 0px;
+	            margin:0px;
+            }
+
+
+            .newsTable
+            {
+	            width: 100%;
+                height: 33px;
+	            border-spacing: 0px;
+	            margin: auto auto 1px 0px;
+	            padding: 0px;
+	            border: solid 0px #ff0000;
+	            text-align:center;
+            }
+
+            .newsPlayIconTd
+            {
+	            width: 21px;
+	            border-spacing: 0px;
+	            padding: 0px;
+	            margin: 0px;
+	            text-align:left;
+	            vertical-align:middle;
+	            white-space:nowrap;
+            }
+
+            .newsPlayIcon
+            {
+	            width: 17px;
+	            height: 17px;
+	            border: solid 0px #ffffff;
+	            border-spacing: 0px;
+	            padding: 6px 5px 4px 5px;
+	            margin:0px;
+            }
+            
+            .newsCenterTd
+            {
+	            border-spacing: 0px;
+	            padding: 0px 4px 0px 4px;
+	            margin: 0px;
+                color: #656565;
+                font-family: Arial, Verdana, Georgia, Sans-Serif;
+                text-transform: uppercase;
+                font-size: 11px;
+                vertical-align: middle;
+                text-align: left;
+                width: 74px;
+                white-space:nowrap;
+                border: solid 0px #ff0000;
+            }
+            
+            .newsCenterUrl
+            {
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+                color: #656565;
+                font-family: Arial, Verdana, Georgia, Sans-Serif;
+                text-transform: uppercase;
+                font-size: 10px;
+                text-decoration: none;
+            }
+
+            .newsCenterUrl:link, .newsCenterUrl:visited, .newsCenterUrl:active, .newsCenterUrl:hover
+            {
+                color: #656565;
+                font-family: Arial, Verdana, Georgia, Sans-Serif;
+	            text-decoration: none;
+            }
+
+
+            .newsContentTd
+            {
+	            width: auto;
+	            max-width: 100px;
+	            border-spacing: 0px;
+	            padding: 0px 4px 0px 4px;
+	            margin: 0px;
+	            text-align:left;
+	            vertical-align:middle;
+	            white-space:nowrap;
+	            overflow: hidden;
+            }
+
+            .newsHeadlineURL
+            {
+                display: inline-table;
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 10px;
+	            font-weight: bold;
+	            color:#386b93;
+	            width: 50px;
+	            overflow: hidden;
+            }
+            .newsHeadlineURL:link, .newsHeadlineURL:visited, .newsHeadlineURL:active, .newsHeadlineURL:hover
+            {
+                display: inline-table;
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 10px;
+	            font-weight: bold;
+	            color:#386b93;
+	            width: 50px;
+	            overflow: hidden;
+            }
+
+            .newsSourceURL
+            {
+                display: none;
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 10px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+            .newsSourceURL:link, .newsSourceURL:visited, .newsSourceURL:active, .newsSourceURL:hover
+            {
+                display: none;
+                border-spacing: 0px;
+                padding: 0px;
+                margin: 0px;
+	            text-decoration: none;
+	            font-size: 10px;
+	            font-weight: normal;
+	            color:#386b93;
+            }
+
+            
+        }
+
+    </style>
+    <script type="text/javascript">
+<!--
+   var hl=new Array(11);
+   var url=new Array(11);
+   var desc=new Array(11);
+   var source=new Array(11);
+   var x=0;
+   var action;
+   var stop=0;
+ var del=1000*4;
+   var timer;
+
+   function ticker(){
+     hl[1] = "After Bullying Reports, Scott Rudin Will Step Aw&hellip;";
+     url[1] = "385650025";
+     desc[1] = "New York Times - Front Page";
+
+     hl[2] = "Latest Updates from Prince Philip&#39;s Funeral";
+     url[2] = "385650013";
+     desc[2] = "New York Times - Front Page";
+
+     hl[3] = "Fear of Contagion Won&#39;t Depress Our Sex Live&hellip;";
+     url[3] = "385650021";
+     desc[3] = "New York Times - Front Page";
+
+     hl[4] = "I Have Read Thousands of R&#233;sum&#233;s and I&hellip;";
+     url[4] = "385650017";
+     desc[4] = "New York Times - Front Page";
+
+     hl[5] = "On Afghanistan, Biden Ditches the Generals";
+     url[5] = "385650018";
+     desc[5] = "New York Times - Front Page";
+
+     hl[6] = "Planned Parenthood Is Done Making Excuses for Ma&hellip;";
+     url[6] = "385650016";
+     desc[6] = "New York Times - Front Page";
+
+     hl[7] = "Updates From Indianapolis: What We Know About th&hellip;";
+     url[7] = "385650012";
+     desc[7] = "New York Times - Front Page";
+
+     hl[8] = "Live Updates From Prince Philip&#39;s Funeral";
+     url[8] = "385647979";
+     desc[8] = "New York Times - Front Page";
+
+     hl[9] = "Global Coronavirus Deaths Pass 3 Million as Vari&hellip;";
+     url[9] = "385647978";
+     desc[9] = "New York Times - Front Page";
+
+     hl[10] = "Researchers Are Hatching a Low-Cost Covid-19 Vac&hellip;";
+     url[10] = "385636778";
+     desc[10] = "New York Times - Front Page";
+
+       if (stop==0) {
+           x=x+1;
+         if (x>10) { x=1 };
+
+           var redirurl='/rss/hlredir.asp?id='+url[x];
+
+           document.getElementById('head').innerHTML=hl[x];
+           document.getElementById('body').innerHTML=desc[x];
+           document.getElementById('head').href=redirurl;
+           scroll();
+       }
+   }
+
+   function back(){
+
+       x=x-1;
+   	if (x<1) {x=10}
+
+       var redirurl='/rss/hlredir.asp?id='+url[x];
+
+       document.getElementById('head').innerHTML=hl[x];
+       document.getElementById('body').innerHTML=desc[x];
+       document.getElementById('head').href=redirurl;
+   }
+
+   function forward(){
+
+   x=x+1;
+   if (x>10) {x=1}
+
+   var redirurl='/rss/hlredir.asp?id='+url[x];
+
+   document.getElementById('head').innerHTML=hl[x];
+   document.getElementById('body').innerHTML=desc[x];
+   document.getElementById('head').href=redirurl;
+
+   }
+
+   function scroll(){
+
+       timer=setTimeout('ticker()',del);
+   }
+
+   function toggle() {
+       timer=clearTimeout(timer);
+   	if (stop == 0) {
+   		stop = 1;
+   		document.getElementById('newsControler').src='/rss/graphics/news_play.png';
+   	}
+   	else
+   	{
+   		stop = 0;
+   		document.getElementById('newsControler').src='/rss/graphics/news_pause.png';
+   		ticker();
+   	}
+   }
+
+   function pause() {
+        stop = 1;
+        timer=clearTimeout(timer);
+        document.getElementById('newsControler').src='/rss/graphics/news_play.png';
+    }
+
+   function play() {
+       stop = 0;
+       scroll();
+       document.getElementById('newsControler').src='/rss/graphics/news_pause.png';
+   }
+
+   //-->
+   </script>
+
+</head>
+<body onload="ticker();">
+    <form method="post" action="https://www.ceoexpress.com/UserControls/News_Weather_Responsive_Public.aspx" id="form1" target="_self" class="frmaspnet">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B5ED8261">
+</div>
+    <div class="wrapper">
+        <div class="NewsWrapper">
+            <table class="newsTable">
+            <tbody><tr>
+            <td class="newsPlayIconTd" onclick="toggle();"><img src="./news_pause.png" id="newsControler" class="newsPlayIcon" alt="Controls" title="Pause/Play News"></td>
+            <td class="newsCenterTd"><a href="https://www.ceoexpress.com/rss/rsscenterfull.aspx" class="newsCenterUrl" target="_top">News Center</a></td>
+            <td class="newsBFIconTd">
+                <table class="newsBFIconTbl">
+                <tbody><tr>
+                <td class="newsBackIconTd"><img src="./news_up.png" alt="back" title="back one article" class="newsBackIcon" onclick="javascript:time=clearTimeout(timer),back()"></td>
+                </tr>
+                <tr>
+                <td class="newsFwdIconTd"><img src="./news_down.png" alt="forward" title="forward one article" class="newsFwdIcon" onclick="javascript:time=clearTimeout(timer),forward()"></td>
+                </tr>
+                </tbody></table>
+            </td>
+            <td class="newsContentTd"><a href="https://www.ceoexpress.com/rss/hlredir.asp?id=385650025" class="newsHeadlineURL" id="head" target="_blank" onmouseover="pause();" onmouseout="play();">After Bullying Reports, Scott Rudin Will Step Aw…</a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="newsSourceURL" id="body">New York Times - Front Page</span></td>
+            </tr>
+            </tbody></table>
+        </div>
+        <div class="NewsWeatherMiddleWrapper"><hr class="NewsWeatherMiddleHr"></div>
+        <div class="WeatherWrapper"><table class="weatherTable">
+<tbody><tr>
+<td class="weatherIconTd" title="Reported at: Boston, MA on Saturday, April, 17 2021 at 1:08 PM EDT">
+<a href="https://www.ceoexpress.com/weather/select_weatherd.aspx" class="weatherIconUrl" target="_top"><img src="./cond007.png" class="weatherIcon" alt="current conditions"></a>
+</td>
+<td class="weatherConditionsTd" title="Reported at: Boston, MA on Saturday, April, 17 2021 at 1:08 PM EDT">&nbsp;&nbsp;
+<a href="https://www.ceoexpress.com/weather/select_weatherd.aspx" class="weatherConditionsURL" target="_top">
+<span class="weatherCityURL" id="wcity">Boston, MA&nbsp;44&nbsp;°F</span>
+</a>&nbsp;&nbsp;<a href="https://www.ceoexpress.com/weather/select_weatherd.aspx" class="weatherConditionsURL" target="_top">
+<span class="weatherConditionsURL">Cloudy</span></a>
+</td>
+<td class="weatherGearTd" title="Reported at: Boston, MA on Saturday, April, 17 2021 at 1:08 PM EDT">
+<a href="https://www.ceoexpress.com/weather/select_weatherd.aspx" class="weatherGearURL" target="_top"><img src="./gear_light.gif" class="weatherGear" alt="icon" title="Click to update weather city."></a></td>
+</tr>
+</tbody></table>
+</div>
+    </div>
+    </form>
+
+
+</body></html>

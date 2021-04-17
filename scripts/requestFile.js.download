@@ -1,0 +1,94 @@
+﻿function requestFile(url, repdiv, synch, ev, refresh, sendid, message) {
+    var success = 0;
+    try {
+        var httpRequest = new ActiveXObject("Msxml2.XMLHTTP");
+        success = 1;
+    }
+    catch (ex) {
+        try {
+            var httpRequest = new XMLHttpRequest();
+            success = 1;
+        }
+        catch (ex2) {
+            try {
+                var httpRequest = new ActiveXObject("Microsoft.XMLHttp");
+                success = 1;
+            }
+            catch (ex3) {
+                alert("Your Browser Does Not Support AJAX");
+                success = 0;
+            }
+        }
+    }
+
+    if (success == 1) {
+
+        if (message != '' && message != null) {
+            document.getElementById("message").style.top = 400;
+            document.getElementById("message").style.left = 400;
+            document.getElementById("innermessage").innerHTML = "<span class='mbn'>"+message+"</span>";
+            document.getElementById("message").style.display = "";
+        }
+        if (sendid == "Y") {
+            url += "?id=" + CurrTabID;
+        }
+        var randomnumber = Math.floor(Math.random() * 10000000)
+
+        if (url.indexOf('?') == -1) {
+            url += "?rv=" + randomnumber;
+        }
+        else {
+            url += "&rv=" + randomnumber;
+        }
+       
+        if (synch == "N") {
+            httpRequest.open('get', url, true);
+        }
+        else {
+            httpRequest.open('get', url, false);
+        }
+        httpRequest.send(null);
+
+        if (ev == 'Y') {
+            try
+            {
+                eval(httpRequest.responseText);
+            }
+            catch (ex)
+            {
+                alert(ex);
+            }
+        }
+        else {
+            if (repdiv != '' && repdiv != null) {
+                if (document.getElementById(repdiv) != null) {
+                    if (synch == "Y") {
+                        if (httpRequest.responseText.length>0)
+                        {
+                            document.getElementById(repdiv).innerHTML = httpRequest.responseText;
+                        }
+                    }
+                    else {
+                        httpRequest.onreadystatechange = function() {
+                            if (httpRequest.readyState == 4) {
+                                if (httpRequest.responseText.length>0)
+                                {
+                                    document.getElementById(repdiv).innerHTML = httpRequest.responseText;
+                                }
+                            }
+                        }
+                    }
+                }
+                else {
+                    alert("Target ID not found (" + repdiv + ")");
+                }
+            }
+        }
+    }    
+    if (refresh == 'Y') {
+        refreshtab();
+    }
+    if (message != "" && message != null) {
+        document.getElementById("message").style.display = "none";
+    }
+}

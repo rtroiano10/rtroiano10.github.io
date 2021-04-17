@@ -1,0 +1,467 @@
+
+<!-- saved from url=(0046)https://www.ceoexpress.com/factbook/widget.asp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The World Factbook</title>
+<!--<base href="https://www.cia.gov/library/publications/the-world-factbook/" />-->
+<!--<base target="_blank">--><base href="." target="_blank">
+
+<style type="text/css">
+form1 { 
+	border: 0px;
+	padding: 0px; 
+	font-size: 16px;
+	}
+	
+.country_select {
+	font-size: 10px;
+	font-family: Verdana;
+	font-weight: bold;
+	color: #666666;
+	background-color: #F8F7E9;
+	height: 20px;
+	text-transform:uppercase;
+	padding-top: 2px;
+	border:1px solid #8CACBB;
+	width:255px;
+}
+form {
+	margin: 0 0 0 0;
+	border: 0px;
+}
+	
+body {
+	margin: 0px;
+	}
+.title {
+	height: 25px;
+	background: url(/factbook/graphics/home_title_bkg.jpg) repeat-x;
+	}
+.header {
+	height: 23px;
+	background: url(/factbook/graphics/home_header_bkg.jpg) repeat-x;
+	}
+.home-date {
+	font: 10px normal Verdana, Arial, Helvetica, sans-serif;
+	color: #0E5783; /*blue*/
+	/*padding-bottom: 50px;*/
+	}
+.header img {
+	font: 9px normal Verdana, Arial, Helvetica, sans-serif;
+	color: #0B4075;
+	vertical-align:text-bottom;
+	}
+.intro {
+	font: 11px/18px Arial, Helvetica, sans-serif;
+	color: #666;
+	letter-spacing: .02em;
+	text-align: left;
+	padding: 8px 35px 10px 10px;
+	background: url(/factbook/graphics/home_intro_bkg.jpg) no-repeat;
+	}
+.whats-new-text {
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	letter-spacing: 0.01em;
+	padding: 3px 5px 3px 5px;
+	background: url(/factbook/graphics/home_whatsnew_bkg.jpg) repeat-x;
+	}
+.cover-text {
+	font-size: 11px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #666666;
+	letter-spacing: 0.01em;
+	padding: 7px 5px 10px 10px;
+	background-image: url(/factbook/graphics/whatsnew_gradiant.jpg);
+  background-repeat: repeat-x;
+  background-position: top;
+	}
+.map {
+	background: url(/factbook/graphics/home_title_map_bkg.jpg) repeat-x;
+	text-align: right;
+	padding: 4px 0px;
+	}
+#buttons td {
+	padding-bottom: 5px;
+	}
+#navigation {
+	visibility: visible;
+	z-index: 1000000;
+}
+</style>
+<script type="text/javascript">
+<!--
+    function MM_swapImgRestore() { //v3.0
+        var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+    function MM_preloadImages() { //v3.0
+        var d = document; if (d.images) {
+            if (!d.MM_p) d.MM_p = new Array();
+            var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+        }
+    }
+
+    function MM_findObj(n, d) { //v4.01
+        var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+            d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+        }
+        if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+        for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+        if (!x && d.getElementById) x = d.getElementById(n); return x;
+    }
+
+    function MM_swapImage() { //v3.0
+        var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+            if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+    }
+//-->
+</script>
+</head>
+<body marginwidth="0" marginheight="0">
+<table style="width:300px;padding:0px;margin:0px auto 0px auto;border-spacing:0px;border: solid 0px #ff0000;" id="navigation">
+<tbody><tr>
+<td>
+    <table style="width:100%;padding:0px;margin:0px;border-spacing:0px;border: solid 0px #ff0000;position:relative; z-index:999;">
+    <tbody><tr>
+    <td>
+        <table style="width:100%;background-image: url(/factbook/graphics/country_gradiant_back.jpg); height: 32px;" id="country_select2">
+        <tbody><tr>
+        <td style="width:100%;text-align:right;vertical-align:middle;">
+            <div id="parent" style="position: relative; left: 0px; top: 0px; z-index: 1;">
+                <table style="width:100%;padding:0px;margin:0px;border-spacing:0px;border: solid 0px #ff0000;">
+                <tbody><tr>
+                <td style="vertical-align:top;white-space:nowrap"><form id="SelectCountry" name="SelectCountry">
+                    <select name="countryCode" id="countryCode" class="country_select">
+                    <option selected="selected" value="xx">--- Select a Country or Location ---</option>
+                    <option value="xx"> World </option>
+                    <option value="af"> Afghanistan </option>
+                    <option value="ax"> Akrotiri </option>
+                    <option value="al"> Albania </option>
+                    <option value="ag"> Algeria </option>
+                    <option value="aq"> American Samoa </option>
+                    <option value="an"> Andorra </option>
+                    <option value="ao"> Angola </option>
+                    <option value="av"> Anguilla </option>
+                    <option value="ay"> Antarctica </option>
+                    <option value="ac"> Antigua and Barbuda </option>
+                    <option value="xq"> Arctic Ocean </option>
+                    <option value="ar"> Argentina </option>
+                    <option value="am"> Armenia </option>
+                    <option value="aa"> Aruba </option>
+                    <option value="at"> Ashmore and Cartier Islands </option>
+                    <option value="zh"> Atlantic Ocean </option>
+                    <option value="as"> Australia </option>
+                    <option value="au"> Austria </option>
+                    <option value="aj"> Azerbaijan </option>
+                    <option value="bf"> Bahamas, The </option>
+                    <option value="ba"> Bahrain </option>
+                    <option value="um"> Baker Island </option>
+                    <option value="bg"> Bangladesh </option>
+                    <option value="bb"> Barbados </option>
+                    <option value="bo"> Belarus </option>
+                    <option value="be"> Belgium </option>
+                    <option value="bh"> Belize </option>
+                    <option value="bn"> Benin </option>
+                    <option value="bd"> Bermuda </option>
+                    <option value="bt"> Bhutan </option>
+                    <option value="bl"> Bolivia </option>
+                    <option value="bk"> Bosnia and Herzegovina </option>
+                    <option value="bc"> Botswana </option>
+                    <option value="bv"> Bouvet Island </option>
+                    <option value="br"> Brazil </option>
+                    <option value="io"> British Indian Ocean Territory </option>
+                    <option value="vi"> British Virgin Islands </option>
+                    <option value="bx"> Brunei </option>
+                    <option value="bu"> Bulgaria </option>
+                    <option value="uv"> Burkina Faso </option>
+                    <option value="bm"> Burma </option>
+                    <option value="by"> Burundi </option>
+                    <option value="cb"> Cambodia </option>
+                    <option value="cm"> Cameroon </option>
+                    <option value="ca"> Canada </option>
+                    <option value="cv"> Cape Verde </option>
+                    <option value="cj"> Cayman Islands </option>
+                    <option value="ct"> Central African Republic </option>
+                    <option value="cd"> Chad </option>
+                    <option value="ci"> Chile </option>
+                    <option value="ch"> China </option>
+                    <option value="kt"> Christmas Island </option>
+                    <option value="ip"> Clipperton Island </option>
+                    <option value="ck"> Cocos (Keeling) Islands </option>
+                    <option value="co"> Colombia </option>
+                    <option value="cn"> Comoros </option>
+                    <option value="cg"> Congo, Democratic Republic of the </option>
+                    <option value="cf"> Congo, Republic of the </option>
+                    <option value="cw"> Cook Islands </option>
+                    <option value="cr"> Coral Sea Islands </option>
+                    <option value="cs"> Costa Rica </option>
+                    <option value="iv"> Cote d'Ivoire </option>
+                    <option value="hr"> Croatia </option>
+                    <option value="cu"> Cuba </option>
+                    <option value="cy"> Cyprus </option>
+                    <option value="ez"> Czech Republic </option>
+                    <option value="da"> Denmark </option>
+                    <option value="dx"> Dhekelia </option>
+                    <option value="dj"> Djibouti </option>
+                    <option value="do"> Dominica </option>
+                    <option value="dr"> Dominican Republic </option>
+                    <option value="ec"> Ecuador </option>
+                    <option value="eg"> Egypt </option>
+                    <option value="es"> El Salvador </option>
+                    <option value="ek"> Equatorial Guinea </option>
+                    <option value="er"> Eritrea </option>
+                    <option value="en"> Estonia </option>
+                    <option value="et"> Ethiopia </option>
+                    <option value="fk"> Falkland Islands (Islas Malvinas) </option>
+                    <option value="fo"> Faroe Islands </option>
+                    <option value="fj"> Fiji </option>
+                    <option value="fi"> Finland </option>
+                    <option value="fr"> France </option>
+                    <option value="fp"> French Polynesia </option>
+                    <option value="fs"> French Southern and Antarctic Lands </option>
+                    <option value="gb"> Gabon </option>
+                    <option value="ga"> Gambia, The </option>
+                    <option value="gz"> Gaza Strip </option>
+                    <option value="gg"> Georgia </option>
+                    <option value="gm"> Germany </option>
+                    <option value="gh"> Ghana </option>
+                    <option value="gi"> Gibraltar </option>
+                    <option value="gr"> Greece </option>
+                    <option value="gl"> Greenland </option>
+                    <option value="gj"> Grenada </option>
+                    <option value="gq"> Guam </option>
+                    <option value="gt"> Guatemala </option>
+                    <option value="gk"> Guernsey </option>
+                    <option value="gv"> Guinea </option>
+                    <option value="pu"> Guinea-Bissau </option>
+                    <option value="gy"> Guyana </option>
+                    <option value="ha"> Haiti </option>
+                    <option value="hm"> Heard Island and McDonald Islands </option>
+                    <option value="vt"> Holy See (Vatican City) </option>
+                    <option value="ho"> Honduras </option>
+                    <option value="hk"> Hong Kong </option>
+                    <option value="um"> Howland Island </option>
+                    <option value="hu"> Hungary </option>
+                    <option value="ic"> Iceland </option>
+                    <option value="in"> India </option>
+                    <option value="xo"> Indian Ocean </option>
+                    <option value="id"> Indonesia </option>
+                    <option value="ir"> Iran </option>
+                    <option value="iz"> Iraq </option>
+                    <option value="ei"> Ireland </option>
+                    <option value="im"> Isle of Man </option>
+                    <option value="is"> Israel </option>
+                    <option value="it"> Italy </option>
+                    <option value="jm"> Jamaica </option>
+                    <option value="jn"> Jan Mayen </option>
+                    <option value="ja"> Japan </option>
+                    <option value="um"> Jarvis Island </option>
+                    <option value="je"> Jersey </option>
+                    <option value="um"> Johnston Atoll </option>
+                    <option value="jo"> Jordan </option>
+                    <option value="kz"> Kazakhstan </option>
+                    <option value="ke"> Kenya </option>
+                    <option value="um"> Kingman Reef </option>
+                    <option value="kr"> Kiribati </option>
+                    <option value="kn"> Korea, North </option>
+                    <option value="ks"> Korea, South </option>
+                    <option value="kv"> Kosovo </option>
+                    <option value="ku"> Kuwait </option>
+                    <option value="kg"> Kyrgyzstan </option>
+                    <option value="la"> Laos </option>
+                    <option value="lg"> Latvia </option>
+                    <option value="le"> Lebanon </option>
+                    <option value="lt"> Lesotho </option>
+                    <option value="li"> Liberia </option>
+                    <option value="ly"> Libya </option>
+                    <option value="ls"> Liechtenstein </option>
+                    <option value="lh"> Lithuania </option>
+                    <option value="lu"> Luxembourg </option>
+                    <option value="mc"> Macau </option>
+                    <option value="mk"> Macedonia </option>
+                    <option value="ma"> Madagascar </option>
+                    <option value="mi"> Malawi </option>
+                    <option value="my"> Malaysia </option>
+                    <option value="mv"> Maldives </option>
+                    <option value="ml"> Mali </option>
+                    <option value="mt"> Malta </option>
+                    <option value="rm"> Marshall Islands </option>
+                    <option value="mr"> Mauritania </option>
+                    <option value="mp"> Mauritius </option>
+                    <option value="mf"> Mayotte </option>
+                    <option value="mx"> Mexico </option>
+                    <option value="fm"> Micronesia, Federated States of </option>
+                    <option value="um"> Midway Islands </option>
+                    <option value="md"> Moldova </option>
+                    <option value="mn"> Monaco </option>
+                    <option value="mg"> Mongolia </option>
+                    <option value="mj"> Montenegro </option>
+                    <option value="mh"> Montserrat </option>
+                    <option value="mo"> Morocco </option>
+                    <option value="mz"> Mozambique </option>
+                    <option value="wa"> Namibia </option>
+                    <option value="nr"> Nauru </option>
+                    <option value="bq"> Navassa Island </option>
+                    <option value="np"> Nepal </option>
+                    <option value="nl"> Netherlands </option>
+                    <option value="nt"> Netherlands Antilles </option>
+                    <option value="nc"> New Caledonia </option>
+                    <option value="nz"> New Zealand </option>
+                    <option value="nu"> Nicaragua </option>
+                    <option value="ng"> Niger </option>
+                    <option value="ni"> Nigeria </option>
+                    <option value="ne"> Niue </option>
+                    <option value="nf"> Norfolk Island </option>
+                    <option value="cq"> Northern Mariana Islands </option>
+                    <option value="no"> Norway </option>
+                    <option value="mu"> Oman </option>
+                    <option value="zn"> Pacific Ocean </option>
+                    <option value="pk"> Pakistan </option>
+                    <option value="ps"> Palau </option>
+                    <option value="um"> Palmyra Atoll </option>
+                    <option value="pm"> Panama </option>
+                    <option value="pp"> Papua New Guinea </option>
+                    <option value="pf"> Paracel Islands </option>
+                    <option value="pa"> Paraguay </option>
+                    <option value="pe"> Peru </option>
+                    <option value="rp"> Philippines </option>
+                    <option value="pc"> Pitcairn Islands </option>
+                    <option value="pl"> Poland </option>
+                    <option value="po"> Portugal </option>
+                    <option value="rq"> Puerto Rico </option>
+                    <option value="qa"> Qatar </option>
+                    <option value="ro"> Romania </option>
+                    <option value="rs"> Russia </option>
+                    <option value="rw"> Rwanda </option>
+                    <option value="tb"> Saint Barthelemy </option>
+                    <option value="sh"> Saint Helena, Ascension, and Tristan da Cunha </option>
+                    <option value="sc"> Saint Kitts and Nevis </option>
+                    <option value="st"> Saint Lucia </option>
+                    <option value="rn"> Saint Martin </option>
+                    <option value="sb"> Saint Pierre and Miquelon </option>
+                    <option value="vc"> Saint Vincent and the Grenadines </option>
+                    <option value="ws"> Samoa </option>
+                    <option value="sm"> San Marino </option>
+                    <option value="tp"> Sao Tome and Principe </option>
+                    <option value="sa"> Saudi Arabia </option>
+                    <option value="sg"> Senegal </option>
+                    <option value="ri"> Serbia </option>
+                    <option value="se"> Seychelles </option>
+                    <option value="sl"> Sierra Leone </option>
+                    <option value="sn"> Singapore </option>
+                    <option value="lo"> Slovakia </option>
+                    <option value="si"> Slovenia </option>
+                    <option value="bp"> Solomon Islands </option>
+                    <option value="so"> Somalia </option>
+                    <option value="sf"> South Africa </option>
+                    <option value="sx"> South Georgia and South Sandwich Islands </option>
+                    <option value="oo"> Southern Ocean </option>
+                    <option value="sp"> Spain </option>
+                    <option value="pg"> Spratly Islands </option>
+                    <option value="ce"> Sri Lanka </option>
+                    <option value="su"> Sudan </option>
+                    <option value="ns"> Suriname </option>
+                    <option value="sv"> Svalbard </option>
+                    <option value="wz"> Swaziland </option>
+                    <option value="sw"> Sweden </option>
+                    <option value="sz"> Switzerland </option>
+                    <option value="sy"> Syria </option>
+                    <option value="ti"> Tajikistan </option>
+                    <option value="tz"> Tanzania </option>
+                    <option value="th"> Thailand </option>
+                    <option value="tt"> Timor-Leste </option>
+                    <option value="to"> Togo </option>
+                    <option value="tl"> Tokelau </option>
+                    <option value="tn"> Tonga </option>
+                    <option value="td"> Trinidad and Tobago </option>
+                    <option value="ts"> Tunisia </option>
+                    <option value="tu"> Turkey </option>
+                    <option value="tx"> Turkmenistan </option>
+                    <option value="tk"> Turks and Caicos Islands </option>
+                    <option value="tv"> Tuvalu </option>
+                    <option value="ug"> Uganda </option>
+                    <option value="up"> Ukraine </option>
+                    <option value="ae"> United Arab Emirates </option>
+                    <option value="uk"> United Kingdom </option>
+                    <option value="us"> United States </option>
+                    <option value="um"> United States Pacific Island Wildlife Refuges </option>
+                    <option value="uy"> Uruguay </option>
+                    <option value="uz"> Uzbekistan </option>
+                    <option value="nh"> Vanuatu </option>
+                    <option value="ve"> Venezuela </option>
+                    <option value="vm"> Vietnam </option>
+                    <option value="vq"> Virgin Islands </option>
+                    <option value="wq"> Wake Island </option>
+                    <option value="wf"> Wallis and Futuna </option>
+                    <option value="we"> West Bank </option>
+                    <option value="wi"> Western Sahara </option>
+                    <option value="ym"> Yemen </option>
+                    <option value="za"> Zambia </option>
+                    <option value="zi"> Zimbabwe </option>
+                    <option value="tw"> Taiwan </option>
+                    <option value="ee"> European Union </option>
+                    </select>
+                    </form>
+                </td>
+                <td style="vertical-align:top;white-space:nowrap"><input type="button" name="navigatebtn" value="&gt;&gt;" style="height: 20px; padding: 0px 2px 0px 2px;margin:0px 0px 0px 2px; font-weight: bold;" onclick="window.open(&#39;https://www.cia.gov/library/publications/the-world-factbook/geos/&#39;+document.getElementById(&#39;countryCode&#39;).options[document.getElementById(&#39;countryCode&#39;).selectedIndex].value+&#39;.html&#39;,&#39;_blank&#39;)"></td>
+                </tr>
+                </tbody></table>
+            </div>
+        </td>
+        </tr>
+        </tbody></table>
+
+        <table style="width:100%;padding:0px;margin:0px;border-spacing:0px;border: solid 0px #ff0000;" id="navigation2">
+        <tbody><tr>
+	    <td style="text-align:center; vertical-align:top;">
+		        <img src="./map_noFlash_sm.jpg" style="width:300px;height:197px;padding:0px;margin:0px;border: solid 0px #ff0000;" usemap="#noflash" alt="map">
+        <map id="Map1" name="noflash">
+          <!--North America-->
+          <area shape="poly" coords="48,91,39,84,35,70,32,59,36,53,35,47,28,46,12,50,17,43,28,33,45,28,58,28,76,21,89,21,105,20,133,19,127,28,118,35,110,43,98,43,100,55,88,59,77,66,69,77,59,80,48,91" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_noa.html" alt="North America" title="North America" target="_blank">
+          <area shape="poly" coords="7,81,14,80,16,87,8,90" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_noa.html" alt="North America" title="North America" target="_blank">
+          <!--South America-->
+          <area shape="poly" coords="65,100,62,110,66,121,72,128,74,151,83,169,93,167,94,158,92,148,98,134,105,121,106,109,92,98,77,91" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_soa.html" alt="South America" title="South America" target="_blank">
+          <!--Central America-->
+          <area shape="poly" coords="50,91,59,82,71,79,83,84,84,92,77,88,61,102" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_cam.html" alt="Central America" title="Central America" target="_blank">
+          <!--Antartica-->
+          <area shape="poly" coords="45,195,45,184,66,180,85,179,96,173,106,177,126,180,157,177,173,172,186,176,214,173,242,178,242,188,236,194" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_ant.html" alt="Antartica" title="Antartica" target="_blank">
+          <!--Africa-->
+          <area shape="poly" coords="122,70,114,82,123,104,137,102,139,115,141,132,149,146,163,141,176,136,179,120,171,110,179,96,169,94,160,72,145,69,139,65" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_afr.html" alt="Africa" title="Africa" target="_blank">
+          <!--Europe-->
+          <area shape="poly" coords="122,63,128,54,118,37,126,32,137,39,147,22,152,21,152,31,154,39,164,53,156,59,152,68,138,63,126,67" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_eur.html" alt="Europe" title="Europe" target="_blank">
+          <!--Central Asia-->
+          <area shape="poly" coords="156,27,163,21,188,20,209,25,223,23,243,30,264,34,252,54,242,58,227,45,219,50,204,49,196,57,191,64,184,66,178,61,172,59,165,56,163,47,155,40" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_cas.html" alt="Central Asia" title="Central Asia" target="_blank">
+          <!--Middle East-->
+          <area shape="poly" coords="179,91,187,81,186,67,174,61,163,57,153,66,162,71,171,92" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_mde.html" alt="Middle East" title="Middle East" target="_blank">
+          <!--South Asia-->
+          <area shape="poly" coords="189,83,201,103,208,96,208,87,214,75,204,76,195,67,191,64,186,67" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_sas.html" alt="South Asia" title="South Asia" target="_blank">
+          <!--East Southeast Asia-->
+          <area shape="poly" coords="253,101,270,109,264,118,251,116,234,117,212,102,213,86,212,82,215,74,204,76,193,63,204,49,219,52,227,46,240,57,250,57,250,69,240,80" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_eas.html" alt="East Southeast Asia" title="East Southeast Asia" target="_blank">
+          <!--Australia/Oceania-->
+          <area shape="poly" coords="227,129,227,146,242,144,247,156,264,160,281,149,278,136,288,125,270,112,261,120,245,117" href="https://www.cia.gov/library/publications/the-world-factbook/region/region_aus.html" alt="Australia-Oceania" title="Australia-Oceania" target="_blank">
+          <!--Pacific Ocean-->
+          <area shape="circle" coords="25,105,10" href="https://www.cia.gov/library/publications/the-world-factbook/geos/zn.html" alt="Pacific Ocean" title="Pacific Ocean" target="_blank">
+          <area shape="circle" coords="277,87,10" href="https://www.cia.gov/library/publications/the-world-factbook/geos/zn.html" alt="Pacific Ocean" title="Pacific Ocean" target="_blank">
+          <!--Southern Ocean-->
+          <area shape="circle" coords="134,170,10" href="https://www.cia.gov/library/publications/the-world-factbook/geos/oo.html" alt="Southern Ocean" title="Southern Ocean" target="_blank">
+          <!--Atlantic Ocean-->
+          <area shape="circle" coords="99,82,10" href="https://www.cia.gov/library/publications/the-world-factbook/geos/zh.html" alt="Atlantic Ocean" title="Atlantic Ocean" target="_blank">
+          <!--Indian Ocean-->
+          <area shape="circle" coords="199,137,10" href="https://www.cia.gov/library/publications/the-world-factbook/geos/zh.html" alt="Indian Ocean" title="Indian Ocean" target="_blank">
+          <!--Arctic Ocean-->
+          <area shape="circle" coords="137,30,9" href="https://www.cia.gov/library/publications/the-world-factbook/geos/xq.html" alt="Arctic Ocean" title="Arctic Ocean" target="_blank">
+          <!--World-->
+          <area shape="rect" coords="2,169,24,192" href="https://www.cia.gov/library/publications/the-world-factbook/geos/xx.html" alt="World" title="World" target="_blank">
+        </map>
+        </td>
+        </tr>
+        </tbody></table>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+
+
+</body></html>
