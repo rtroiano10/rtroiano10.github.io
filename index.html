@@ -1,0 +1,3406 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://www.ceoexpress.com/home -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<title>
+	CEOExpress: Business portal for executives created by a busy executive
+</title><link rel="SHORTCUT ICON" href="https://www.ceoexpress.com/favicon.ico"><link rel="apple-touch-icon" href="https://www.ceoexpress.com/apple-touch-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="CEOExpress: Business portal for executives created by a CEO"><meta name="keywords" content="business links, CEO, chief executive officer, senior executives, CEO Links, Business Portal, Business Directory, Small Business Directory, CEO Homepage, CFO Portal, CFO Links, CIO Portal, CIO Links, International Business Portal, C-Level"><link rel="stylesheet" href="./CEOExpress_ Business portal for executives created by a busy executive_files/megamenu_ceox.css" type="text/css" media="screen"><link rel="stylesheet" href="./CEOExpress_ Business portal for executives created by a busy executive_files/Responsive.css" type="text/css">
+    
+    <script src="./CEOExpress_ Business portal for executives created by a busy executive_files/jquery.js.download" type="text/javascript"></script>
+    <script src="./CEOExpress_ Business portal for executives created by a busy executive_files/megamenu.js.download" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $('.megamenu').megaMenuMobile();
+        });
+    </script>
+    
+    
+    <script src="./CEOExpress_ Business portal for executives created by a busy executive_files/requestFile.js.download" type="text/javascript"></script>
+    
+    <script src="./CEOExpress_ Business portal for executives created by a busy executive_files/responsive.js.download" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+    <!--
+
+        function changeEng(num)
+        {
+
+            var x=0;
+            var curreng="";
+            var currimg="";
+
+            if (num==1)
+            {
+                curreng='1';
+                currimg='google.gif';
+            }
+
+            if (num==2)
+            {
+                curreng='45';
+                currimg='amazon.gif';
+            }
+
+            if (num==3)
+            {
+                curreng='59';
+                currimg='wiki.gif';
+            }
+
+            if (num==4)
+            {
+                curreng='59';
+                currimg='wiki.gif';
+            }
+
+            switch(num) {
+                case 1:
+                    document.getElementById("Eng1").style.backgroundColor = "#94afc4";
+                    document.getElementById("Eng2").style.backgroundColor = "#afafaf";
+                    document.getElementById("Eng3").style.backgroundColor = "#afafaf";
+                    break;
+                case 2:
+                    document.getElementById("Eng1").style.backgroundColor = "#afafaf";
+                    document.getElementById("Eng2").style.backgroundColor = "#94afc4";
+                    document.getElementById("Eng3").style.backgroundColor = "#afafaf";
+                    break;
+                case 3:
+                    document.getElementById("Eng1").style.backgroundColor = "#afafaf";
+                    document.getElementById("Eng2").style.backgroundColor = "#afafaf";
+                    document.getElementById("Eng3").style.backgroundColor = "#94afc4";
+                    break;
+                default:
+                    document.getElementById("Eng1").style.backgroundColor = "#94afc4";
+                    document.getElementById("Eng2").style.backgroundColor = "#afafaf";
+                    document.getElementById("Eng3").style.backgroundColor = "#afafaf";
+            }
+
+            for (x=1; x<5; x++)
+            {
+                if (x==num)
+                {
+                    document.ceolink.Engine.value=curreng;
+                    document.ceolink.query.focus();
+
+                }
+                else
+                {
+
+                }
+            }
+        }
+
+    //-->
+    </script>
+
+    
+    <script type="text/javascript">
+    <!--
+        function toggleHomeTools() {
+            if (document.getElementById("HomeToolsLayerDiv") != null) {
+                if (document.getElementById("HomeToolsLayerDiv").style.display == "none") {
+                    document.getElementById("HomeToolsLayerDiv").style.display = "block";
+                }
+                else {
+                    document.getElementById("HomeToolsLayerDiv").style.display = "none";
+                }
+            }
+        }
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+
+        function checkStartSz() {
+            var size = getCookie("fontresize"),
+                returnSize;
+            if (size != "") {
+                var s = parseInt(size);
+                if (s == NaN) {
+                    setCookie("fontresize", "2", 3650);
+                    returnSize = 2;
+                }
+                else {
+                    switch (s) {
+                        case 0:
+                        case 1:
+                        case 2:
+                        case 3:
+                        case 4:
+                        case 5:
+                        case 6:
+                            returnSize = s;
+                            break;
+                        default:
+                            returnSize = 2;
+                    }
+                }
+            }
+            else {
+                returnSize = 2;
+            }
+            return returnSize;
+        }
+
+        var startSz = checkStartSz();
+        function fontResize(inc) {
+
+            var w = window,
+                d = document,
+                sz = startSz,
+                pcnt,
+                cls1,
+                cls2,
+                cls3;
+
+            sz += inc;
+            if (sz < 0) sz = 0;
+            if (sz > 6) sz = 6;
+            startSz = sz;
+
+            setCookie("fontresize", sz.toString(), 3650);
+
+            switch (sz) {
+                case 0:
+                    pcnt = "0.8em";
+                    if (document.getElementById("aminus") != null) {
+                        document.getElementById("aminus").className = "Adisabled";
+                        document.getElementById("aminus").title = "Disabled - As Small As You Can Go!";
+                    }
+                    break;
+                case 1:
+                    pcnt = "0.9em";
+                    if (document.getElementById("aminus") != null) {
+                        document.getElementById("aminus").className = "Aminus";
+                        document.getElementById("aminus").title = "Reduce Font Size";
+                    }
+                    if (document.getElementById("aplus") != null) {
+                        document.getElementById("aplus").className = "Aplus";
+                        document.getElementById("aplus").title = "Increase Font Size";
+                    }
+                    break;
+                case 2:
+                    pcnt = "1.0em";
+                    if (document.getElementById("aminus") != null) {
+                        document.getElementById("aminus").className = "Aminus";
+                        document.getElementById("aminus").title = "Reduce Font Size";
+                    }
+                    if (document.getElementById("aplus") != null) {
+                        document.getElementById("aplus").className = "Aplus";
+                        document.getElementById("aplus").title = "Increase Font Size";
+                    }
+                    break;
+                case 3:
+                    pcnt = "1.1em";
+                    if (document.getElementById("aminus") != null) {
+                        document.getElementById("aminus").className = "Aminus";
+                        document.getElementById("aminus").title = "Reduce Font Size";
+                    }
+                    if (document.getElementById("aplus") != null) {
+                        document.getElementById("aplus").className = "Aplus";
+                        document.getElementById("aplus").title = "Increase Font Size";
+                    }
+                    break;
+                case 4:
+                    pcnt = "1.2em";
+                    if (document.getElementById("aminus") != null) {
+                        document.getElementById("aminus").className = "Aminus";
+                        document.getElementById("aminus").title = "Reduce Font Size";
+                    }
+                    if (document.getElementById("aplus") != null) {
+                        document.getElementById("aplus").className = "Aplus";
+                        document.getElementById("aplus").title = "Increase Font Size";
+                    }
+                    break;
+                case 5:
+                    pcnt = "1.3em";
+                    if (document.getElementById("aminus") != null) {
+                        document.getElementById("aminus").className = "Aminus";
+                        document.getElementById("aminus").title = "Reduce Font Size";
+                    }
+                    if (document.getElementById("aplus") != null) {
+                        document.getElementById("aplus").className = "Aplus";
+                        document.getElementById("aplus").title = "Increase Font Size";
+                    }
+                    break;
+                case 6:
+                    pcnt = "1.4em";
+                    if (document.getElementById("aplus") != null) {
+                        document.getElementById("aplus").className = "Adisabled";
+                        document.getElementById("aplus").title = "Disabled - As Big As You Can Go!";
+                    }
+                    break;
+                default:
+                    pcnt = "1.0em";
+                    if (document.getElementById("aminus") != null) {
+                        document.getElementById("aminus").className = "Aminus";
+                        document.getElementById("aminus").title = "Reduce Font Size";
+                    }
+                    if (document.getElementById("aplus") != null) {
+                        document.getElementById("aplus").className = "Aplus";
+                        document.getElementById("aplus").title = "Increase Font Size";
+                    }
+                    break;
+            }
+
+            if (d.getElementsByClassName("widgetContentLiSubHeadingBullets") != null) {
+                cls1 = d.getElementsByClassName("widgetContentLiSubHeadingBullets");
+                for (var i = 0; i < cls1.length; i++) {
+                    var cls1element = cls1[i];
+                    cls1element.style.fontSize = pcnt;
+                }
+            }
+
+            if (d.getElementsByClassName("widgetContentLiSubHeadingNoBullets") != null) {
+                cls2 = d.getElementsByClassName("widgetContentLiSubHeadingNoBullets");
+                for (var j = 0; j < cls2.length; j++) {
+                    var cls2element = cls2[j];
+                    cls2element.style.fontSize = pcnt;
+                }
+            }
+
+            if (d.getElementsByClassName("widgetContentLiLink") != null) {
+                cls3 = d.getElementsByClassName("widgetContentLiLink");
+                for (var k = 0; k < cls3.length; k++) {
+                    var cls3element = cls3[k];
+                    if (cls3element.children != null) {
+                        var childs = cls3element.children;
+                        for (var l = 0; l < childs.length; l++) {
+                            var childnode = childs[l];
+                            childnode.style.fontSize = pcnt;
+                        }
+                    }
+                }
+            }
+        }
+
+        function closeBubble() {
+            document.getElementById("bubbleLayerDiv").style.display = "none";
+            var xmlhttp;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    //document.getElementById("bubbleLayerDiv").style.display = "none";
+                }
+            }
+            xmlhttp.open("POST", "/setBubbleOff_ajax.aspx", true);
+            xmlhttp.send();
+        }
+        
+        //-->
+    </script>
+
+    
+    
+    <!--<base target="_blank">--><base href="." target="_blank">
+</head>
+<body onload="kalamazoo();" onresize="kalamazoo();">
+
+<!--<div class="wrapper">
+        <div id="kalamazooDiv" class="iframewrapper"><iframe src="./CEOExpress_ Business portal for executives created by a busy executive_files/Responsive_Ads.html" id="kalamazooifr" class="ifrclass" align="middle" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" m3sexqj3f=""></iframe>
+</div>  -->
+   </div>
+   
+   <div id="MegaMenuPublic_PanelDTMenu">
+	
+    <div class="megamenu_wrapper_full megamenu_dark_theme">
+     
+        <div class="megamenu_container megamenu_black" style="display: none;">
+     
+            <ul class="megamenu">
+            
+            <li class="menuitem_nodrop" style="cursor: default;"><a href="https://www.ceoexpress.com/home#_" target="_self" style="cursor:default;color: #b0cade;">
+                <script type="text/javascript" src="./CEOExpress_ Business portal for executives created by a busy executive_files/displaydate_Modern.js.download"></script>APRIL  17th, 2021<noscript>APRIL 17, 2021</noscript></a>
+            </li>
+
+            
+         
+            </ul>
+     
+        </div>
+        <div class="megamenu_container megamenu_powderblue">
+        <ul class="megamenu">
+            <li><a href="https://www.ceoexpress.com/home#" target="_top" class="menuitem_drop">Quotes</a>
+            <div class="dropdown_2columns">
+            
+             <div class="col_full firstcolumn">
+             <form action="https://www.ceoexpress.com/finance/financecenterd.aspx" id="frmQuoteD" name="frmQuoteD" method="get" style="margin:0px; padding:0px;border-spacing: 0px;"><input type="hidden" name="tab" value="quote">
+             <h2>GET QUOTE</h2>
+             <p style="margin:0px; padding:0px;border-spacing: 0px; border: solid 0px #ff0000;white-space: nowrap;">
+             Enter Symbol:&nbsp;&nbsp;<input type="text" class="sn" id="symbol" name="symbol" value="" style="width: auto;">&nbsp;<input type="submit" name="query_submit" value="Go" class="plContactSendBtn">
+             </p>
+             <p style="margin:5px 0px 20px 0px; padding:0px;border-spacing: 0px;"><a href="https://www.ceoexpress.com/finance/financecenterd.aspx" style="color: #ffffff;" target="_top">Finance Center</a>&nbsp;<span class="tabURL">|</span>&nbsp;<a href="http://www.marketwatch.com/" style="color: #ffffff;" target="_blank">MarketWatch</a></p>
+             </form>
+             
+             <h2>CALCULATOR</h2>
+             <div style="width:95%; padding: 0px 2px 2px 2px;">
+                <script type="text/javascript">
+
+                    var mn;
+                    var sn;
+                    var sn = 1;
+                    var cn;
+                    var ac2;
+                    var out;
+                    var na;
+                    var nn;
+
+                    function calc(ac) {
+
+                        nstring = document.calc.numinput.value;
+                        cn = parseInt(nstring);
+                        if (ac == "m") {
+                            ac2 = 'm'
+                            if (mn == null) {
+                                mn = cn;
+                            }
+                            else {
+                                sn = cn;
+                            }
+                            na = "noout";
+                        }
+
+                        if (ac == "e") {
+                            if (ac2 == "m") {
+
+                                out = mn * cn;
+                                document.calc.numinput.value = out;
+                                mn = mn * cn;
+                                na = "noout";
+                            }
+                        }
+
+                        if (nn == 1) {
+                            document.calc.numinput.value = "";
+                            na = "";
+                            nn = 0;
+                        }
+
+                        if (na != 'noout') {
+                            if (nstring.length < 14) {
+                                if (nstring == '0') {
+                                    document.calc.numinput.value = ac;
+                                }
+                                else
+                                { document.calc.numinput.value = document.calc.numinput.value + ac; }
+                            }
+                        }
+
+                        if (na == "noout") {
+                            nn = 1;
+                        }
+
+                    }
+
+                    //-->
+                </script>
+				<style type="text/css">
+					.mCalcTbl
+					{
+						padding:0px;
+						margin:0px;
+						border-spacing:0px;
+						width:252px;
+						height: 130px;
+						background-color: #647482;
+					}
+					
+					.mCalcTdRO
+					{
+						width:127px;
+						height:24px;
+						padding:0px;
+						margin:0px;
+						border-spacing:0px;
+						vertical-align: middle;
+						line-height:10px;
+						border: solid 1px #49545E;
+					}
+					
+					.mCalcRO
+					{
+						padding:0px;
+						margin:0px;
+						border-spacing:0px;
+						width:125px;
+						height:24px;
+						font-size: 10px;
+						vertical-align: middle;
+						border: solid 0px #49545E;
+					}
+
+					.mCalcTdMain, .mCalcTdMainLh, .mCalcTdMainPt
+					{
+						width:40px;
+						height:24px;
+						padding:0px;
+						margin:0px;
+						border-spacing:0px;
+						vertical-align: middle;
+						border: solid 1px #49545E;
+						line-height:10px;
+						background-color: #647482;
+					}					
+					.mCalcTdMainLh
+					{
+					}					
+					.mCalcTdMainPt
+					{
+						text-align:center;
+						cursor: pointer;
+					}
+
+					.mCalcImg
+					{
+						padding:0px;
+						margin:0px;
+						border-spacing:0px;
+						width: 40px;
+						height: 24px;
+						border: solid 0px #bbbbbb;
+						vertical-align: middle;
+					}
+					
+					.mCalcSpn
+					{
+						padding:0px;
+						margin:0px;
+						border-spacing:0px;
+						font-weight: bold;
+						font-size: 13px;
+						color: #ffffff;
+						font-family: Arial, Helvetica, sans-serif
+					}
+				</style>
+				<form name="Keypad" action="https://www.ceoexpress.com/home#" style="padding:0px; margin:0px; border-spacing:0px;">
+                <!--  Original:  http://www.dummyproof.com/javascripts -->
+                <!-- This script and many more are available free online at -->
+                <!-- The JavaScript Source!! http://javascript.internet.com -->
+                <table class="mCalcTbl">
+                <tbody>
+                <tr>
+                <td colspan="3" class="mCalcTdRO">
+                <input name="ReadOut" type="text" value="0" class="mCalcRO" onkeyup="keys();">
+                </td>
+                <td class="mCalcTdMainLh">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/clear.gif" onclick="iClear();" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/undo.gif" onclick="ClearEntry();" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMainLh">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/mc.gif" onclick="MC();" class="mCalcImg">
+                </td>
+                </tr>
+                <tr>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/7.gif" onclick="NumPressed(7);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/8.gif" onclick="NumPressed(8);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/9.gif" onclick="NumPressed(9);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/neg.gif" onclick="Neg();" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/div.gif" onclick="fPercent();" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/mr.gif" onclick="MR();" class="mCalcImg">
+                </td>
+                </tr>
+                <tr>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/4.gif" onclick="NumPressed(4);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/5.gif" onclick="NumPressed(5);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/6.gif" onclick="NumPressed(6);" class="mCalcImg">
+                </td>
+				<td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/plus.gif" onclick="Operation(&#39;+&#39;);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/sub.gif" onclick="Operation(&#39;-&#39;);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/mp.gif" onclick="MP();" class="mCalcImg">
+                </td>
+                </tr>
+                <tr>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/1.gif" onclick="NumPressed(1);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/2.gif" onclick="NumPressed(2);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/3.gif" onclick="NumPressed(3);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/mult.gif" onclick="Operation(&#39;*&#39;);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/divide.gif" onclick="Operation(&#39;/&#39;);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/ms.gif" onclick="MS();" class="mCalcImg">
+                </td>
+                </tr>
+                <tr>
+                <td class="mCalcTdMainPt" onclick="MR()">
+                <span id="mi" class="mCalcSpn"></span>
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/0.gif" onclick="NumPressed(0);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/point.gif" onclick="idecimal();" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/equal.gif" onclick="Operation(&#39;=&#39;);" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/sroot.gif" onclick="sroot();" class="mCalcImg">
+                </td>
+                <td class="mCalcTdMain">
+                <span id="oi" class="mCalcSpn"></span>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+                </form>
+                <script type="text/javascript">
+                <!--                    Begin
+                    var FKeyPad = document.Keypad;
+                    var Accum = 0;
+                    var FlagNewNum = false;
+                    var PendingOp = "";
+                    var mem = 0;
+                    var meminput = 0;
+
+                    function KeyPress() {
+                        if (window.event.keyCode == 13) {
+                            //Operation('=');
+                            window.event.keyCode = 61;
+                        }
+                    }
+
+                    function MC() {
+                        mem = 0;
+                        meminput = 0;
+                        document.getElementById("mi").innerHTML = "";
+                    }
+
+                    function MR() {
+                        document.Keypad.ReadOut.value = mem;
+                        NumPressed('', 'm');
+                    }
+
+                    function MP() {
+                        if (meminput == 0) {
+                            mem = document.Keypad.ReadOut.value;
+                            meminput = 1;
+                        }
+                        else {
+                            var currnum = document.Keypad.ReadOut.value;
+                            mem = parseFloat(mem) + parseFloat(currnum);
+                        }
+                        document.getElementById("mi").innerHTML = "M";
+                    }
+
+                    function MS() {
+                        if (meminput == 0) {
+                            mem = 0 - parseFloat(document.Keypad.ReadOut.value);
+                            meminput = 1;
+                        }
+                        else {
+                            var currnum = document.Keypad.ReadOut.value;
+                            mem = parseFloat(mem) - parseFloat(currnum);
+                        }
+                        document.getElementById("mi").innerHTML = "M";
+                    }
+
+                    function sroot() {
+                        var currnum = document.Keypad.ReadOut.value;
+                        document.Keypad.ReadOut.value = Math.sqrt(parseFloat(currnum));
+                        clop();
+                    }
+
+
+                    function keys() {
+                        var rset = 0;
+                        var gchar = 0;
+                        var strsv = document.Keypad.ReadOut.value;
+                        var strsl = strsv.length;
+                        var strll = strsv.charAt(strsl - 1);
+                        if ((strll == "+") || (strll == "-") || (strll == "/") || (strll == "*")) {
+                            document.Keypad.ReadOut.value = strsv.slice(0, strsl - 1);
+                            Operation(strll);
+                            gchar = 1;
+                        }
+                        if ((strll == "0") || (strll == "1") || (strll == "2") || (strll == "3") || (strll == "4") || (strll == "5") || (strll == "6") || (strll == "7") || (strll == "8") || (strll == "9")) {
+                            NumPressed(strll, "no");
+                            gchar = 1;
+                        }
+                        if (strll == ".") {
+                            idecimal();
+                            gchar = 1;
+                        }
+                        if (strll == "=") {
+                            Operation('=');
+                            gchar = 1;
+                        }
+                        if ((strll == "c") || (strll == "C")) {
+                            iClear();
+                            gchar = 1;
+                        }
+                        if (gchar == 0) {
+                            document.Keypad.ReadOut.value = strsv.slice(0, strsl - 1);
+                        }
+                    }
+
+                    function clop() {
+                        document.getElementById("oi").innerHTML = "";
+                    }
+
+                    function NumPressed(Num, out) {
+                        if (FlagNewNum) {
+                            if (out != "m") {
+                                FKeyPad.ReadOut.value = Num;
+                            }
+                            FlagNewNum = false;
+                        }
+                        else {
+                            if (FKeyPad.ReadOut.value == "0") {
+                                if (out != "no") {
+                                    FKeyPad.ReadOut.value = Num;
+                                }
+                            }
+                            else
+                                if (out != "no") {
+                                FKeyPad.ReadOut.value += Num;
+                            }
+                        }
+                    }
+                    function Operation(Op) {
+                        //if (Op!=PendingOp) {FlagNewNum=false};
+                        var Readout = FKeyPad.ReadOut.value;
+                        if (FlagNewNum && PendingOp != "=");
+                        else {
+                            FlagNewNum = true;
+                            if ('+' == PendingOp)
+                                Accum += parseFloat(Readout);
+                            else if ('-' == PendingOp)
+                                Accum -= parseFloat(Readout);
+                            else if ('/' == PendingOp)
+                                Accum /= parseFloat(Readout);
+                            else if ('*' == PendingOp)
+                                Accum *= parseFloat(Readout);
+                            else
+                                Accum = parseFloat(Readout);
+                            FKeyPad.ReadOut.value = Accum;
+                            PendingOp = Op;
+                        }
+                        if (PendingOp == "+") { document.getElementById("oi").innerHTML = "+"; }
+                        if (PendingOp == "-") { document.getElementById("oi").innerHTML = "-"; }
+                        if (PendingOp == "*") { document.getElementById("oi").innerHTML = "*"; }
+                        if (PendingOp == "/") { document.getElementById("oi").innerHTML = "/"; }
+                        if (PendingOp == "=") { document.getElementById("oi").innerHTML = ""; }
+                    }
+                    function idecimal() {
+                        var curReadOut = FKeyPad.ReadOut.value;
+                        if (FlagNewNum) {
+                            curReadOut = "0.";
+                            FlagNewNum = false;
+                        }
+                        else {
+                            if (curReadOut.indexOf(".") == -1)
+                                curReadOut += ".";
+                        }
+                        FKeyPad.ReadOut.value = curReadOut;
+                    }
+                    function ClearEntry() {
+                        FKeyPad.ReadOut.value = "0";
+                        FlagNewNum = true;
+                    }
+                    function iClear() {
+                        Accum = 0;
+                        PendingOp = "";
+                        ClearEntry();
+                        clop();
+                    }
+                    function Neg() {
+                        FKeyPad.ReadOut.value = parseFloat(FKeyPad.ReadOut.value) * -1;
+                    }
+                    function fPercent() {
+                        FKeyPad.ReadOut.value = (parseFloat(FKeyPad.ReadOut.value) / 100) * parseFloat(Accum);
+                    }
+                // End -->
+                </script>
+
+             </div>
+             </div>
+            </div>
+            
+            </li>
+            
+            <li><a href="https://www.ceoexpress.com/home#_" target="_self" class="menuitem_drop">Shortcuts</a>
+                <div class="dropdown_2columns">
+                
+                    <div class="col_half firstcolumn">
+                    <h2>LINKS</h2>
+                    <ul class="levels">
+                        <li><a href="https://www.ceoexpress.com/finance/financecenterd.aspx" target="_top" style="color: #ffffff;">Finance Center</a></li>
+                        <li><a href="https://www.ceoexpress.com/rss/rsscenterfull.aspx" target="_top" style="color: #ffffff;">News Center</a></li>
+                        <li><a href="https://www.ceoexpress.com/weather/select_weatherd.aspx" target="_top" style="color: #ffffff;">Weather</a></li>
+                        <!-- <li><a href="/ceoblogger" target="_top" style="color: #ffffff;">CEO Blogger</a></li> -->
+                        <!-- <li><a href="/polls/dailypoll.asp" target="_top" style="color: #ffffff;">Poll of the Day</a></li> -->
+                        <!-- <li><a href="/asp/publicsitemap.aspx" target="_top" style="color: #ffffff;">Map & FAQs</a></li> -->
+                        <li><a href="https://www.ceoexpress.com/asp/mailform.aspx?to=WM" target="_top" style="color: #ffffff;">Help</a></li>
+                        <li>&nbsp;</li>
+                    </ul>
+                    </div>
+                    
+                    <div class="col_half">
+                    <h2>INDUSTRIES</h2>
+                    <ul class="levels">
+                        <li><a href="http://www.lawyerexpress.com/" target="_blank" style="color: #ffffff;">Lawyer Express</a></li>
+                        <li><a href="http://www.journalistexpress.com/" target="_blank" style="color: #ffffff;">Journalist Express</a></li>
+                        <li><a href="http://www.mdexpress.com/" target="_blank" style="color: #ffffff;">MD Express</a></li>
+                        <li><a href="http://www.clo-express.com/" target="_blank" style="color: #ffffff;">CLO Express</a></li>
+                    </ul>
+                    </div>
+                </div> 
+            </li>
+
+            <!-- <li class="hidePL" style="display: none;"><a href="/corporate/index.aspx" target="_top" class="menuitem_nodrop">Private Label</a>
+            </li> -->
+            
+
+            
+            <li class="menuitem_right" style="background-color: #49545e;margin-left: 1px;"><a href="https://www.ceoexpress.com/home#_" target="_self" class="menuitem_drop" style="background-color: #49545e;">Login</a>
+                <div class="dropdown_2columns dropdown_right" style="z-index: 99999999;padding-bottom: 20px;">
+					<form action="https://www.ceoexpress.com/asp/signin.aspx" method="post" id="mLoginFrm" name="mLoginFrm" target="_top" style="margin:0px; padding:0px;border-spacing: 0px;">
+					<input type="hidden" name="action" value="login">
+					<h2 style="width:80%;margin-left:30px;">LOGIN</h2>
+					<p style="margin:0px 20px 0px 30px; padding:0px 0px 10px 0px;border-spacing: 0px; border: solid 0px #ff0000;">Username:<br><input type="text" name="username" id="username" value="" style="width: 200px;"></p>
+					<p style="margin:0px 20px 0px 30px; padding:0px 0px 10px 0px;border-spacing: 0px; border: solid 0px #ff0000;">Password:<br><input type="password" name="password" id="password" value="" style="width: 200px;"></p>
+					<p style="margin:0px 20px 0px 30px; padding:0px 0px 10px 0px;border-spacing: 0px; border: solid 0px #ff0000;"><input type="submit" name="login_submit" value="Submit" class="plContactSendBtn">&nbsp;&nbsp;<input type="reset" name="login_reset" value="Reset" class="plContactSendBtn">
+					</p><p style="margin:0px 20px 0px 30px; padding:0px 0px 10px 0px;border-spacing: 0px; border: solid 0px #ff0000;">Remember&nbsp;Login&nbsp;&nbsp;<input type="checkbox" name="autologin" id="autologin" value="yes" checked="checked" style="font-family:Arial, Helvetica, sans-serif;font-size:12px;width:auto;padding: 0px;margin: 0px; -webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;vertical-align:middle;"></p>
+                    <ul>
+                        <li style="margin:0px 20px 0px 30px;"><a href="https://www.ceoexpress.com/faq/loginprobs.aspx" target="_top">Login Problems?</a></li>
+                        <li style="margin:0px 20px 0px 30px;"><a href="https://www.ceoexpress.com/asp/password.aspx" target="_top">Forgot Your Password?</a></li>
+                    </ul>
+					</form>
+                </div>
+            </li>
+            
+
+            
+
+           
+            <!-- <li class="menuitem_right" style="background-color: #49545e;margin-left: 1px;"><a href="/asp/BecomeAMember.aspx" target="_top" style="background-color: #49545e;">Join Now</a></li> -->
+            
+            
+            
+
+            
+            <li class="menuitem_right" style="background-color: #49545e;"><a href="https://www.ceoexpress.com/home#_" target="_self">
+                <div class="AZSearchBox">
+                <script type="text/javascript"><!--
+                    var AZFirst = "Y";
+                    var AZSValue = "";
+                    function chkAZSearch() {
+                        if (AZFirst == "Y") {
+                            if (document.amazon.keyword.value == "Amazon Search") {
+                                document.amazon.keyword.value = "";
+                                AZFirst = "N";
+                            }
+                        }
+                    }
+                //--></script>
+                <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/amazon.gif" alt="Amazon" style="border: solid 0px #ffffff; vertical-align: middle; padding: 0px; margin: 0px; border-spacing: 0px; width: 16px; height: 16px;">&nbsp;<form method="get" action="https://www.amazon.com/exec/obidos/external-search" name="amazon" id="amazonMMS" target="_blank" style="display:inline-block; border-spacing: 0px; margin:0px; padding:0px;"><input type="hidden" name="mode" value="blended"><input type="hidden" name="tag" value="ceoexpress"><input type="text" name="keyword" class="AZkeyword" value="Amazon Search" onfocus="chkAZSearch();" style="color:#656565;">&nbsp;<input type="image" name="submitAZ" src="./CEOExpress_ Business portal for executives created by a busy executive_files/az_go.png" alt="Submit" style="border: solid 0px #ffffff; vertical-align: middle; padding: 0px; margin: 0px; border-spacing: 0px; height: 16px; width: 20px;"></form>
+				</div></a>
+            </li>
+
+        </ul>
+        
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+    <div class="dailyStartUpWrapper">
+        <div class="logoWrapper">
+        <div class="logoDiv">
+
+            
+
+            <img src="./CEOExpress_ Business portal for executives created by a busy executive_files/ceoxlogo_default.png" alt="logo" title="" class="ceoxLogo" width="215" height="44">
+
+            
+        </div>
+        <div class="logoTextDiv">The Executive's Internet</div><div class="logoTextDiv">Sat, Apr 17th
+        </div>
+        </div>
+        
+        <div class="pollSearchWrapper">
+
+        <div class="ECWrapper">
+            <table class="ECTable">
+<tbody><tr>
+<td rowspan="2" class="ECImgTd"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/s4newspaper.png" alt="US National News icon" class="ECImg"></td>
+<td class="ECHeadTd"><a href="https://www.ceoexpress.com/newsstand?tab=nc&amp;newsid=22#tbs" target="_top" class="ECHeadUrl"><span class="ECHeadUrl">US NATIONAL NEWS  | </span></a><a href="https://www.ceoexpress.com/news/DailyStartUpDisclaimer.aspx" target="_top" class="ECHeadArchiveUrl"><span class="ECHeadArchiveUrl">disclaimer</span></a> | <a href="https://www.ceoexpress.com/newsstand?tab=nc&amp;newsid=22#tbs" target="_top" class="ECHeadArchiveUrl">more news</a></td>
+</tr>
+<tr>
+<td class="ECBodyTd">Fox News: <a href="https://www.foxnews.com/us/riots-protests-in-minnesota-chicago-elsewhere-in-reaction-to-police-shootings" target="_blank" class="ECHeadArchiveUrl">Riots, protests in Minnesota, Chicago, elsewhere in reaction to police shootings</a></td>
+</tr>
+</tbody></table>
+
+        </div>
+		
+        <div class="searchWrapper">
+			<table class="SearchTable">
+<tbody><tr>
+<td rowspan="2" class="SearchImgTd"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/s5magglass.png" alt="icon" class="SearchImg"></td>
+<td class="SearchWrapTd">
+<table class="SearchNestTable"><tbody><tr><td class="SearchTabTd"><table class="SearchTabTable"><tbody><tr><td class="Eng1Td" id="Eng1" onclick="changeEng(1);">Google</td><td class="SearchSpacer"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/c.gif" height="1" width="2"></td><td class="Eng2Td" id="Eng2" onclick="changeEng(2);">Amazon</td><td class="SearchSpacer"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/c.gif" height="1" width="2"></td><td class="Eng3Td" id="Eng3" onclick="changeEng(3);">Wikipedia</td><td class="SearchSpacer"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/c.gif" height="1" width="2"></td><td class="SearchIcon"><a href="https://www.ceoexpress.com/asp/searchboxselection.aspx" target="_top"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/gear_light.gif" border="0"></a></td></tr></tbody></table></td></tr><tr><td class="SearchBoxTd"><form action="https://www.ceoexpress.com/search/searchredir.aspx" method="get" name="ceolink" class="SearchFrm" target="_blank"><div class="SearchBoxDiv" id="searchborder"><input type="text" class="SearchBoxTxt" name="query"><input type="image" src="./CEOExpress_ Business portal for executives created by a busy executive_files/magsmall.gif" name="inputgraphic" class="searchMagImg"></div><input type="hidden" name="Engine" value="1"></form></td></tr></tbody></table></td>
+</tr>
+</tbody></table>
+
+        </div>
+		
+        </div>
+
+        <div class="ECGSWrapper">
+        
+        <div class="pollWrapper">
+            <table class="pollTable">
+<tbody><tr>
+<td rowspan="2" class="pollImgTd"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/s4world.png" alt="international news icon" class="pollImg"></td>
+<td class="pollHeadTd"><a href="https://www.ceoexpress.com/newsstand?tab=nc&amp;newsid=24#tbs" target="_top" class="pollHeadUrl"><span class="pollHeadUrl">INTERNATIONAL NEWS  | </span></a><a href="https://www.ceoexpress.com/news/DailyStartUpDisclaimer.aspx" target="_top" class="pollHeadArchiveUrl"><span class="pollHeadArchiveUrl">disclaimer</span></a> | <a href="https://www.ceoexpress.com/newsstand?tab=nc&amp;newsid=24#tbs" target="_top" class="pollHeadArchiveUrl">more news</a></td>
+</tr>
+<tr>
+<td class="GSBodyTd">Int'l Herald Tribune: <a href="https://www.nytimes.com/2021/04/05/health/hexapro-mclellan-vaccine.html" target="_blank" class="pollHeadArchiveUrl">Researchers Are Hatching a Low-Cost Covid-19 Vaccine</a></td>
+</tr>
+</tbody></table>
+
+        </div>
+		
+        <div class="GSWrapper">
+            <table class="GSTable">
+<tbody><tr>
+<td rowspan="2" class="GSImgTd"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/s7computer.png" alt="Technology News icon" class="GSImg"></td>
+<td class="GSHeadTd"><a href="https://www.ceoexpress.com/newsstand?tab=nc&amp;newsid=25#tbs" target="_top" class="GSHeadUrl"><span class="GSHeadUrl">TECHNOLOGY NEWS  | </span></a><a href="https://www.ceoexpress.com/news/DailyStartUpDisclaimer.aspx" target="_top" class="GSHeadArchiveUrl"><span class="GSHeadArchiveUrl">disclaimer</span></a> | <a href="https://www.ceoexpress.com/newsstand?tab=nc&amp;newsid=25#tbs" target="_top" class="GSHeadArchiveUrl">more news</a></td>
+</tr>
+<tr>
+<td class="GSBodyTd">CNET How To: <a href="https://www.cnet.com/personal-finance/get-more-money-in-your-tax-refund-with-these-7-tax-credits/#ftag=CAD5457c2c" target="_blank" class="GSHeadArchiveUrl">Get more money in your tax refund with these 7 tax credits     - CNET</a></td>
+</tr>
+</tbody></table>
+
+        </div>
+        
+        </div>
+    </div>
+ 
+
+
+
+
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="1QNoowj2nwZwnrXAKaqWDERn7PLySVU3VXlJO7jxWz88KRzsCTrzRW/TrNyQDVZuR3IAfJRvvgjNWqKgNewaJsjMmMlHgBad1eOQSMtMDFhGxLe7dA8qPFQlHzv/KQGG3x1d3ptcjrtk4X71UbrKZf8OJFwPE6YF1lM1fjgElWTq6gWBWq6biS7Ltk5XpgMipKjOzLdxu2FD00wqqzDAXzSrIXeP70xHVXRIB1aPYF4=">
+</div><a id="tabs" name="tabs" class="tabanchor"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/c.gif" alt="spacer" style="height: 0px;width: 0px; border-spacing: 0px; border: solid 0px #ff0000;"></a><a id="tbs" name="tbs" class="tinyanchor"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/c.gif" alt="spacer" style="height: 0px;width: 0px; border-spacing: 0px; border: solid 0px #ff0000;"></a>
+<div id="divTabWrapper" class="tabwrapper twHome">
+<div class="tabSpacerDiv tabLeftDiv">
+    <table class="tabSpacerTable">
+    <tbody><tr>
+    <td class="tabSpacerTop">
+    </td>
+    </tr>
+    <tr>
+    <td class="tabSpacerBody">
+    </td>
+    </tr>
+    <tr>
+    <td class="tabSpacerBottom">
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="tabItemDiv tabHomeDiv">
+    <table class="tabItemTable">
+    <tbody><tr>
+    <td class="tabItemBody tabHomeBody" onclick="top.location.href=&#39;/home#tabs&#39;;"><a href="https://www.ceoexpress.com/home#tabs" class="tabURL" target="_top">Home</a>
+    </td>
+    </tr>
+    <tr>
+    <td id="tabHomeBottonTd" class="tabHomeBottomSelected">
+    </td>
+
+    </tr>
+    </tbody></table>
+</div>
+<div class="tabItemDiv tabNewsCenterDiv">
+    <table class="tabItemTable">
+    <tbody><tr>
+    <td class="tabItemBody tabNewsCenterBody" onclick="top.location.href=&#39;/newsstand#tabs&#39;;"><a href="https://www.ceoexpress.com/newsstand#tabs" class="tabURL" target="_top"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/news_sm.png" alt="News" title="News" class="tabicon"> News</a>
+    </td>
+    </tr>
+    <tr>
+    <td id="tabNewsCenterBottonTd" class="tabNewsCenterBottom">
+    </td>
+
+    </tr>
+    </tbody></table>
+</div>
+<div class="tabItemDiv tabSearchDiv">
+    <table class="tabItemTable">
+    <tbody><tr>
+    <td class="tabItemBody tabSearchBody" onclick="top.location.href=&#39;/searchapp#tabs&#39;;"><a href="https://www.ceoexpress.com/searchapp#tabs" class="tabURL" target="_top"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/Search_sm.png" alt="Search" title="Search" class="tabicon"> Search</a>
+    </td>
+    </tr>
+    <tr>
+    <td id="tabSearchBottonTd" class="tabSearchBottom">
+    </td>
+
+    </tr>
+    </tbody></table>
+</div>
+<div class="tabItemDiv tabIndustriesDiv">
+    <table class="tabItemTable">
+    <tbody><tr>
+    <td class="tabItemBody tabIndustriesBody" onclick="top.location.href=&#39;/industries#tabs&#39;;"><a href="https://www.ceoexpress.com/industries#tabs" class="tabURL" target="_top"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/industries_sm.png" alt="Industries" title="Industries" class="tabicon"> Industries</a>
+    </td>
+    </tr>
+    <tr>
+    <td id="tabIndustriesBottonTd" class="tabIndustriesBottom">
+    </td>
+
+    </tr>
+    </tbody></table>
+</div>
+<div class="tabItemDiv tabCEOHomeDiv">
+    <table class="tabItemTable">
+    <tbody><tr>
+    <td class="tabItemBody tabCEOHomeBody" onclick="top.location.href=&#39;/ceoathome#tabs&#39;;"><a href="https://www.ceoexpress.com/ceoathome#tabs" class="tabURL" target="_top"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/CEOatHome_sm.png" alt="CEO at Home Icon" title="CEO@Home" class="tabicon"> CEO@Home</a>
+    </td>
+    </tr>
+    <tr>
+    <td id="tabCEOHomeBottonTd" class="tabCEOHomeBottom">
+    </td>
+
+    </tr>
+    </tbody></table>
+</div>
+<div class="tabItemDiv tabToolsDiv">
+    <table class="tabItemTable">
+    <tbody><tr>
+    <td class="tabItemBody tabToolsBody">
+    </td>
+    </tr>
+    <tr>
+    <td id="tabToolsBottonTd" class="tabToolsBottom">
+    </td>
+
+    </tr>
+    </tbody></table>
+</div>
+<div class="tabItemDiv tabExecudivaDiv">
+    <table class="tabItemTable">
+    <tbody><tr>
+    <td class="tabItemBody tabExecudivaBody" onclick="top.location.href=&#39;/execudiva#tabs&#39;;"><a href="https://www.ceoexpress.com/execudiva#tabs" class="tabURL" target="_top"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/execudiva_sm.png" alt="Execudiva High Heel Shoe" title="Execudiva" class="tabicon"> Execudiva</a>
+    </td>
+    </tr>
+    <tr>
+    <td id="tabExecudivaBottonTd" class="tabExecudivaBottom">
+    </td>
+
+    </tr>
+    </tbody></table>
+</div>
+<div class="tabItemDiv tabMarketplaceDiv">
+    <table class="tabItemTable">
+    <tbody><tr>
+    <td class="tabItemBody tabMarketplaceBody" onclick="top.location.href=&#39;/shop#tabs&#39;;"><a href="https://www.ceoexpress.com/shop#tabs" class="tabURL" target="_top"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/Shop_sm.png" alt="shopping cart" title="Shop" class="tabicon"> Shop</a>
+    </td>
+    </tr>
+    <tr>
+    <td id="tabMarketplaceBottonTd" class="tabMarketplaceBottom">
+    </td>
+
+    </tr>
+    </tbody></table>
+</div>
+<div class="tabItemDiv tabMemberDiv">
+    <table class="tabItemTable">
+    <tbody><tr>
+    <td class="tabItemBody tabMemberBody">
+    </td>
+    </tr>
+    <tr>
+    <td id="tabMemberBottonTd" class="tabMemberBottom">
+    </td>
+
+    </tr>
+    </tbody></table>
+</div>
+<div class="tabItemDiv tabPrivateLabelDiv">
+    <table class="tabItemTable">
+    <tbody><tr>
+    <td class="tabItemBody tabPrivateLabelBody">
+    </td>
+    </tr>
+    <tr>
+    <td id="tabPrivateLabelBottonTd" class="tabPrivateLabelBottom">
+    </td>
+
+    </tr>
+    </tbody></table>
+</div>
+
+<div class="tabItemDiv tab480DropDownDiv">
+    <table class="tabItemTable">
+    <tbody><tr>
+    <td id="tab480DropDownBodyTd" class="tabItemBody tab480DropDownIndustriesBody">
+	<select name="DropDownList480" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;DropDownList480\&#39;,\&#39;\&#39;)&#39;, 0)" id="DropDownList480" style="font-family:Arial,Helvetica,sans-serif;font-size:8px;width:85px;">
+	<option selected="selected" value="in">INDUSTRIES</option>
+	<option value="ch">CEO@HOME</option>
+	<option value="ed">EXECUDIVA</option>
+	<option value="mp">SHOP</option>
+
+</select>
+        <input type="image" name="ButtonTabs" id="ButtonTabs" class="dd_go" src="./CEOExpress_ Business portal for executives created by a busy executive_files/dd_go.png">
+    </td>
+
+    </tr>
+    <tr>
+    <td id="tab480DropDownBottomTd" class="tabItemBottom tab480DropDownIndustriesBottom">
+    </td>
+
+    </tr>
+    </tbody></table>
+</div>
+<div class="tabSpacerDiv tabRightDiv">
+    <table class="tabSpacerTable">
+    <tbody><tr>
+    <td class="tabSpacerTop">
+    </td>
+    </tr>
+    <tr>
+    <td class="tabSpacerBody">
+    </td>
+    </tr>
+    <tr>
+    <td class="tabSpacerBottom">
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</div>
+</form>
+
+<div id="PanelHome">
+	
+<a id="dailynews" name="dailynews" class="jumpanchor"></a>
+<div class="jumpwrappertop">
+<div class="jumpSpacerDivtop">
+    <table class="jumpSpacerTabletop">
+    <tbody><tr>
+    <td class="jumpSpacerBodytop">
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDivtop jumpDailyNewsDiv">
+    <table class="jumpItemTabletop">
+    <tbody><tr>
+    <td class="jumpItemBodytop"><a href="https://www.ceoexpress.com/home#tbs" class="jumpURLSelected" target="_self">Daily News</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDivtop jumpBusinessResearchDiv">
+    <table class="jumpItemTabletop">
+    <tbody><tr>
+    <td class="jumpItemBodytop BusinessResearch"><a href="https://www.ceoexpress.com/home#businessresearch" class="jumpURL" target="_self">Business Research</a>
+    </td>
+    <td class="jumpItemBodytop BusResearch"><a href="https://www.ceoexpress.com/home#businessresearch" class="jumpURL" target="_self">Bus Research</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDivtop jumpToolsTravelDiv">
+    <table class="jumpItemTabletop">
+    <tbody><tr>
+    <td class="jumpItemBodytop"><a href="https://www.ceoexpress.com/home#toolstravel" class="jumpURL" target="_self">Tools &amp; Travel</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDivtop jumpBreaktimeDiv">
+    <table class="jumpItemTabletop">
+    <tbody><tr>
+    <td class="jumpItemBodytop"><a href="https://www.ceoexpress.com/home#breaktime" class="jumpURL" target="_self">Breaktime</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpSpacerDivtop">
+    <table class="jumpSpacerTabletop">
+    <tbody><tr>
+    <td class="jumpSpacerBodytop" style="vertical-align:bottom;">
+        <div id="HomeToolWrapperDiv" class="cfgHomeRelWrapper">
+            <div class="cfgHomeBtnDiv"><input type="button" id="cfgHomeBtn" value="CONFIGURE" class="cfgHomeBtn" onclick="toggleHomeTools();"></div>
+        </div>
+        <div style="display: none; width:18px; padding:0px; border-spacing:0px; margin:0px 10px 0px auto;"><img src="./CEOExpress_ Business portal for executives created by a busy executive_files/icon_menu_home.png" alt="menu"></div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</div>
+<div class="cfgLayerRelWrapper">
+    <div id="HomeToolsLayerDiv" class="cfgHomeAbsWrapper" style="display: none;">
+        <table class="cfgHomeTbl">
+        <tbody><tr>
+        <td class="cfgHomeHeadTdR"><span class="cfgHomeXSpn" onclick="toggleHomeTools();">X</span></td>
+        </tr>
+        <tr id="cfgHomeLSHeadTr">
+		<td class="cfgHomeHeadTd">LINK SIZE
+        <hr class="cfgHomeBodyHr">
+        </td>
+	</tr>
+	
+        <tr id="cfgHomeLSBodyTr">
+		<td class="cfgHomeBodyTd"><span id="aminus" title="Reduce Font Size" class="Aminus" onclick="fontResize(-1);">A-</span><span id="aplus" title="Increase Font Size" class="Aplus" onclick="fontResize(1);">A+</span>
+        </td>
+	</tr>
+	
+        <tr>
+        <td class="cfgHomeHeadTd">LINK LAYOUT
+        <hr class="cfgHomeBodyHr">
+        </td>
+        </tr>
+        <tr>
+        <td class="cfgHomeBodyTd"><form id="cfgHomeFrm" action="https://www.ceoexpress.com/SetLinkLayout.aspx" method="post" target="_top" class="cfgHomeLayoutFrm">
+        List <input value="L" name="HomeLinkLayout" type="radio" id="cfgHomeRadioList" onchange="this.form.submit();" checked="checked"> | Paragraph <input value="P" name="HomeLinkLayout" type="radio" id="cfgHomeRadioPara" onchange="this.form.submit();">
+        </form>
+        </td>
+        </tr>
+        <tr>
+        <td class="cfgHomeHeadTd">RESOURCES
+        <hr class="cfgHomeBodyHr">
+        </td>
+        </tr>
+        <tr>
+        <td class="cfgHomeBodyTdL"><ul class="cfgResUL">
+	    
+	    <li class="cfgResLi"><a href="https://www.ceoexpress.com/asp/mailform.aspx?to=HP" target="_blank" class="cfgResURL">Help</a></li>
+	    </ul>
+        </td>
+        </tr>
+        </tbody></table>
+    </div>
+</div>
+
+<div class="menuLayerRelWrapper">
+    
+</div>
+    
+    <div class="widgetContainerWrapper3_1">
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTWWrapper"><div style="width: 100%; text-align: left;">
+	<table style="width: auto;border-left:solid 10px #597b94;">
+		<tbody>
+			<tr>
+				<td style="padding:0px 0px 2px 10px;margin:0px;border-spacing:0px;font-family: arial,helvetica,sans-serif;font-size:12px;color:#597b94;">
+					HOME</td>
+			</tr>
+			<tr>
+				<td style="padding:0px 0px 0px 10px;margin:0px;border-spacing:0px;font-family: arial,helvetica,sans-serif;font-size:24px;color:#597b94;">
+					DAILY NEWS</td>
+			</tr>
+		</tbody>
+	</table>
+</div></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Daily News</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="https://www.boston.com/">Boston Globe</a></li>
+<li class="widgetContentLiLink"><a href="https://www.chicagotribune.com/">Chicago Tribune</a></li>
+<li class="widgetContentLiLink"><a href="https://www.csmonitor.com/">Christian Science Monitor</a></li>
+<li class="widgetContentLiLink"><a href="https://www.cnn.com/">CNN</a></li>
+<li class="widgetContentLiLink"><a href="https://www.latimes.com/">Los Angeles Times</a></li>
+<li class="widgetContentLiLink"><a href="https://nypost.com/">New York Post</a></li>
+<li class="widgetContentLiLink"><a href="https://www.nytimes.com/">New York Times</a></li>
+<li class="widgetContentLiLink"><a href="https://www.newsday.com/">Newsday</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mercurynews.com/">San Jose Mercury News</a></li>
+<li class="widgetContentLiLink"><a href="https://www.usatoday.com/">USA Today</a></li>
+<li class="widgetContentLiLink"><a href="https://www.washingtonpost.com/">Washington Post</a></li>
+<li class="widgetContentLiLink"><a href="https://www.50states.com/news/">US Newspapers by State</a></li>
+<li class="widgetContentLiLink"><a href="http://www.world-newspapers.com/index.html">All Other Newspapers</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Business News</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="https://www.barrons.com/">Barrons ($)</a></li>
+<li class="widgetContentLiLink"><a href="https://www.bloomberg.com/">Bloomberg</a></li>
+<li class="widgetContentLiLink"><a href="https://www.cnn.com/business">CNN Business</a></li>
+<li class="widgetContentLiLink"><a href="https://www.chicagobusiness.com/">Crain's: Chicago</a></li>
+<li class="widgetContentLiLink"><a href="https://www.crainsnewyork.com/">Crain's: NY</a></li>
+<li class="widgetContentLiLink"><a href="https://www.ft.com/">Financial Times</a></li>
+<li class="widgetContentLiLink"><a href="https://www.investors.com/">Investor's Business Daily</a></li>
+<li class="widgetContentLiLink"><a href="https://www.joc.com/">Journal of Commerce</a></li>
+<li class="widgetContentLiLink"><a href="https://www.kiplinger.com/">Kiplinger</a></li>
+<li class="widgetContentLiLink"><a href="https://www.law.com/">Law.com</a></li>
+<li class="widgetContentLiLink"><a href="https://www.businesstimes.com.sg/">Singapore Business Times</a></li>
+<li class="widgetContentLiLink"><a href="https://www.wsj.com/">Wall Street Journal ($)</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">International News</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.bbc.com/news/">BBC</a></li>
+<li class="widgetContentLiLink"><a href="https://www.theglobeandmail.com/">Globe and Mail</a></li>
+<li class="widgetContentLiLink"><a href="http://www.lemonde.fr/">Le Monde</a></li>
+<li class="widgetContentLiLink"><a href="https://www.thetimes.co.uk/">London Times</a></li>
+<li class="widgetContentLiLink"><a href="https://www.nytimes.com/section/world">New York Times World</a></li>
+<li class="widgetContentLiLink"><a href="http://www.worldpress.org/">World Press Review</a></li>
+<li class="widgetContentLiLink"><a href="http://www.world-newspapers.com/africa.html">Africa</a></li>
+<li class="widgetContentLiLink"><a href="http://www.world-newspapers.com/asia.html">Asia</a></li>
+<li class="widgetContentLiLink"><a href="http://www.world-newspapers.com/oceania.html">Australia and Oceania</a></li>
+<li class="widgetContentLiLink"><a href="http://www.world-newspapers.com/europe.html">Europe</a></li>
+<li class="widgetContentLiLink"><a href="http://www.world-newspapers.com/east.html">Middle East</a></li>
+<li class="widgetContentLiLink"><a href="http://www.world-newspapers.com/americas.html">North and Central America</a></li>
+<li class="widgetContentLiLink"><a href="http://www.world-newspapers.com/south-america.html">South America</a></li>
+<li class="widgetContentLiLink"><a href="http://www.world-newspapers.com/usa.html">United States</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Online Television News</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://abcnews.go.com/">ABC</a></li>
+<li class="widgetContentLiLink"><a href="http://www.bbc.com/news/">BBC</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cbsnews.com/">CBS</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cnn.com/">CNN</a></li>
+<li class="widgetContentLiLink"><a href="http://www.c-span.org/">C-SPAN</a></li>
+<li class="widgetContentLiLink"><a href="http://www.foxnews.com/">Fox</a></li>
+<li class="widgetContentLiLink"><a href="http://www.msnbc.com/">MSNBC</a></li>
+<li class="widgetContentLiLink"><a href="http://www.pbs.org/">PBS</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cnbc.com/">CNBC</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Messaging</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Apps:</li>
+<li class="widgetContentLiLink"><a href="https://www.messenger.com/">Facebook Messenger</a></li>
+<li class="widgetContentLiLink"><a href="https://www.snapchat.com/">SnapChat</a></li>
+<li class="widgetContentLiLink"><a href="https://www.textnow.com/">Text Now</a></li>
+<li class="widgetContentLiLink"><a href="https://www.whatsapp.com/">WhatsApp</a></li>
+<li class="widgetContentLiSubHeadingBullets">Cell Phone Messaging:</li>
+<li class="widgetContentLiLink"><a href="http://www.skytel.com/servlet/SendMessage">Skytel</a></li>
+<li class="widgetContentLiLink"><a href="https://uscellular.zipwhip.com/">U.S. Cellular</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Track Packages</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.dhl-usa.com/en/express/tracking.shtml">DHL</a></li>
+<li class="widgetContentLiLink"><a href="https://www.fedex.com/apps/fedextrack/?action=track">FedEx</a></li>
+<li class="widgetContentLiLink"><a href="https://www.ups.com/track?loc=en_US&amp;requester=ST/">UPS</a></li>
+<li class="widgetContentLiLink"><a href="https://tools.usps.com/go/TrackConfirmAction!input.action">USPS</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Health</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.pollen.com/">Allergy Forecasts</a></li>
+<li class="widgetContentLiLink"><a href="http://www.ama-assn.org/">AMA</a></li>
+<li class="widgetContentLiLink"><a href="http://www.getbodysmart.com/">Anatomy/Physiology</a></li>
+<li class="widgetContentLiLink"><a href="http://www.drweil.com/">Ask Dr. Weil</a></li>
+<li class="widgetContentLiLink"><a href="https://healthfinder.gov/FindServices/Topics.aspx?section=5">Healthfinder Search</a></li>
+<li class="widgetContentLiLink"><a href="http://www.healthyweightforum.org/">Healthy Weight Forum</a></li>
+<li class="widgetContentLiLink"><a href="http://www.mayoclinic.org/patient-care-and-health-information">Mayo Clinic</a></li>
+<li class="widgetContentLiLink"><a href="http://www.medscape.com/px/urlinfo">Medscape</a></li>
+<li class="widgetContentLiLink"><a href="http://www.univadis.org/medical-news#?f2=-1">Merck Breaking Medical News</a></li>
+<li class="widgetContentLiLink"><a href="http://www.nlm.nih.gov/">Nat'l Library of Medicine</a></li>
+<li class="widgetContentLiLink"><a href="https://aapcc.org/">Poison Centers</a></li>
+<li class="widgetContentLiLink"><a href="https://www.cpsc.gov/Recalls/">Product Recall Database</a></li>
+<li class="widgetContentLiLink"><a href="https://www.fda.gov/ForConsumers/ProtectYourself/HealthFraud/default.htm">Quackery and Fraud</a></li>
+<li class="widgetContentLiLink"><a href="http://www.webmd.com/">WebMD</a></li>
+<li class="widgetContentLiSubHeadingBullets">Cancer Resources:</li>
+<li class="widgetContentLiLink"><a href="http://www.cancer.org/">American Cancer Society</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cancernetwork.com/">Cancer Network</a></li>
+<li class="widgetContentLiLink"><a href="http://www.oncolink.org/">OncoLink</a></li>
+<li class="widgetContentLiSubHeadingBullets">Drugs:</li>
+<li class="widgetContentLiLink"><a href="http://www.drugsdb.com/">Drugsdb</a></li>
+<li class="widgetContentLiLink"><a href="http://www.rxlist.com/">Drug Index</a></li>
+<li class="widgetContentLiLink"><a href="https://reference.medscape.com/drug-interactionchecker">Drug Interaction Database</a></li>
+<li class="widgetContentLiSubHeadingBullets">Physician Search:</li>
+<li class="widgetContentLiLink"><a href="http://doctor.webmd.com/">Physician Finder</a></li>
+<li class="widgetContentLiLink"><a href="http://www.docinfo.org/">State Medical Board Search</a></li>
+<li class="widgetContentLiLink"><a href="https://www.certificationmatters.org/is-your-doctor-board-certified/search-now.aspx">Who's Board Certified?</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Business Magazines</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.bloomberg.com/">Bloomberg</a></li>
+<li class="widgetContentLiLink"><a href="https://www.bloomberg.com/businessweek">Business Week</a></li>
+<li class="widgetContentLiLink"><a href="http://ww2.cfo.com/">CFO</a></li>
+<li class="widgetContentLiLink"><a href="https://chiefexecutive.net/">Chief Executive</a></li>
+<li class="widgetContentLiLink"><a href="http://www.economist.com/">Economist</a></li>
+<li class="widgetContentLiLink"><a href="http://www.entrepreneur.com/">Entrepreneur</a></li>
+<li class="widgetContentLiLink"><a href="http://www.fastcompany.com/">Fast Company</a></li>
+<li class="widgetContentLiLink"><a href="http://www.forbes.com/">Forbes</a></li>
+<li class="widgetContentLiLink"><a href="http://fortune.com/">Fortune</a></li>
+<li class="widgetContentLiLink"><a href="http://www.inc.com/">Inc.</a></li>
+<li class="widgetContentLiLink"><a href="http://www.industryweek.com/">Industry Week</a></li>
+<li class="widgetContentLiLink"><a href="http://time.com/money/">Money</a></li>
+<li class="widgetContentLiLink"><a href="http://www.newsweek.com/">Newsweek</a></li>
+<li class="widgetContentLiLink"><a href="http://time.com/">Time</a></li>
+<li class="widgetContentLiLink"><a href="http://time.com/money/">Time: Money</a></li>
+<li class="widgetContentLiLink"><a href="https://www.usnews.com/">US News</a></li>
+<li class="widgetContentLiLink"><a href="http://www.wired.com/">Wired</a></li>
+<li class="widgetContentLiLink"><a href="http://www.onlinenewspapers.com/magazines/magazines-business-finance.htm">International Business Magazines</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Business Knowledge</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="https://www.kornferry.com/institute/briefings-magazine">Briefings</a></li>
+<li class="widgetContentLiLink"><a href="https://hbr.org/">Harvard Business Online</a></li>
+<li class="widgetContentLiLink"><a href="https://knowledge.insead.edu/">INSEAD</a></li>
+<li class="widgetContentLiLink"><a href="http://knowledge.wharton.upenn.edu/">Knowledge @ Wharton</a></li>
+<li class="widgetContentLiLink"><a href="https://www.strategy-business.com/">Strategy &amp; Business</a></li>
+<li class="widgetContentLiSubHeadingBullets">WhitePapers:</li>
+<li class="widgetContentLiLink"><a href="https://www.techrepublic.com/resource-library/content-type/whitepapers/">Technology White Papers</a></li>
+<li class="widgetContentLiSubHeadingBullets">McKinseyQuarterly - Function:</li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/business-functions/digital-mckinsey/our-insights">Business Technology</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights">Corporate Finance</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/business-functions/marketing-and-sales/our-insights">Marketing &amp; Sales</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/business-functions/operations/our-insights">Operations</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/business-functions/organization/our-insights">Organization</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/business-functions/risk/our-insights">Risk Management</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights">Strategy</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/business-functions/sustainability-and-resource-productivity/our-insights">Sustainability</a></li>
+<li class="widgetContentLiSubHeadingBullets">McKinseyQuarterly - Industry:</li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights">Consumer &amp; Retail</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/industries/electric-power-and-natural-gas/how-we-help-clients">Electric Power &amp; Natural Gas</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/industries/financial-services/our-insights">Financial Services</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/industries/healthcare-systems-and-services/our-insights">Health Systems</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/industries/high-tech/our-insights">High Tech, Telecoms &amp; Internet</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/industries/pharmaceuticals-and-medical-products/our-insights">Pharmaceuticals &amp; Medical Products</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/industries/private-equity-and-principal-investors/our-insights">Private Equity &amp; Principal Investors</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/industries/public-sector/our-insights">Public Sector</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/industries/social-sector/our-insights">Social Sector</a></li>
+<li class="widgetContentLiLink"><a href="https://www.mckinsey.com/industries/travel-transport-and-logistics/our-insights">Travel, Transport &amp; Logistics</a></li>
+<li class="widgetContentLiSubHeadingBullets">Logistics:</li>
+<li class="widgetContentLiLink"><a href="http://www.clo-express.com/the-chief-logistics-officer-portal">CLO-Express</a></li>
+<li class="widgetContentLiLink"><a href="http://www.clo-express.com/the-chief-logistics-officer-portal/logistics-news">Logistics News</a></li>
+<li class="widgetContentLiLink"><a href="http://www.clo-express.com/the-chief-logistics-officer-portal/logistics-services">Logistics Services</a></li>
+<li class="widgetContentLiLink"><a href="http://www.clo-express.com/the-chief-logistics-officer-portal/transportation-services">Transportation Services</a></li>
+<li class="widgetContentLiLink"><a href="http://www.clo-express.com/the-chief-logistics-officer-portal/logistics-b2b">CLO B2B</a></li>
+<li class="widgetContentLiLink"><a href="http://www.clo-express.com/the-chief-logistics-officer-portal/clo-information-technology">CLO IT</a></li>
+<li class="widgetContentLiSubHeadingBullets">Videos:</li>
+<li class="widgetContentLiLink"><a href="https://www.youtube.com/user/HarvardBusiness">Harvard Business Review</a></li>
+<li class="widgetContentLiLink"><a href="https://www.youtube.com/user/INSEADofficial">INSEAD</a></li>
+<li class="widgetContentLiLink"><a href="https://www.youtube.com/user/TEDtalksDirector">TED</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Tech Magazines &amp; News</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="https://www.cio.com/">CIO</a></li>
+<li class="widgetContentLiLink"><a href="https://www.cnet.com/news/">C-NET</a></li>
+<li class="widgetContentLiLink"><a href="https://www.computerworld.com/">ComputerWorld</a></li>
+<li class="widgetContentLiLink"><a href="https://journals.uic.edu/ojs/index.php/fm/index">First Monday</a></li>
+<li class="widgetContentLiLink"><a href="https://www.informationweek.com/Default.asp">InformationWeek</a></li>
+<li class="widgetContentLiLink"><a href="https://www.macworld.com/">Macworld</a></li>
+<li class="widgetContentLiLink"><a href="https://www.technologyreview.com/">MIT TechReview</a></li>
+<li class="widgetContentLiLink"><a href="http://www.pcmag.com/">PC Magazine</a></li>
+<li class="widgetContentLiLink"><a href="https://slashdot.org/">SlashDot</a></li>
+<li class="widgetContentLiLink"><a href="https://www.zdnet.com/">ZDNet</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Lifestyle Magazines</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="https://www.aldaily.com/">Arts &amp; Letters Daily</a></li>
+<li class="widgetContentLiLink"><a href="https://www.theatlantic.com/">The Atlantic</a></li>
+<li class="widgetContentLiLink"><a href="https://www.golfdigest.com/">Golf Digest</a></li>
+<li class="widgetContentLiLink"><a href="https://harpers.org/">Harper's</a></li>
+<li class="widgetContentLiLink"><a href="https://www.nationalgeographic.com/">National Geographic</a></li>
+<li class="widgetContentLiLink"><a href="https://www.newyorker.com/">New Yorker</a></li>
+<li class="widgetContentLiLink"><a href="https://www.salon.com/">Salon</a></li>
+<li class="widgetContentLiLink"><a href="https://www.scientificamerican.com/">Scientific American</a></li>
+<li class="widgetContentLiLink"><a href="https://slate.com/">Slate</a></li>
+<li class="widgetContentLiLink"><a href="https://www.vanityfair.com/">Vanity Fair</a></li>
+<li class="widgetContentLiLink"><a href="http://magazine-directory.com/">Magazine Directory</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Time &amp; Weather</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Forecasts:</li>
+<li class="widgetContentLiLink"><a href="https://www.accuweather.com/">Accuweather</a></li>
+<li class="widgetContentLiLink"><a href="http://www.intellicast.com/">Intellicast</a></li>
+<li class="widgetContentLiLink"><a href="https://www.ndbc.noaa.gov/">Nat'l Buoy Center</a></li>
+<li class="widgetContentLiLink"><a href="https://radar.weather.gov/Conus/index_lite.php">National Doppler Radar</a></li>
+<li class="widgetContentLiLink"><a href="https://weather.com/">Weather Channel</a></li>
+<li class="widgetContentLiLink"><a href="https://www.yahoo.com/news/weather/">Yahoo Weather</a></li>
+<li class="widgetContentLiSubHeadingBullets">Advisories:</li>
+<li class="widgetContentLiLink"><a href="https://www.fly.faa.gov/flyfaa/usmap.jsp">Airport Delays</a></li>
+<li class="widgetContentLiLink"><a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/">Travel Alerts</a></li>
+<li class="widgetContentLiSubHeadingBullets">Time:</li>
+<li class="widgetContentLiLink"><a href="https://www.usno.navy.mil/USNO/time/display-clocks/simpletime">Naval Clock</a></li>
+<li class="widgetContentLiLink"><a href="https://www.timeanddate.com/calendar/">Perpetual Calendar</a></li>
+<li class="widgetContentLiLink"><a href="https://www.time.gov/">U.S. Time</a></li>
+<li class="widgetContentLiLink"><a href="https://www.worldtimeserver.com/">World Time Zones</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Internet Search</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.ask.com/">Ask.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.bing.com/">Bing</a></li>
+<li class="widgetContentLiLink"><a href="http://www.dogpile.com/">DogPile</a></li>
+<li class="widgetContentLiLink"><a href="https://duckduckgo.com/">DuckDuckGo</a></li>
+<li class="widgetContentLiLink"><a href="http://www.excite.com/my.jsp">Excite</a></li>
+<li class="widgetContentLiLink"><a href="http://www.google.com/">Google</a></li>
+<li class="widgetContentLiLink"><a href="http://www.magportal.com/">MagPortal</a></li>
+<li class="widgetContentLiLink"><a href="http://www.webcrawler.com/">WebCrawler</a></li>
+<li class="widgetContentLiLink"><a href="http://www.wolframalpha.com/">WolframAlpha</a></li>
+<li class="widgetContentLiLink"><a href="http://www.yahoo.com/">Yahoo</a></li>
+<li class="widgetContentLiLink"><a href="http://yippy.com/">Yippy</a></li>
+<li class="widgetContentLiSubHeadingBullets">Government Portals:</li>
+<li class="widgetContentLiLink"><a href="https://webservices.lexisnexis.com/legalresearch/legalguide/states/states_resources_index.htm">State Resource Center</a></li>
+<li class="widgetContentLiLink"><a href="http://www.usa.gov/">US Government</a></li>
+<li class="widgetContentLiSubHeadingBullets">Lists:</li>
+<li class="widgetContentLiLink"><a href="http://fortune.com/fortune500/">Fortune 500</a></li>
+<li class="widgetContentLiLink"><a href="http://fortune.com/global500/">Global 500</a></li>
+<li class="widgetContentLiLink"><a href="http://www.inc.com/inc5000/welcome">Inc. 5000</a></li>
+<li class="widgetContentLiLink"><a href="http://www.thetoptens.com/lists/">The Top Tens</a></li>
+<li class="widgetContentLiSubHeadingBullets">Search Help:</li>
+<li class="widgetContentLiLink"><a href="http://blogoscoped.com/archive/2005-09-29-n85.html">Google Search Tips</a></li>
+<li class="widgetContentLiLink"><a href="https://www.lifewire.com/web-search-tricks-to-know-4046148">Make your searches better</a></li>
+<li class="widgetContentLiLink"><a href="https://www.infoplease.com/homework-help/homework-center-finding-information-internet-using-search-engines">Using Search Engines</a></li>
+<li class="widgetContentLiSubHeadingBullets">Blog Search:</li>
+<li class="widgetContentLiLink"><a href="http://www.twingly.com/search">Twingly</a></li>
+<li class="widgetContentLiLink"><a href="http://www.blogsearchengine.org/">Blog Search Engine</a></li>
+<li class="widgetContentLiLink"><a href="http://www.blog-search.com/">Blog-Search.com</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Newsfeeds--General</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">US:</li>
+<li class="widgetContentLiLink"><a href="https://www.apnews.com/">AP Wire</a></li>
+<li class="widgetContentLiLink"><a href="https://www.apnews.com/apf-sports">AP Sports</a></li>
+<li class="widgetContentLiLink"><a href="https://news.google.com/?hl=en-US&amp;gl=US&amp;ceid=US:en">Google News</a></li>
+<li class="widgetContentLiLink"><a href="https://www.reuters.com/world/us">Reuters US</a></li>
+<li class="widgetContentLiLink"><a href="http://www.topix.com/us">Topix</a></li>
+<li class="widgetContentLiSubHeadingBullets">Opinion Feeds:</li>
+<li class="widgetContentLiLink"><a href="http://www.drudgereport.com/">Drudge Report</a></li>
+<li class="widgetContentLiLink"><a href="https://www.huffingtonpost.com/">Huffington Post</a></li>
+<li class="widgetContentLiLink"><a href="https://www.nytimes.com/section/opinion">NY Times: Opinion</a></li>
+<li class="widgetContentLiLink"><a href="https://www.businessinsider.com/opinion">Business Insider: Opinion</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Newsfeeds--Specialty</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Business:</li>
+<li class="widgetContentLiLink"><a href="http://www.bloomberg.com/">Bloomberg</a></li>
+<li class="widgetContentLiLink"><a href="http://www.businesswire.com/portal/site/home/news/">Business Wire</a></li>
+<li class="widgetContentLiLink"><a href="http://www.entrepreneur.com/topic/women-entrepreneurs">Women Entrepreneurs</a></li>
+<li class="widgetContentLiLink"><a href="http://www.prnewswire.com/">PR Newswire</a></li>
+<li class="widgetContentLiSubHeadingBullets">International:</li>
+<li class="widgetContentLiLink"><a href="https://www.apnews.com/tag/apf-intlnews">AP Wire Int'l</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cbc.ca/news/canada">CBC Canada</a></li>
+<li class="widgetContentLiLink"><a href="http://www.reuters.com/news/world">Reuters</a></li>
+<li class="widgetContentLiSubHeadingBullets">Politics:</li>
+<li class="widgetContentLiLink"><a href="http://www.cnn.com/POLITICS/">CNN Politics</a></li>
+<li class="widgetContentLiLink"><a href="http://thehill.com/">The Hill</a></li>
+<li class="widgetContentLiLink"><a href="http://www.drudgereport.com/">Drudge Report</a></li>
+<li class="widgetContentLiLink"><a href="https://www.huffingtonpost.com/section/politics">Huffington Post</a></li>
+<li class="widgetContentLiSubHeadingBullets">Off Beat News:</li>
+<li class="widgetContentLiLink"><a href="http://www.fark.com/">Fark.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.thesmokinggun.com/">Smoking Gun</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Essential Journalist Links</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Tips:</li>
+<li class="widgetContentLiLink"><a href="https://www.journaliststoolbox.org/category/reporting-tools/">Journalist's Toolbox Reporting Tools</a></li>
+<li class="widgetContentLiLink"><a href="http://www.copyscape.com/">Copyscape Plagarism Checker</a></li>
+<li class="widgetContentLiLink"><a href="http://thenameengine.com/">Name Engine: Name Pronunciation</a></li>
+<li class="widgetContentLiLink"><a href="https://www.w3.org/standards/webdesign/accessibility">Web Accessibility Standards</a></li>
+<li class="widgetContentLiLink"><a href="http://www.editteach.org/">Edit Teach</a></li>
+<li class="widgetContentLiSubHeadingBullets">Courts:</li>
+<li class="widgetContentLiLink"><a href="http://www.law.cornell.edu/supct/">Supreme Court</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cafc.uscourts.gov/">Fed Court of Appeals</a></li>
+<li class="widgetContentLiLink"><a href="http://www.uscourts.gov/court_locator.aspx">All US Courts</a></li>
+<li class="widgetContentLiLink"><a href="http://www.gpo.gov/fdsys/">Fed Laws &amp; Regs</a></li>
+<li class="widgetContentLiSubHeadingBullets">Gov. Statistics:</li>
+<li class="widgetContentLiLink"><a href="http://www.census.gov/">Census Bureau</a></li>
+<li class="widgetContentLiLink"><a href="https://www.usa.gov/statistics">US Government Stats</a></li>
+<li class="widgetContentLiLink"><a href="http://www.bjs.gov/">Bureau of Justice Stats</a></li>
+<li class="widgetContentLiLink"><a href="https://www.fbi.gov/services/cjis/ucr">Uniform Crime Reports</a></li>
+<li class="widgetContentLiSubHeadingBullets">Gov. Agencies:</li>
+<li class="widgetContentLiLink"><a href="https://www.usa.gov/federal-agencies/a">Index of US Gov. Agencies</a></li>
+<li class="widgetContentLiLink"><a href="http://www.federalregister.gov/">Federal Register</a></li>
+<li class="widgetContentLiLink"><a href="http://www.gpo.gov/fdsys/browse/collectiontab.action">GPO Resource List</a></li>
+<li class="widgetContentLiLink"><a href="https://www.congress.gov/">Congress</a></li>
+<li class="widgetContentLiLink"><a href="https://www.ignet.gov/">Federal Inspectors General</a></li>
+<li class="widgetContentLiLink"><a href="http://www.gao.gov/">U.S. GAO</a></li>
+<li class="widgetContentLiLink"><a href="http://www.loc.gov/">Library of Congress</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cdc.gov/">CDC</a></li>
+<li class="widgetContentLiLink"><a href="http://www.uspto.gov/">Patents &amp; Trademarks</a></li>
+<li class="widgetContentLiSubHeadingBullets">Planes, Trains &amp; Automobiles:</li>
+<li class="widgetContentLiLink"><a href="http://www.faa.gov/data_research/accident_incident/">Aviation Safety</a></li>
+<li class="widgetContentLiLink"><a href="https://safetydata.fra.dot.gov/OfficeofSafety/default.aspx">Railway Safety</a></li>
+<li class="widgetContentLiLink"><a href="http://www.nhtsa.gov/">Highway Safety</a></li>
+<li class="widgetContentLiSubHeadingBullets">Social Media:</li>
+<li class="widgetContentLiLink"><a href="https://twitter.com/">Twitter</a></li>
+<li class="widgetContentLiLink"><a href="http://www.linkedin.com/">LinkedIn</a></li>
+<li class="widgetContentLiLink"><a href="http://www.facebook.com/">Facebook</a></li>
+<li class="widgetContentLiLink"><a href="https://plus.google.com/">Google+</a></li>
+<li class="widgetContentLiLink"><a href="http://www.youtube.com/">YouTube</a></li>
+<li class="widgetContentLiLink"><a href="http://www.pinterest.com/">Pinterest</a></li>
+<li class="widgetContentLiSubHeadingBullets">Public Records &amp; Statistics:</li>
+<li class="widgetContentLiLink"><a href="http://publicrecords.netronline.com/">Public Records Directory</a></li>
+<li class="widgetContentLiLink"><a href="http://www.google.com/publicdata/directory">Google Public Data Explorer</a></li>
+<li class="widgetContentLiLink"><a href="http://www.robertniles.com/stats/">Statistics Help for Journalists</a></li>
+<li class="widgetContentLiLink"><a href="http://environmental.netronline.com/">Environmental RE Database</a></li>
+<li class="widgetContentLiLink"><a href="https://nsarchive.gwu.edu/">National Security Archive</a></li>
+<li class="widgetContentLiSubHeadingBullets">Newspapers:</li>
+<li class="widgetContentLiLink"><a href="http://www.usnpl.com/">US Newspapers</a></li>
+<li class="widgetContentLiLink"><a href="http://www.world-newspapers.com/index.html">World Newspapers</a></li>
+<li class="widgetContentLiSubHeadingBullets">Politics &amp; Spin:</li>
+<li class="widgetContentLiLink"><a href="http://www.opensecrets.org/lobby/index.php">Lobbyists &amp; Lobbying</a></li>
+<li class="widgetContentLiLink"><a href="http://www.politifact.com/truth-o-meter/">PolitiFact Truth-O-Meter</a></li>
+<li class="widgetContentLiLink"><a href="http://www.opensecrets.org/index.php">OpenSecrets.org</a></li>
+<li class="widgetContentLiLink"><a href="http://www.factcheck.org/">FactCheck.org</a></li>
+<li class="widgetContentLiLink"><a href="http://www.usgovernmentspending.com/">US Gov't Spending</a></li>
+<li class="widgetContentLiSubHeadingBullets">Mapping/GIS:</li>
+<li class="widgetContentLiLink"><a href="http://www.randmcnally.com/">Rand McNally</a></li>
+<li class="widgetContentLiLink"><a href="https://www.google.com/maps">Google Maps</a></li>
+<li class="widgetContentLiLink"><a href="https://mapmaker.nationalgeographic.org/">NatGeo Map Maker</a></li>
+<li class="widgetContentLiLink"><a href="http://hisz.rsoe.hu/alertmap/index2.php">Maps of Global Disasters</a></li>
+<li class="widgetContentLiSubHeadingBullets">Weird/Fun:</li>
+<li class="widgetContentLiLink"><a href="http://www.weirdconverter.com/">Weird Converter</a></li>
+<li class="widgetContentLiLink"><a href="http://www.huffingtonpost.com/good-news/">Good News</a></li>
+<li class="widgetContentLiLink"><a href="http://www.historicaerials.com/">Historic Aerials</a></li>
+<li class="widgetContentLiSubHeadingBullets">Jobs:</li>
+<li class="widgetContentLiLink"><a href="https://www.mediabistro.com/jobs/openings/">MediaBistro</a></li>
+<li class="widgetContentLiLink"><a href="http://www.newsnerdjobs.com/">News Nerd Jobs</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Website Locator/Registration</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="https://www.domainit.com/domains/country-domains.mhtml">Country Domain Codes</a></li>
+<li class="widgetContentLiLink"><a href="https://www.networksolutions.com/whois/index.jsp?">InterNIC 'Whois'</a></li>
+<li class="widgetContentLiLink"><a href="https://www.godaddy.com/">GoDaddy</a></li>
+<li class="widgetContentLiLink"><a href="https://www.networksolutions.com/">Network Solutions</a></li>
+<li class="widgetContentLiLink"><a href="https://www.register.com/">Register.com</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+
+    
+    
+<a id="businessresearch" name="businessresearch" class="jumpanchor"></a>
+<hr class="JumpHr">
+<div class="jumpwrapper">
+<div class="jumpSpacerDiv">
+    <table class="jumpSpacerTable">
+    <tbody><tr>
+    <td class="jumpSpacerBody">
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpDailyNewsDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody"><a href="https://www.ceoexpress.com/home#tbs" class="jumpURL" target="_self">Daily News</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpBusinessResearchDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody BusinessResearch"><a href="https://www.ceoexpress.com/home#businessresearch" class="jumpURLSelected" target="_self">Business Research</a>
+    </td>
+    <td class="jumpItemBody BusResearch"><a href="https://www.ceoexpress.com/home#businessresearch" class="jumpURLSelected" target="_self">Bus Research</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpToolsTravelDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody"><a href="https://www.ceoexpress.com/home#toolstravel" class="jumpURL" target="_self">Tools &amp; Travel</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpBreaktimeDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody"><a href="https://www.ceoexpress.com/home#breaktime" class="jumpURL" target="_self">Breaktime</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpSpacerDiv">
+    <table class="jumpSpacerTable">
+    <tbody><tr>
+    <td class="jumpSpacerBody">
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</div>
+<hr class="JumpHrB">
+
+
+    <div class="widgetContainerWrapper3_1">
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTWWrapper"><div style="width: 100%; text-align: left;">
+	<table style="width: auto;border-left:solid 10px #597b94;">
+		<tbody>
+			<tr>
+				<td style="padding:0px 0px 2px 10px;margin:0px;border-spacing:0px;font-family: arial,helvetica,sans-serif;font-size:12px;color:#597b94;">
+					HOME</td>
+			</tr>
+			<tr>
+				<td style="padding:0px 0px 0px 10px;margin:0px;border-spacing:0px;font-family: arial,helvetica,sans-serif;font-size:24px;color:#597b94;">
+					BUSINESS RESEARCH</td>
+			</tr>
+		</tbody>
+	</table>
+</div></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Financial Markets</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Indices:</li>
+<li class="widgetContentLiLink"><a href="http://money.cnn.com/data/us_markets/">Averages &amp; Composites</a></li>
+<li class="widgetContentLiLink"><a href="http://money.cnn.com/data/markets/dow/">Dow Jones</a></li>
+<li class="widgetContentLiLink"><a href="http://www.nasdaq.com/">Nasdaq</a></li>
+<li class="widgetContentLiLink"><a href="http://finance.yahoo.com/q?s=^N225">Nikkei</a></li>
+<li class="widgetContentLiLink"><a href="http://www.nyse.com/">NYSE</a></li>
+<li class="widgetContentLiSubHeadingBullets">Futures/Options:</li>
+<li class="widgetContentLiLink"><a href="http://www.cmegroup.com/market-data/delayed-quotes/commodities.html">Commodities Charts (T-bills etc.)</a></li>
+<li class="widgetContentLiLink"><a href="http://quotes.ino.com/">Futures Quotes</a></li>
+<li class="widgetContentLiSubHeadingBullets">Foreign:</li>
+<li class="widgetContentLiLink"><a href="http://quotes.ino.com/exchanges/?e=FOREX">Foreign Exchange</a></li>
+<li class="widgetContentLiLink"><a href="http://finance.yahoo.com/intlindices?e=americas">Int'l Stock Exchanges</a></li>
+<li class="widgetContentLiSubHeadingBullets">Analysis:</li>
+<li class="widgetContentLiLink"><a href="http://www.bea.gov/">Bureau of Economic Analysis</a></li>
+<li class="widgetContentLiLink"><a href="http://www.economy.com/dismal/">Dismal Scientist</a></li>
+<li class="widgetContentLiLink"><a href="http://www.epi.org/">Economic Policy Institute</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Breaking Business Trends</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.businessnewsdaily.com/news-trends/">Business News Daily News &amp; Trends</a></li>
+<li class="widgetContentLiLink"><a href="http://www.entrepreneur.com/topic/business-idea-trends">Entrepreneur Business Idea Trends</a></li>
+<li class="widgetContentLiLink"><a href="http://www.huffingtonpost.com/news/small-business-news-and-trends/">Huffington Post Small Business News &amp; Trends</a></li>
+<li class="widgetContentLiLink"><a href="http://www.trendhunter.com/cool-hunting/category/business-trends">Trendhunter</a></li>
+<li class="widgetContentLiLink"><a href="http://trendwatching.com/">Trendwatching</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">SEC</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.sec.gov/edgar/searchedgar/webusers.htm">SEC Database</a></li>
+<li class="widgetContentLiLink"><a href="http://www.sec.gov/edgar/searchedgar/companysearch.html">Edgar Company Filings</a></li>
+<li class="widgetContentLiLink"><a href="http://biz.yahoo.com/reports/edgar.html">Today's SEC Filings</a></li>
+<li class="widgetContentLiLink"><a href="http://www.naics.com/search.htm">NAICS/SIC Codes</a></li>
+<li class="widgetContentLiLink"><a href="http://www.sec.gov/news/whatsnew/wn-today.shtml">SEC News Digest</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Government Agencies</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.copyright.gov/">Copyright Office</a></li>
+<li class="widgetContentLiLink"><a href="http://www.gpo.gov/fdsys/">Gov't Printing Office</a></li>
+<li class="widgetContentLiLink"><a href="http://www.irs.ustreas.gov/">IRS</a></li>
+<li class="widgetContentLiLink"><a href="http://www.dhs.gov/">Homeland Security</a></li>
+<li class="widgetContentLiLink"><a href="http://www.osha.gov/">OSHA</a></li>
+<li class="widgetContentLiLink"><a href="http://business.usa.gov/">US Business Advisor</a></li>
+<li class="widgetContentLiLink"><a href="http://www.uspto.gov/">US Patents</a></li>
+<li class="widgetContentLiLink"><a href="http://www.uspto.gov/main/trademarks.htm">US Trademarks</a></li>
+<li class="widgetContentLiLink"><a href="http://www.usa.gov/Agencies/Federal/All_Agencies/index.shtml">All Government Agencies</a></li>
+<li class="widgetContentLiSubHeadingBullets">Int'l Agencies:</li>
+<li class="widgetContentLiLink"><a href="http://ucblibraries.colorado.edu/govpubs/for/foreign.htm">Foreign Gov't Resources</a></li>
+<li class="widgetContentLiLink"><a href="http://www.imf.org/">IMF</a></li>
+<li class="widgetContentLiLink"><a href="http://www.ita.doc.gov/">Int'l Trade Administration</a></li>
+<li class="widgetContentLiLink"><a href="http://www.worldbank.org/">World Bank</a></li>
+<li class="widgetContentLiSubHeadingBullets">Government Portals:</li>
+<li class="widgetContentLiLink"><a href="https://webservices.lexisnexis.com/legalresearch/legalguide/states/states_resources_index.htm">State Resource Center</a></li>
+<li class="widgetContentLiLink"><a href="http://www.usa.gov/">US Government</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Essential Government Links</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Courts:</li>
+<li class="widgetContentLiLink"><a href="http://www.law.cornell.edu/supremecourt/text/home">Supreme Court</a></li>
+<li class="widgetContentLiLink"><a href="http://www.plol.org/Pages/Search.aspx">Federal Court of Appeals</a></li>
+<li class="widgetContentLiLink"><a href="http://www.uscourts.gov/courtlinks/">All US Courts</a></li>
+<li class="widgetContentLiSubHeadingBullets">Gov. Statistics:</li>
+<li class="widgetContentLiLink"><a href="http://www.census.gov/">Census Bureau</a></li>
+<li class="widgetContentLiLink"><a href="http://fedstats.sites.usa.gov/">US Government Stats</a></li>
+<li class="widgetContentLiLink"><a href="http://www.bjs.gov/">Bureau of Justice Stats</a></li>
+<li class="widgetContentLiSubHeadingBullets">Gov. Agencies:</li>
+<li class="widgetContentLiLink"><a href="http://www.usa.gov/directory/federal/index.shtml">Index of US Gov. Agencies</a></li>
+<li class="widgetContentLiLink"><a href="http://www.gpo.gov/fdsys/browse/collection.action?collectionCode=FR">Federal Register</a></li>
+<li class="widgetContentLiLink"><a href="http://www.uspto.gov/">Patents &amp; Trademarks</a></li>
+<li class="widgetContentLiSubHeadingBullets">Public Records:</li>
+<li class="widgetContentLiLink"><a href="http://publicrecords.netronline.com/">Public Records Directory</a></li>
+<li class="widgetContentLiLink"><a href="http://environmental.netronline.com/">Environmental RE Database</a></li>
+<li class="widgetContentLiSubHeadingBullets">Newspapers:</li>
+<li class="widgetContentLiLink"><a href="http://newslink.org/metnews.html">US Newspapers</a></li>
+<li class="widgetContentLiLink"><a href="http://www.ipl.org/div/news/">World Newspapers</a></li>
+<li class="widgetContentLiSubHeadingBullets">Mapping/GIS:</li>
+<li class="widgetContentLiLink"><a href="http://maps.google.com/">Google Maps</a></li>
+<li class="widgetContentLiLink"><a href="http://maps.yahoo.com/">Yahoo! Maps</a></li>
+<li class="widgetContentLiSubHeadingBullets">Law Directories:</li>
+<li class="widgetContentLiLink"><a href="http://www.abajournal.com/">ABA Journal</a></li>
+<li class="widgetContentLiLink"><a href="http://www.abajournal.com/blawgs/">Blog Directory</a></li>
+<li class="widgetContentLiLink"><a href="http://www.findlaw.com/">Findlaw</a></li>
+<li class="widgetContentLiLink"><a href="http://forms.findlaw.com/">Popular Legal Forms</a></li>
+<li class="widgetContentLiLink"><a href="http://www.hg.org/">HG.org</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Statistics</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.bls.gov/">Bureau of Labor Stats</a></li>
+<li class="widgetContentLiLink"><a href="http://fedstats.sites.usa.gov/">Fedstats</a></li>
+<li class="widgetContentLiLink"><a href="http://www.offstats.auckland.ac.nz/browse/">Int'l Stats</a></li>
+<li class="widgetContentLiLink"><a href="http://www.clickz.com/stats/">Internet Statistics</a></li>
+<li class="widgetContentLiLink"><a href="http://factfinder2.census.gov/">Population Lookup</a></li>
+<li class="widgetContentLiLink"><a href="http://www.bestplaces.net/">Best Places</a></li>
+<li class="widgetContentLiLink"><a href="http://library.clark.edu/?q=content/university-michigan-documents-center">Umich Documents Center</a></li>
+<li class="widgetContentLiLink"><a href="http://quickfacts.census.gov/qfd/index.html">US Census Datamaps</a></li>
+<li class="widgetContentLiLink"><a href="https://www.gov.uk/government/statistics/announcements">U.K. Statistics</a></li>
+<li class="widgetContentLiLink"><a href="http://www.econdata.net/">Regional Data</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Research &amp; Surveys</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.ecommerce-guide.com/">Electronic Commerce Guide</a></li>
+<li class="widgetContentLiLink"><a href="http://www.gallup.com/home.aspx">Gallup Polls</a></li>
+<li class="widgetContentLiLink"><a href="http://www.harrisinteractive.com/NewsRoom/HarrisPolls.aspx">Harris Interactive</a></li>
+<li class="widgetContentLiLink"><a href="http://pewresearch.org/">PewResearchCenter</a></li>
+<li class="widgetContentLiLink"><a href="http://www.procon.org/">ProCon.org</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Legislature</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.gpo.gov/fdsys/browse/collectionGPO.action?collectionCode=BUDGET">Federal Budget</a></li>
+<li class="widgetContentLiLink"><a href="http://www.gpo.gov/fdsys/browse/collection.action?collectionCode=FR">Federal Register</a></li>
+<li class="widgetContentLiLink"><a href="http://legiscan.com/">Legislator Search Engine</a></li>
+<li class="widgetContentLiLink"><a href="http://thomas.loc.gov/home/state-legislatures.html">State Legislatures</a></li>
+<li class="widgetContentLiLink"><a href="http://thomas.loc.gov/home/thomas.php">Thomas Legislative Search</a></li>
+<li class="widgetContentLiLink"><a href="https://www.govtrack.us/congress/votes">Congressional Vote Search</a></li>
+<li class="widgetContentLiLink"><a href="http://www.house.gov/">US House</a></li>
+<li class="widgetContentLiLink"><a href="http://www.house.gov/writerep">Email</a></li>
+<li class="widgetContentLiLink"><a href="http://www.senate.gov/">US Senate</a></li>
+<li class="widgetContentLiLink"><a href="http://www.senate.gov/general/contact_information/senators_cfm.cfm">Email</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Business Links</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.cob.ohio-state.edu/cgi-bin/DB_Search/db_search.cgi?setup_file=finance.setup.cgi">Financial Data Finder</a></li>
+<li class="widgetContentLiLink"><a href="http://www.brint.com/interest.html">Research Links</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Quotes and Market News</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://bigcharts.marketwatch.com/">BigCharts</a></li>
+<li class="widgetContentLiLink"><a href="http://www.marketwatch.com/?siteid=mktw">Marketwatch</a></li>
+<li class="widgetContentLiLink"><a href="http://www.msn.com/en-us/money">MSN Money</a></li>
+<li class="widgetContentLiLink"><a href="http://finance.yahoo.com/?">Yahoo Finance</a></li>
+<li class="widgetContentLiSubHeadingBullets">Movers:</li>
+<li class="widgetContentLiLink"><a href="http://biz.yahoo.com/z/extreme.html">Earnings Surprises</a></li>
+<li class="widgetContentLiLink"><a href="http://www.marketwatch.com/tools/stockresearch/updown">Upgrades &amp; Downgrades</a></li>
+<li class="widgetContentLiSubHeadingBullets">StockScreener:</li>
+<li class="widgetContentLiLink"><a href="http://screen.yahoo.com/stocks.html">Yahoo</a></li>
+<li class="widgetContentLiSubHeadingBullets">Int'l:</li>
+<li class="widgetContentLiLink"><a href="http://www.site-by-site.com/canada/astock.htm">Canadian Companies</a></li>
+<li class="widgetContentLiLink"><a href="http://news.ft.com/markets">F T MarketWatch</a></li>
+<li class="widgetContentLiLink"><a href="http://data.worldbank.org/indicator/BX.PEF.TOTL.CD.WD">World Portfolio</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Best CI Tools</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.zillman.us/subject-tracers/business-intelligence-resources/">100 Web Search Tools</a></li>
+<li class="widgetContentLiLink"><a href="http://www.attentionmeter.com/">Attention Meter</a></li>
+<li class="widgetContentLiLink"><a href="https://www.brandverity.com/">Brand Verity: Brand Protection ($)</a></li>
+<li class="widgetContentLiLink"><a href="http://www.semrush.com/">Competitor Adword/Keyword Search</a></li>
+<li class="widgetContentLiLink"><a href="http://www.crunchbase.com/">CrunchBase</a></li>
+<li class="widgetContentLiLink"><a href="http://www.google.com/alerts">Google Alerts</a></li>
+<li class="widgetContentLiLink"><a href="http://www.google.com/analytics/">Google Analytics</a></li>
+<li class="widgetContentLiLink"><a href="http://www.google.com/trends">Google Trends</a></li>
+<li class="widgetContentLiLink"><a href="http://www.quantcast.com/">Quantcast: Understand Your Audience</a></li>
+<li class="widgetContentLiLink"><a href="http://www.socialmention.com/">Social Mention</a></li>
+<li class="widgetContentLiLink"><a href="http://www.spyfu.com/">Spyfu: Track Google Adwords</a></li>
+<li class="widgetContentLiLink"><a href="http://www.thesearchmonitor.com/">The Search Monitor: Track Competitors' Advertising ($)</a></li>
+<li class="widgetContentLiLink"><a href="https://twitter.com/search-home">Twitter Search</a></li>
+<li class="widgetContentLiLink"><a href="http://www.archive.org/">Wayback Machine</a></li>
+<li class="widgetContentLiLink"><a href="https://marketing.grader.com/">Website Grader SEO Tool</a></li>
+<li class="widgetContentLiLink"><a href="http://read-able.com/">Website Readability</a></li>
+<li class="widgetContentLiLink"><a href="http://www.wordtracker.com/">Word Tracker</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Best CI Search Engines</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.zillman.us/subject-tracers/business-intelligence-resources/">100 Web Search Tools</a></li>
+<li class="widgetContentLiLink"><a href="http://www.bing.com/">Bing</a></li>
+<li class="widgetContentLiLink"><a href="http://blekko.com/">Blekko</a></li>
+<li class="widgetContentLiLink"><a href="http://www.brint.com/">Brint</a></li>
+<li class="widgetContentLiLink"><a href="http://www.dogpile.com/">Dogpile</a></li>
+<li class="widgetContentLiLink"><a href="http://www.google.com/">Google</a></li>
+<li class="widgetContentLiLink"><a href="http://www.twingly.com/search">Twingly Blog Search</a></li>
+<li class="widgetContentLiLink"><a href="http://www.archive.org/">Wayback Machine</a></li>
+<li class="widgetContentLiSubHeadingBullets">Strictly Business:</li>
+<li class="widgetContentLiLink"><a href="http://www.bbb.org/search">Better Business Bureau</a></li>
+<li class="widgetContentLiLink"><a href="http://www.business.com/">Business.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.linkedin.com/companies">LinkedIn Company Search</a></li>
+<li class="widgetContentLiLink"><a href="http://www.manta.com/">Manta Company Search</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Business &amp; Technology</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Business Apps (Mobile):</li>
+<li class="widgetContentLiLink"><a href="https://play.google.com/store/search?q=business&amp;c=apps">Android App Directory</a></li>
+<li class="widgetContentLiLink"><a href="http://itunes.apple.com/us/genre/ios-business/id6000?mt=8">iPhone App Directory</a></li>
+<li class="widgetContentLiLink"><a href="http://appworld.blackberry.com/webstore/category/116/?lang=en">BlackBerry App Directory</a></li>
+<li class="widgetContentLiSubHeadingBullets">Learning:</li>
+<li class="widgetContentLiLink"><a href="http://www.clo-express.com/the-chief-logistics-officer-portal/clo-information-technology">Logistics and Technology</a></li>
+<li class="widgetContentLiLink"><a href="http://www.media.mit.edu/research">Research - MIT Media Lab</a></li>
+<li class="widgetContentLiLink"><a href="http://cybraryman.com/ted.html">Everything "TED"</a></li>
+<li class="widgetContentLiLink"><a href="http://www.bitpipe.com/">Technical White Papers</a></li>
+<li class="widgetContentLiLink"><a href="http://cybraryman.com/assistedtech.html">Assisted Technologies</a></li>
+<li class="widgetContentLiSubHeadingBullets">Office/Presentation Tools:</li>
+<li class="widgetContentLiLink"><a href="http://cyber-kap.blogspot.com/2010/08/top-10-sites-for-file-conversion.html">Top 10 Sites for File Conversion</a></li>
+<li class="widgetContentLiLink"><a href="http://www.educatorstechnology.com/2012/07/list-of-free-must-have-pdf-tools-for.html">PDF Converters/Tools</a></li>
+<li class="widgetContentLiLink"><a href="http://cybraryman.com/slideshows.html">Create Slideshows and Photoshows</a></li>
+<li class="widgetContentLiSubHeadingBullets">All About Social Media:</li>
+<li class="widgetContentLiLink"><a href="http://social-media.alltop.com/">Top Social Media News</a></li>
+<li class="widgetContentLiLink"><a href="http://mashable.com/social-media/">All About Social Media (General)</a></li>
+<li class="widgetContentLiLink"><a href="http://mashable.com/category/facebook/">All About Facebook</a></li>
+<li class="widgetContentLiLink"><a href="http://cybraryman.com/klout.html">All About Klout</a></li>
+<li class="widgetContentLiLink"><a href="http://learn.linkedin.com/">All About LinkedIn</a></li>
+<li class="widgetContentLiLink"><a href="http://cybraryman.com/pinterest.html">All About Pinterest</a></li>
+<li class="widgetContentLiLink"><a href="http://mashable.com/guidebook/twitter/">All About Twitter</a></li>
+<li class="widgetContentLiLink"><a href="http://mashable.com/follow/topics/linkedin/">LinkedIn News &amp; Tips</a></li>
+<li class="widgetContentLiLink"><a href="http://ifttt.com/">IFTTT - Creating Alerts</a></li>
+<li class="widgetContentLiSubHeadingBullets">Breaktime:</li>
+<li class="widgetContentLiLink"><a href="http://www.ourtimelines.com/create_tl_2c.html">Create Timelines</a></li>
+<li class="widgetContentLiLink"><a href="http://icanhas.cheezburger.com/">I Can Has Cheezburger?</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Online Investor Services</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.tdameritrade.com/">TD Ameritrade</a></li>
+<li class="widgetContentLiLink"><a href="https://us.etrade.com/e/t/invest?traxui=F_HV">E*Trade</a></li>
+<li class="widgetContentLiLink"><a href="https://www.fidelity.com/">Fidelity</a></li>
+<li class="widgetContentLiLink"><a href="http://www.schwab.com/">Schwab</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Banking &amp; Finance</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.bankrate.com/">Bank Rate Monitor</a></li>
+<li class="widgetContentLiLink"><a href="http://aaadir.com/">Banks of the World</a></li>
+<li class="widgetContentLiLink"><a href="http://www.federalreserve.gov/">Federal Reserve</a></li>
+<li class="widgetContentLiLink"><a href="http://web.utk.edu/~jwachowi/wacho_world.html">Finance Student's Web World</a></li>
+<li class="widgetContentLiSubHeadingBullets">Private Equity:</li>
+<li class="widgetContentLiLink"><a href="http://blogs.wsj.com/privateequity/">Private Equity</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Small Business</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.bbb.org/">Better Business Bureau</a></li>
+<li class="widgetContentLiLink"><a href="http://www.bplans.com/">BPlans.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.lectlaw.com/form.html">Business Forms</a></li>
+<li class="widgetContentLiLink"><a href="http://www.wesst.org/business-toolkit/">Business Toolkit</a></li>
+<li class="widgetContentLiLink"><a href="https://www.uschamber.com/chamber/directory">Chambers of Commerce</a></li>
+<li class="widgetContentLiLink"><a href="http://www.entrepreneurship.org/">Entrepreneurship.org</a></li>
+<li class="widgetContentLiLink"><a href="http://publications.usa.gov/USAPubs.php?CatID=10">Government Resources</a></li>
+<li class="widgetContentLiLink"><a href="http://products.office.com/en-us/business/office">Microsoft Office</a></li>
+<li class="widgetContentLiLink"><a href="http://www.score.org/">SCORE</a></li>
+<li class="widgetContentLiLink"><a href="http://www.sbaonline.sba.gov/">SBA</a></li>
+<li class="widgetContentLiLink"><a href="https://www.sba.gov/category/advocacy-navigation-structure/research-and-statistics/state-economic-profiles">Small Business State Profiles</a></li>
+<li class="widgetContentLiSubHeadingBullets">Taxes:</li>
+<li class="widgetContentLiLink"><a href="http://www.irs.gov/businesses/small/index.html">IRS Small Business</a></li>
+<li class="widgetContentLiLink"><a href="https://www.esmarttax.com/tax-resources.asp">Tax Checklist</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Law</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.americanbar.org/groups/departments_offices/legal_technology_resources.html">ABA Resource Center</a></li>
+<li class="widgetContentLiLink"><a href="http://www.catalaw.com/">CataLaw</a></li>
+<li class="widgetContentLiLink"><a href="http://www.findlaw.com/">FindLaw</a></li>
+<li class="widgetContentLiLink"><a href="http://lawyers.findlaw.com/">FindLaw Directory</a></li>
+<li class="widgetContentLiLink"><a href="http://www.hg.org/">Hieros Gamos</a></li>
+<li class="widgetContentLiLink"><a href="http://guides.library.cornell.edu/c.php?g=31912&amp;p=207505">Intellectual Property</a></li>
+<li class="widgetContentLiLink"><a href="http://www.martindale.com/">Lawyer Locator</a></li>
+<li class="widgetContentLiSubHeadingBullets">Federal/State Code:</li>
+<li class="widgetContentLiLink"><a href="http://www.access.gpo.gov/nara/cfr/cfr-table-search.html">Code of Federal Regulations</a></li>
+<li class="widgetContentLiLink"><a href="http://www.findlaw.com/casecode/#statelaw">State Code</a></li>
+<li class="widgetContentLiLink"><a href="http://www4.law.cornell.edu/uscode/26/">Tax Code</a></li>
+<li class="widgetContentLiLink"><a href="http://www.law.cornell.edu/uscode">U.S. Code</a></li>
+<li class="widgetContentLiSubHeadingBullets">SEC:</li>
+<li class="widgetContentLiLink"><a href="http://www.seclaw.com/Welcome.shtml">SEC Law.com</a></li>
+<li class="widgetContentLiLink"><a href="http://securities.stanford.edu/">Securities Class Action Clearinghouse</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Online Marketing</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.admedia.org/">Ad Media</a></li>
+<li class="widgetContentLiLink"><a href="http://www.clickz.com/">ClickZ Network</a></li>
+<li class="widgetContentLiLink"><a href="http://www.knowthis.com/">Marketing Virtual Library</a></li>
+<li class="widgetContentLiSubHeadingBullets">Metrics:</li>
+<li class="widgetContentLiLink"><a href="http://www.nielsen.com/us/en.html">Nielsen Ratings</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Company Research</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.annualreportservice.com/">Annual Reports</a></li>
+<li class="widgetContentLiLink"><a href="http://www.brint.com/interest.html">Brint Research</a></li>
+<li class="widgetContentLiLink"><a href="http://www.corporateinformation.com/">Corporate Info</a></li>
+<li class="widgetContentLiLink"><a href="http://www.hoovers.com/free/">Hoover's</a></li>
+<li class="widgetContentLiLink"><a href="http://www.uspto.gov/">Patents Search</a></li>
+<li class="widgetContentLiLink"><a href="http://www.thomasnet.com/">Thomas Register</a></li>
+<li class="widgetContentLiLink"><a href="http://www.thomasnet.com/suppliers/">Thomas Directory</a></li>
+<li class="widgetContentLiSubHeadingBullets">Associations:</li>
+<li class="widgetContentLiLink"><a href="http://dir.yahoo.com/Business_and_Economy/Organizations/Professional/">Professional</a></li>
+<li class="widgetContentLiLink"><a href="http://dir.yahoo.com/Business_and_Economy/organizations/trade_associations/">Trade</a></li>
+<li class="widgetContentLiLink"><a href="http://www.weddles.com/associations/index.cfm">Web Directory</a></li>
+<li class="widgetContentLiSubHeadingBullets">Ratings:</li>
+<li class="widgetContentLiLink"><a href="http://www.ambest.com/">A.M. Best</a></li>
+<li class="widgetContentLiLink"><a href="https://www.moodys.com/">Moody's</a></li>
+<li class="widgetContentLiLink"><a href="http://www.standardandpoors.com/en_US/web/guest/home">Standard &amp; Poor's</a></li>
+<li class="widgetContentLiSubHeadingBullets">Online Research Tips:</li>
+<li class="widgetContentLiLink"><a href="http://library.duke.edu/research/citing/">Citing Sources</a></li>
+<li class="widgetContentLiLink"><a href="http://www.theladders.com/career-advice/researching-companies-online-do-your-homework">Researching Companies</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Social Media Intel</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Social Search:</li>
+<li class="widgetContentLiLink"><a href="http://backtweets.com/">Back Tweets (Tweet Tracking)</a></li>
+<li class="widgetContentLiLink"><a href="https://www.facebook.com/search.php">Facebook Posts Search</a></li>
+<li class="widgetContentLiLink"><a href="http://www.icerocket.com/">Ice Rocket</a></li>
+<li class="widgetContentLiLink"><a href="http://www.icerocket.com/search?tab=twitter&amp;q=economy">Ice Rocket Twitter Search</a></li>
+<li class="widgetContentLiLink"><a href="http://topsy.com/">Topsy</a></li>
+<li class="widgetContentLiLink"><a href="http://www.twazzup.com/">Twitter Real Time News</a></li>
+<li class="widgetContentLiLink"><a href="http://wefollow.com/interest/ceo">We Follow: CEOs on Twitter</a></li>
+<li class="widgetContentLiSubHeadingBullets">Twitter Sentiment Analysis:</li>
+<li class="widgetContentLiLink"><a href="http://www.hubspot.com/">Hubspot.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.socialmention.com/">Social Mention</a></li>
+<li class="widgetContentLiLink"><a href="http://www.trackur.com/">Trackur</a></li>
+<li class="widgetContentLiLink"><a href="http://twittersentiment.appspot.com/">Twitter Sentiment</a></li>
+<li class="widgetContentLiSubHeadingBullets">Miscellaneous:</li>
+<li class="widgetContentLiLink"><a href="http://angieslist.com/">Angie's List</a></li>
+<li class="widgetContentLiLink"><a href="https://marketing.grader.com/">Website Grader SEO Tool</a></li>
+<li class="widgetContentLiLink"><a href="http://www.yelp.com/">Yelp</a></li>
+<li class="widgetContentLiSubHeadingBullets">Crowdsource Q&amp;A:</li>
+<li class="widgetContentLiLink"><a href="http://www.quora.com/">Quora Questions</a></li>
+<li class="widgetContentLiLink"><a href="http://stackexchange.com/">Stack Exchange</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">World Fact Book</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentIfrWrapperWF"><iframe src="./CEOExpress_ Business portal for executives created by a busy executive_files/widget.html" name="WFBIF828" id="WFBIF828" class="widgetContentIfrWF" width="100%" height="250" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="auto"></iframe></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">International Business</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.digitallook.com/p.cgx">Digital Look</a></li>
+<li class="widgetContentLiLink"><a href="http://www.doingbusiness.org/">Global Business Centre</a></li>
+<li class="widgetContentLiLink"><a href="http://globaledge.msu.edu/ibrd/ibrd.asp">Int'l Business Resources</a></li>
+<li class="widgetContentLiLink"><a href="http://www.offstats.auckland.ac.nz/">Int'l Stats</a></li>
+<li class="widgetContentLiLink"><a href="http://www.buyusainfo.net/adsearch.cfm?search_type=int&amp;loadnav=no">Market Research</a></li>
+<li class="widgetContentLiLink"><a href="http://www.wrightinvestors.com/ramainnew.htm">Wrights Research Center</a></li>
+<li class="widgetContentLiSubHeadingBullets">By Country:</li>
+<li class="widgetContentLiLink"><a href="http://www.doingbusiness.org/data/exploreeconomies/china">Asia Resources</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cbr.ca/Default.aspx">Blue Book of Canadian Business</a></li>
+<li class="widgetContentLiLink"><a href="http://www.ic.gc.ca/eic/site/icgc.nsf/eng/home?OpenDocument">Canadian Industry Research</a></li>
+<li class="widgetContentLiLink"><a href="http://www.sedar.com/homepage_en.htm">Canadian Securities Admin.</a></li>
+<li class="widgetContentLiLink"><a href="http://www.europages.com/">Euro Pages</a></li>
+<li class="widgetContentLiLink"><a href="http://www.dnb.co.uk/">Hoovers UK</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+
+
+<div class="widgetWrapper">
+
+</div>
+
+</div>
+
+    
+<a id="toolstravel" name="toolstravel" class="jumpanchor"></a>
+<hr class="JumpHr">
+<div class="jumpwrapper">
+<div class="jumpSpacerDiv">
+    <table class="jumpSpacerTable">
+    <tbody><tr>
+    <td class="jumpSpacerBody">
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpDailyNewsDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody"><a href="https://www.ceoexpress.com/home#tbs" class="jumpURL" target="_self">Daily News</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpBusinessResearchDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody BusinessResearch"><a href="https://www.ceoexpress.com/home#businessresearch" class="jumpURL" target="_self">Business Research</a>
+    </td>
+    <td class="jumpItemBody BusResearch"><a href="https://www.ceoexpress.com/home#businessresearch" class="jumpURL" target="_self">Bus Research</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpToolsTravelDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody"><a href="https://www.ceoexpress.com/home#toolstravel" class="jumpURLSelected" target="_self">Tools &amp; Travel</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpBreaktimeDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody"><a href="https://www.ceoexpress.com/home#breaktime" class="jumpURL" target="_self">Breaktime</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpSpacerDiv">
+    <table class="jumpSpacerTable">
+    <tbody><tr>
+    <td class="jumpSpacerBody">
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</div>
+<hr class="JumpHrB">
+
+
+    <div class="widgetContainerWrapper3_1">
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTWWrapper"><div style="width: 100%; text-align: left;">
+	<table style="width: auto;border-left:solid 10px #597b94;">
+		<tbody>
+			<tr>
+				<td style="padding:0px 0px 2px 10px;margin:0px;border-spacing:0px;font-family: arial,helvetica,sans-serif;font-size:12px;color:#597b94;">
+					HOME</td>
+			</tr>
+			<tr>
+				<td style="padding:0px 0px 0px 10px;margin:0px;border-spacing:0px;font-family: arial,helvetica,sans-serif;font-size:24px;color:#597b94;">
+					TOOLS &amp; TRAVEL</td>
+			</tr>
+		</tbody>
+	</table>
+</div></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Office Tools</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.anonymizer.com/">Anonymizer</a></li>
+<li class="widgetContentLiLink"><a href="http://www.martindalecenter.com/Calculators.html">Calculators Online</a></li>
+<li class="widgetContentLiLink"><a href="https://www.oanda.com/currency/converter/">Currency Converter</a></li>
+<li class="widgetContentLiLink"><a href="http://www.dinkytown.net/">Financial Calculators</a></li>
+<li class="widgetContentLiLink"><a href="http://postcalc.usps.gov/">Postage Calculator</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cbsalary.com/salary-calculator">Salary Calculator</a></li>
+<li class="widgetContentLiSubHeadingBullets">Maps:</li>
+<li class="widgetContentLiLink"><a href="http://maps.google.com/">Google Maps</a></li>
+<li class="widgetContentLiLink"><a href="http://www.mapquest.com/">MapQuest</a></li>
+<li class="widgetContentLiLink"><a href="http://maps.yahoo.com/">YahooMaps</a></li>
+<li class="widgetContentLiLink"><a href="http://subway.umka.org/">Subway Navigator</a></li>
+<li class="widgetContentLiSubHeadingBullets">Tax Info:</li>
+<li class="widgetContentLiLink"><a href="http://www.irs.ustreas.gov/formspubs/index.html">IRS Forms: Federal</a></li>
+<li class="widgetContentLiLink"><a href="http://www.taxadmin.org/state-tax-forms">IRS Forms: State</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Speech &amp; Writing</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://library.duke.edu/research/citing/">Citing Sources</a></li>
+<li class="widgetContentLiLink"><a href="http://www.wsu.edu/~brians/errors/index.html">Common English Errors</a></li>
+<li class="widgetContentLiLink"><a href="http://grammar.ccc.commnet.edu/grammar/">Guide to Grammar &amp; Writing</a></li>
+<li class="widgetContentLiLink"><a href="http://www.garrreynolds.com/preso-tips/">PresentationTips</a></li>
+<li class="widgetContentLiLink"><a href="http://www.press-release-writing.com/10_essential_tips.htm">Press Release Guide</a></li>
+<li class="widgetContentLiSubHeadingBullets">Style Guides:</li>
+<li class="widgetContentLiLink"><a href="http://www.dianahacker.com/resdoc/">Citation Styles</a></li>
+<li class="widgetContentLiLink"><a href="http://www.economist.com/styleguide/introduction">Economist Style Guide</a></li>
+<li class="widgetContentLiLink"><a href="http://www.bartleby.com/141/index.html">Elements of Style</a></li>
+<li class="widgetContentLiSubHeadingBullets">Famous Quotes:</li>
+<li class="widgetContentLiLink"><a href="http://www.bartleby.com/99/index1.html">Bartlett's Quotations</a></li>
+<li class="widgetContentLiLink"><a href="http://www.brainyquote.com/">Brainy Quote</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Reference</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.britannica.com/">Britannica</a></li>
+<li class="widgetContentLiLink"><a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA World Facts</a></li>
+<li class="widgetContentLiLink"><a href="http://www.pueblo.gsa.gov/">Consumer Info Center</a></li>
+<li class="widgetContentLiLink"><a href="http://www.encyclopedia.com/">Encyclopedia.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.nationmaster.com/">NationMaster</a></li>
+<li class="widgetContentLiLink"><a href="http://www.refdesk.com/">RefDesk</a></li>
+<li class="widgetContentLiLink"><a href="https://translate.google.com/">Translation Site</a></li>
+<li class="widgetContentLiLink"><a href="http://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+<li class="widgetContentLiSubHeadingBullets">Dictionaries:</li>
+<li class="widgetContentLiLink"><a href="http://acronyms.thefreedictionary.com/">Acronyms</a></li>
+<li class="widgetContentLiLink"><a href="http://dictionary.reference.com/">Dictionary.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.onelook.com/">"One Look"</a></li>
+<li class="widgetContentLiLink"><a href="http://www.wordreference.com/">Multi-Lingual</a></li>
+<li class="widgetContentLiLink"><a href="http://www.rhymezone.com/">RhymeZone</a></li>
+<li class="widgetContentLiLink"><a href="http://www.thesaurus.com/">Thesaurus</a></li>
+<li class="widgetContentLiSubHeadingBullets">Libraries:</li>
+<li class="widgetContentLiLink"><a href="http://www.ipl.org/">Internet Public Library</a></li>
+<li class="widgetContentLiLink"><a href="http://www.loc.gov/">Library of Congress</a></li>
+<li class="widgetContentLiLink"><a href="http://www.archives.gov/">National Archives</a></li>
+<li class="widgetContentLiSubHeadingBullets">Misc:</li>
+<li class="widgetContentLiLink"><a href="http://www.loc.gov/rr/askalib/">Ask a Librarian</a></li>
+<li class="widgetContentLiLink"><a href="http://www.ehow.com/">eHow</a></li>
+<li class="widgetContentLiLink"><a href="http://www.howstuffworks.com/">HowStuffWorks</a></li>
+<li class="widgetContentLiLink"><a href="http://publicrecords.searchsystems.net/">Public Records Database</a></li>
+<li class="widgetContentLiLink"><a href="http://www.timeanddate.com/holidays/">World Public Holidays</a></li>
+<li class="widgetContentLiLink"><a href="http://www.refdesk.com/factbeg.html">Internet Beginner's Guides</a></li>
+<li class="widgetContentLiLink"><a href="http://www.libraryspot.com/">LibrarySpot</a></li>
+<li class="widgetContentLiLink"><a href="http://www.techweb.com/encyclopedia/">Technology Encyclopedia</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Directory Search</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.anywho.com/">AnyWho</a></li>
+<li class="widgetContentLiLink"><a href="https://www.allareacodes.com/area-code-lookup/">Area Code Finder</a></li>
+<li class="widgetContentLiLink"><a href="http://www.switchboard.com/">Switchboard</a></li>
+<li class="widgetContentLiLink"><a href="http://www.countrycallingcodes.com/">Int'l Dialing Codes</a></li>
+<li class="widgetContentLiLink"><a href="http://inter800.com/">800 Directory</a></li>
+<li class="widgetContentLiLink"><a href="http://www.superpages.com/">Yellow Pages</a></li>
+<li class="widgetContentLiLink"><a href="https://tools.usps.com/go/ZipLookupAction_input">Zip Code Finder</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Essential Downloads</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://get.adobe.com/reader/">Acrobat Reader</a></li>
+<li class="widgetContentLiLink"><a href="http://childrenstech.com/">Children’s Technology Review</a></li>
+<li class="widgetContentLiLink"><a href="http://download.cnet.com/">Download.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.apple.com/quicktime/download/index.html">Quicktime Video</a></li>
+<li class="widgetContentLiLink"><a href="http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=Shockwave">Shockwave</a></li>
+<li class="widgetContentLiLink"><a href="http://downloads.zdnet.com/">Software Library</a></li>
+<li class="widgetContentLiLink"><a href="http://www.tucows.com/">TUCOWS</a></li>
+<li class="widgetContentLiLink"><a href="http://www.winzip.com/">WinZip</a></li>
+<li class="widgetContentLiSubHeadingBullets">AntiVirus:</li>
+<li class="widgetContentLiLink"><a href="http://www.mcafee.com/">McAfee</a></li>
+<li class="widgetContentLiLink"><a href="http://us.norton.com/antivirus">Norton</a></li>
+<li class="widgetContentLiLink"><a href="http://www.trendmicro.com/">Trend Micro</a></li>
+<li class="widgetContentLiSubHeadingBullets">Browsers:</li>
+<li class="widgetContentLiLink"><a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a></li>
+<li class="widgetContentLiLink"><a href="https://www.google.com/chrome">Google Chrome</a></li>
+<li class="widgetContentLiLink"><a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a></li>
+<li class="widgetContentLiLink"><a href="http://www.apple.com/safari/">Safari (Mac)</a></li>
+<li class="widgetContentLiSubHeadingBullets">Security:</li>
+<li class="widgetContentLiLink"><a href="http://www.microsoft.com/technet/security/default.mspx">Microsoft Security Patches</a></li>
+<li class="widgetContentLiLink"><a href="http://www.symantec.com/security_response/">VirusAlerts</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Tech Tools</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.computerworld.com/">Computerworld</a></li>
+<li class="widgetContentLiLink"><a href="http://www.internettrafficreport.com/">Internet Traffic Report</a></li>
+<li class="widgetContentLiLink"><a href="http://www.netmechanic.com/">NetMechanic</a></li>
+<li class="widgetContentLiLink"><a href="http://www.google.com/imghp">PhotoFinder</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cnn.com/TECH/">Technology.Updates</a></li>
+<li class="widgetContentLiSubHeadingBullets">Website Design Advice:</li>
+<li class="widgetContentLiLink"><a href="http://www.asktog.com/">Ask Tog</a></li>
+<li class="widgetContentLiLink"><a href="http://www.useit.com/alertbox/">Alertbox</a></li>
+<li class="widgetContentLiSubHeadingBullets">Standards:</li>
+<li class="widgetContentLiLink"><a href="http://www.w3.org/">World Wide Web Consortium</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Airlines</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.airlinequality.com/Airlines/Web_links.htm">Airlines (World Wide)</a></li>
+<li class="widgetContentLiLink"><a href="http://www.airlinetollfree.info/">Airline Phone #s</a></li>
+<li class="widgetContentLiLink"><a href="http://www.quickaid.com/">Airport Directory</a></li>
+<li class="widgetContentLiLink"><a href="http://www.flightarrivals.com/cgi-bin/WebObjects/Flights">Flight Arrivals and Departures</a></li>
+<li class="widgetContentLiSubHeadingBullets">Schedules:</li>
+<li class="widgetContentLiLink"><a href="http://www.alaskaair.com/">Alaska Air</a></li>
+<li class="widgetContentLiLink"><a href="http://www.aa.com/">American Airlines</a></li>
+<li class="widgetContentLiLink"><a href="http://www.delta.com/">Delta</a></li>
+<li class="widgetContentLiLink"><a href="http://www.flyfrontier.com/">Frontier</a></li>
+<li class="widgetContentLiLink"><a href="http://www.jetblue.com/">Jet Blue</a></li>
+<li class="widgetContentLiLink"><a href="https://www.southwest.com/">Southwest</a></li>
+<li class="widgetContentLiLink"><a href="http://www.united.com/">United</a></li>
+<li class="widgetContentLiLink"><a href="http://www.usairways.com/">US Airways</a></li>
+<li class="widgetContentLiSubHeadingBullets">Frequent Flyers:</li>
+<li class="widgetContentLiLink"><a href="http://www.airsafe.com/">Airline Safety</a></li>
+<li class="widgetContentLiLink"><a href="http://www.seatguru.com/">Airline Seat Maps</a></li>
+<li class="widgetContentLiLink"><a href="http://www.fly.faa.gov/flyfaa/usmap.jsp">Airport Delays</a></li>
+<li class="widgetContentLiLink"><a href="http://www.executiveplanet.com/">Business Culture Guides</a></li>
+<li class="widgetContentLiLink"><a href="http://www.geobytes.com/CityDistanceTool.htm">City Distance Tool</a></li>
+<li class="widgetContentLiLink"><a href="http://www.faa.gov/regulations_policies/">FAA Rules and Regs</a></li>
+<li class="widgetContentLiLink"><a href="http://www.flightstats.com/">FlightStats</a></li>
+<li class="widgetContentLiLink"><a href="http://www.webflyer.com/programs/notiflyer/">Frequent Flyer News</a></li>
+<li class="widgetContentLiLink"><a href="http://www.airlinequality.com/">Global Airline Rankings</a></li>
+<li class="widgetContentLiSubHeadingBullets">Book Flights:</li>
+<li class="widgetContentLiLink"><a href="http://www.dpbolvw.net/click-2172150-10449267">Expedia</a></li>
+<li class="widgetContentLiLink"><a href="http://www.orbitz.com/">Orbitz</a></li>
+<li class="widgetContentLiLink"><a href="http://www.tkqlhce.com/click-2172150-10395159">Travelocity</a></li>
+<li class="widgetContentLiSubHeadingBullets">Live Airplane Tracking:</li>
+<li class="widgetContentLiLink"><a href="http://flightaware.com/live/">Live Flight Information</a></li>
+<li class="widgetContentLiLink"><a href="http://www.flightview.com/TravelTools/default.asp">Real Time Flight Tracker</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Travel</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Ticketing:</li>
+<li class="widgetContentLiLink"><a href="http://www.dpbolvw.net/click-2172150-10449267">Expedia</a></li>
+<li class="widgetContentLiLink"><a href="http://www.orbitz.com/">Orbitz</a></li>
+<li class="widgetContentLiLink"><a href="http://www.tkqlhce.com/click-2172150-10395159">Travelocity</a></li>
+<li class="widgetContentLiSubHeadingBullets">Discount Travel:</li>
+<li class="widgetContentLiLink"><a href="http://www.kayak.com/">Kayak.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.jdoqocy.com/click-2172150-10370045">Priceline</a></li>
+<li class="widgetContentLiLink"><a href="http://www.lastminute.com/">LastMinute</a></li>
+<li class="widgetContentLiSubHeadingBullets">Travel Guides:</li>
+<li class="widgetContentLiLink"><a href="http://www.aaa.com/">AAA</a></li>
+<li class="widgetContentLiLink"><a href="https://travel.americanexpress.com/flight">AmEx Travel</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cnn.com/TRAVEL/">CNN Travel</a></li>
+<li class="widgetContentLiLink"><a href="http://www.fodors.com/">Fodors</a></li>
+<li class="widgetContentLiLink"><a href="http://www.frommers.com/">Frommer's</a></li>
+<li class="widgetContentLiLink"><a href="http://www.concierge.com/">Concierge</a></li>
+<li class="widgetContentLiLink"><a href="http://www.kevincoffee.com/safety_tips_index.htm">Travel Safety</a></li>
+<li class="widgetContentLiSubHeadingBullets">International:</li>
+<li class="widgetContentLiLink"><a href="http://wwwnc.cdc.gov/travel/">Health Information</a></li>
+<li class="widgetContentLiLink"><a href="http://travel.state.gov/content/travel/english/legal-considerations.html">Legal Assistance</a></li>
+<li class="widgetContentLiLink"><a href="http://travel.state.gov/content/passports/english.html">Passport Services</a></li>
+<li class="widgetContentLiLink"><a href="http://travel.state.gov/content/passports/english/alertswarnings.html">Travel Warnings</a></li>
+<li class="widgetContentLiLink"><a href="http://travel.usatoday.com/">USA Today Travel</a></li>
+<li class="widgetContentLiLink"><a href="http://www.worldtravelguide.net/">World Travel Guide</a></li>
+<li class="widgetContentLiSubHeadingBullets">Driving:</li>
+<li class="widgetContentLiLink"><a href="https://www.google.com/maps">Google Maps</a></li>
+<li class="widgetContentLiLink"><a href="http://www.mapquest.com/">Driving Directions</a></li>
+<li class="widgetContentLiLink"><a href="http://fuelcostcalculator.aaa.com/">Fuel Cost Calculator</a></li>
+<li class="widgetContentLiLink"><a href="http://www.fhwa.dot.gov/trafficinfo/">Road Traffic &amp; Construction</a></li>
+<li class="widgetContentLiSubHeadingBullets">Trains:</li>
+<li class="widgetContentLiLink"><a href="http://www.amtrak.com/">Amtrak</a></li>
+<li class="widgetContentLiLink"><a href="http://www.seat61.com/">Seat 61 (Best Seats)</a></li>
+<li class="widgetContentLiLink"><a href="http://subway.umka.org/">Subway Navigator</a></li>
+<li class="widgetContentLiSubHeadingBullets">Accommodations:</li>
+<li class="widgetContentLiLink"><a href="http://www.bedandbreakfast.com/">Bed and Breakfast</a></li>
+<li class="widgetContentLiLink"><a href="http://www.dpbolvw.net/click-2172150-10489996?GOTO=DAILY&amp;page=/hotels/default.asp">Expedia</a></li>
+<li class="widgetContentLiLink"><a href="http://www.orbitz.com/App/GetDealsDetailsContent?deal_id=hotel&amp;source=tb&amp;type=l&amp;OrbitzAprilProduction=PvtZGIJ3RcIo3PZtuHDJ6GPEzBVzxdN95ONErVZ22HKtic8QkRty|6156130300904904742/171067021/6/7001/7001/7002/7002/7001/-1&amp;cache=1056659736528&amp;requestId=5">Orbitz</a></li>
+<li class="widgetContentLiLink"><a href="http://www.slh.com/">Small Luxury Hotels</a></li>
+<li class="widgetContentLiLink"><a href="http://www.tkqlhce.com/click-2172150-10489556">Travelocity</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+
+    
+<a id="breaktime" name="breaktime" class="jumpanchor"></a>
+<hr class="JumpHr">
+<div class="jumpwrapper">
+<div class="jumpSpacerDiv">
+    <table class="jumpSpacerTable">
+    <tbody><tr>
+    <td class="jumpSpacerBody">
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpDailyNewsDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody"><a href="https://www.ceoexpress.com/home#tbs" class="jumpURL" target="_self">Daily News</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpBusinessResearchDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody BusinessResearch"><a href="https://www.ceoexpress.com/home#businessresearch" class="jumpURL" target="_self">Business Research</a>
+    </td>
+    <td class="jumpItemBody BusResearch"><a href="https://www.ceoexpress.com/home#businessresearch" class="jumpURL" target="_self">Bus Research</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpToolsTravelDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody"><a href="https://www.ceoexpress.com/home#toolstravel" class="jumpURL" target="_self">Tools &amp; Travel</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpItemDiv jumpBreaktimeDiv">
+    <table class="jumpItemTable">
+    <tbody><tr>
+    <td class="jumpItemBody"><a href="https://www.ceoexpress.com/home#breaktime" class="jumpURLSelected" target="_self">Breaktime</a>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+<div class="jumpSpacerDiv">
+    <table class="jumpSpacerTable">
+    <tbody><tr>
+    <td class="jumpSpacerBody">
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</div>
+<hr class="JumpHrB">
+
+    <div class="widgetContainerWrapper3_1">
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTWWrapper"><div style="width: 100%; text-align: left;">
+	<table style="width: auto;border-left:solid 10px #597b94;">
+		<tbody>
+			<tr>
+				<td style="padding:0px 0px 2px 10px;margin:0px;border-spacing:0px;font-family: arial,helvetica,sans-serif;font-size:12px;color:#597b94;">
+					HOME</td>
+			</tr>
+			<tr>
+				<td style="padding:0px 0px 0px 10px;margin:0px;border-spacing:0px;font-family: arial,helvetica,sans-serif;font-size:24px;color:#597b94;">
+					BREAKTIME</td>
+			</tr>
+		</tbody>
+	</table>
+</div></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Sports</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.cbssports.com/">CBS Sports</a></li>
+<li class="widgetContentLiLink"><a href="http://espn.go.com/">ESPN</a></li>
+<li class="widgetContentLiLink"><a href="http://www.flyfisherman.com/">Fly Fishing</a></li>
+<li class="widgetContentLiLink"><a href="http://www.golf.com/courses-and-travel">Golf Course Locator</a></li>
+<li class="widgetContentLiLink"><a href="http://www.golf.com/">Golf.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.boat-links.com/boatlink.html">Maritime Links</a></li>
+<li class="widgetContentLiLink"><a href="http://www.si.com/">Sports Illustrated</a></li>
+<li class="widgetContentLiLink"><a href="http://mlb.mlb.com/">MLB</a></li>
+<li class="widgetContentLiLink"><a href="http://www.nba.com/">NBA</a></li>
+<li class="widgetContentLiLink"><a href="http://www.nfl.com/">NFL</a></li>
+<li class="widgetContentLiLink"><a href="http://www.nhl.com/">NHL</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Autos</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.autobytel.com/">Autobytel.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.caranddriver.com/">Car &amp; Driver</a></li>
+<li class="widgetContentLiLink"><a href="http://www.edmunds.com/">Edmunds Auto Info</a></li>
+<li class="widgetContentLiLink"><a href="http://www.hemmings.com/">Hemmings</a></li>
+<li class="widgetContentLiLink"><a href="http://www.intellichoice.com/">Intellichoice</a></li>
+<li class="widgetContentLiLink"><a href="http://www.kbb.com/">Kelley Blue Book</a></li>
+<li class="widgetContentLiLink"><a href="http://www.vehiclehistory.gov/">Motor Vehicle Title Information</a></li>
+<li class="widgetContentLiLink"><a href="http://www.msn.com/en-us/autos">MSN Autos</a></li>
+<li class="widgetContentLiLink"><a href="http://www.nadaguides.com/">NADA Appraisal Guides</a></li>
+<li class="widgetContentLiSubHeadingBullets">Safety:</li>
+<li class="widgetContentLiLink"><a href="http://www-odi.nhtsa.dot.gov/owners/SearchSafetyIssues">Automotive Recalls</a></li>
+<li class="widgetContentLiLink"><a href="http://www.iihs.org/iihs/ratings">Car Safety Ratings</a></li>
+<li class="widgetContentLiLink"><a href="http://www.carlemon.com/">Lemon Laws</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Real Estate</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.msn.com/en-us/money/realestate">MSN Real Estate</a></li>
+<li class="widgetContentLiLink"><a href="http://nreionline.com/">Nat'l Real Estate Investor</a></li>
+<li class="widgetContentLiLink"><a href="http://www.realtor.com/">Realtor.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.trulia.com/">Trulia</a></li>
+<li class="widgetContentLiSubHeadingBullets">Relocation:</li>
+<li class="widgetContentLiLink"><a href="http://www.moving.com/">Moving.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.nces.ed.gov/globallocator/">School Locator</a></li>
+<li class="widgetContentLiSubHeadingBullets">RE Values:</li>
+<li class="widgetContentLiLink"><a href="http://zillow.com/">Zillow.com</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Leisure</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.citysearch.com/">Citysearch</a></li>
+<li class="widgetContentLiLink"><a href="http://www.epicurious.com/">Epicurious</a></li>
+<li class="widgetContentLiLink"><a href="http://www.playbill.com/">Playbill</a></li>
+<li class="widgetContentLiLink"><a href="http://www.ticketmaster.com/">Ticketmaster</a></li>
+<li class="widgetContentLiSubHeadingBullets">Movies:</li>
+<li class="widgetContentLiLink"><a href="http://www.mrqe.com/">Movie Reviews</a></li>
+<li class="widgetContentLiLink"><a href="https://www.imdb.com/showtimes/">Movie Showtimes</a></li>
+<li class="widgetContentLiSubHeadingBullets">Restaurant Reviews:</li>
+<li class="widgetContentLiLink"><a href="http://www.gayot.com/restaurants/">Gayot</a></li>
+<li class="widgetContentLiLink"><a href="http://www.zagat.com/">Zagat Dine</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Unwind</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiLink"><a href="http://www.avclub.com/">AV Club</a></li>
+<li class="widgetContentLiLink"><a href="http://www.bartleby.com/">Bartleby Library</a></li>
+<li class="widgetContentLiLink"><a href="http://www.brainyhistory.com/">Brainy History</a></li>
+<li class="widgetContentLiLink"><a href="http://www.archives.gov/research/military/civil-war/">Civil War Archives</a></li>
+<li class="widgetContentLiLink"><a href="http://www.cracked.com/">Cracked</a></li>
+<li class="widgetContentLiLink"><a href="http://www.miamiherald.com/living/liv-columns-blogs/dave-barry/">Dave Barry</a></li>
+<li class="widgetContentLiLink"><a href="http://www.dilbert.com/">Dilbert</a></li>
+<li class="widgetContentLiLink"><a href="http://www.history.com/this-day-in-history">History Channel</a></li>
+<li class="widgetContentLiLink"><a href="http://www.lyricsworld.com/">LyricsWorld</a></li>
+<li class="widgetContentLiLink"><a href="http://sunflower.ch/en/moneymuseum/museum">Money Museum</a></li>
+<li class="widgetContentLiLink"><a href="http://www.npr.org/">NPR</a></li>
+<li class="widgetContentLiLink"><a href="http://www.webelements.com/">Periodic Table of Elements</a></li>
+<li class="widgetContentLiLink"><a href="http://www.gutenberg.org/wiki/Main_Page">Project Gutenberg</a></li>
+<li class="widgetContentLiLink"><a href="http://skepdic.com/">Skeptic's Dictionary</a></li>
+<li class="widgetContentLiLink"><a href="http://www.theonion.com/">The Onion</a></li>
+<li class="widgetContentLiLink"><a href="http://www.tvguide.com/listings">TV Listings</a></li>
+<li class="widgetContentLiLink"><a href="http://www.archive.org/">Way Back Machine</a></li>
+<li class="widgetContentLiSubHeadingBullets">Games:</li>
+<li class="widgetContentLiLink"><a href="http://www.ceoexpress.com/games/diceflip.asp">Dice Flip</a></li>
+<li class="widgetContentLiLink"><a href="http://www.ceoexpress.com/games/mastermind.asp">MasterMind</a></li>
+<li class="widgetContentLiLink"><a href="https://archive.org/details/softwarelibrary_msdos_games/v2">MS-DOS Games Archive</a></li>
+<li class="widgetContentLiLink"><a href="http://worldofsolitaire.com/">Solitaire</a></li>
+<li class="widgetContentLiLink"><a href="http://www.websudoku.com/">Sudoku</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Business Shopping</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Business Tools:</li>
+<li class="widgetContentLiLink"><a href="https://www.gotomypc.com/tr/ceo/MG/Q4_2003/cpa/editorial/g22lp.tmpl?Target=mm/g22lp.tmpl">GoToMyPC</a></li>
+<li class="widgetContentLiSubHeadingBullets">Office Tools:</li>
+<li class="widgetContentLiLink"><a href="http://www.jdoqocy.com/click-2172150-10434132?">Staples</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Fun Shopping</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Books:</li>
+<li class="widgetContentLiLink"><a href="http://www.amazon.com/exec/obidos/redirect?tag=ceoexpress&amp;path=subst/home/books.html">Amazon</a></li>
+<li class="widgetContentLiLink"><a href="http://www.barnesandnoble.com/">Barnes &amp; Noble</a></li>
+<li class="widgetContentLiLink"><a href="http://www.powells.com/">Powell's Books</a></li>
+<li class="widgetContentLiSubHeadingBullets">Rare &amp; Used Books:</li>
+<li class="widgetContentLiLink"><a href="http://click.linksynergy.com/fs-bin/click?id=NxaZJZD*n1A&amp;offerid=39828.10000029&amp;type=3&amp;subid=0">Alibris</a></li>
+<li class="widgetContentLiSubHeadingBullets">Gourmet Food, Flowers &amp; Gifts:</li>
+<li class="widgetContentLiLink"><a href="http://click.linksynergy.com/fs-bin/click?id=NxaZJZD*n1A&amp;offerid=42865.10000340&amp;type=3&amp;subid=0">1-800-Flowers</a></li>
+<li class="widgetContentLiLink"><a href="http://www.anrdoezrs.net/click-2172150-10395901">Brooks Brothers</a></li>
+<li class="widgetContentLiLink"><a href="http://www.allposters.com/link/redirect.asp?aid=856652">Great Posters</a></li>
+<li class="widgetContentLiLink"><a href="http://click.linksynergy.com/fs-bin/click?id=NxaZJZD*n1A&amp;offerid=47355.10000192&amp;type=4&amp;subid=0">Wine.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.zchocolat.com/default.asp?zid=ceox">zChocolat</a></li>
+<li class="widgetContentLiSubHeadingBullets">Music/Movies:</li>
+<li class="widgetContentLiLink"><a href="http://www.amazon.com/exec/obidos/redirect?tag=ceoexpress&amp;path=tg/browse/-/130/ref%253Dtab%255Fd%255Fd%255F9">Amazon Movies</a></li>
+<li class="widgetContentLiLink"><a href="http://www.amazon.com/exec/obidos/redirect?tag=ceoexpress&amp;path=subst/home/music.html">Amazon Music</a></li>
+<li class="widgetContentLiSubHeadingBullets">Bargains:</li>
+<li class="widgetContentLiLink"><a href="http://www.dpbolvw.net/click-2172150-10653746">Overstock</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="widgetWrapper">
+<table class="widgetTable">
+<tbody><tr>
+<td class="widgetHeaderTd">Travel Shopping</td>
+</tr>
+<tr>
+<td class="widgetContentWrapperTd"><table class="widgetContentTable">
+<tbody><tr>
+<td class="widgetContentTdBullets2Col"><ul class="widgetContentULBullets2Col">
+<li class="widgetContentLiSubHeadingBullets">Expedia:</li>
+<li class="widgetContentLiLink"><a href="http://www.kqzyfj.com/click-2172150-10517676">Expedia</a></li>
+<li class="widgetContentLiLink"><a href="http://www.dpbolvw.net/click-2172150-10517611">Expedia Flights</a></li>
+<li class="widgetContentLiLink"><a href="http://www.dpbolvw.net/click-2172150-10517611">Expedia Hotels</a></li>
+<li class="widgetContentLiLink"><a href="http://www.kqzyfj.com/click-2172150-10517679">Expedia Deals</a></li>
+<li class="widgetContentLiLink"><a href="http://www.dpbolvw.net/click-2172150-10517728">Expedia Last Minute Deals</a></li>
+<li class="widgetContentLiSubHeadingBullets">Add'l Travel Options:</li>
+<li class="widgetContentLiLink"><a href="http://www.kayak.com/">Kayak.com</a></li>
+<li class="widgetContentLiLink"><a href="http://www.lastminutetravel.com/">LastMinute</a></li>
+<li class="widgetContentLiLink"><a href="http://www.orbitz.com/">Orbitz</a></li>
+<li class="widgetContentLiLink"><a href="http://www.jdoqocy.com/click-2172150-10370045">Priceline</a></li>
+<li class="widgetContentLiLink"><a href="http://www.tkqlhce.com/click-2172150-10395159">Travelocity</a></li>
+</ul></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+
+    
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="divFooterWrapperTop">
+    
+    <div class="footerItemTopDiv footerHelpDiv">
+    <table class="footerTopTable footerTopLeftTable">
+    <tbody><tr>
+    <td class="footerTopTd footerTopLeftTd">
+        <ul class="footerUL">
+        <li class="footerHeader">Resources</li>
+        <!-- <li class="footerItem"><a href="/corporate/index.aspx" class="footerItemURL" target="_top"><img src="/graphics/icons_tab/Private_Label_sm.png" class="footerIconPL" alt="Icon" /> Private Label</a></li> -->
+        <li class="footerItem"><a href="https://www.ceoexpress.com/asp/mailform.aspx?to=FB" class="footerItemURL" target="_top">Feedback</a></li>
+        <!--<li class="footerItem"><a href="/html/advertise.aspx" class="footerItemURL" target="_top">Advertise</a></li> -->
+        <li class="footerItem"><a href="https://www.ceoexpress.com/html/about.aspx" class="footerItemURL" target="_top">About the Company</a></li>
+        <!--<li class="footerItem"><a href="/asp/publicsitemap.aspx" class="footerItemURL" target="_top">Map & FAQs</a></li> -->
+        </ul>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    <div class="footerItemTopDiv footerBusinessDiv">
+    <table class="footerTopTable footerTopLeftTable">
+    <tbody><tr>
+    <td class="footerTopTd footerTopLeftTd">
+        <ul class="footerUL">
+        <li class="footerHeader">Membership</li>
+        <li class="footerItem"><a href="https://www.ceoexpress.com/asp/mailform.aspx?to=HP" class="footerItemURL" target="_top">Help</a></li>
+        <li class="footerItem"><a href="https://www.ceoexpress.com/asp/signin.aspx" class="footerItemURL" target="_top">Login</a></li>
+        <!-- <li class="footerItem"><a href="/asp/BecomeAMember.aspx" class="footerItemURL" target="_top">Register for CEOExpressSelect</a></li>
+        <li class="footerItem"><a href="/asp/resubscribe.asp" class="footerItemURL" target="_top">Resubscribe</a></li>
+        <li class="footerItem"><a href="/asp/RegisterFM.aspx" class="footerItemURL" target="_top">CEOX Social Membership</a></li> -->
+        </ul>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+    
+    
+    <div class="footerItemTopDiv footerCEOExpressDiv">
+    <table class="footerTopTable footerTopRightTable">
+    <tbody><tr>
+    <td class="footerTopTd footerTopRightTd">
+        <ul class="footerRightUL">
+        <li class="footerRightHeader">CEOExpress</li>
+        <li class="footerRightItemAddress">1 Boston Place | Suite 2600<br>Boston MA 02108</li>
+        <!--<li class="footerRightItemPhone">617 482 1200<br />617 299 8649 (fax)</li> -->
+        <li class="footerRightItemContact"><a href="https://www.ceoexpress.com/asp/mailform.aspx?to=CU" class="footerItemURL" target="_top">Contact</a></li>
+        <li class="footerRightItemAmazon">As an Amazon Associate<br>CEOExpress earns from<br>qualifying purchases.</li>
+        </ul>
+    </td>
+    </tr>
+    </tbody></table>
+    </div>
+</div>
+<div class="divFooterWrapperMiddle"><hr class="FooterMiddleHr"></div>
+<div class="divFooterWrapperBottom">
+    <div class="footerItemBottomDiv footerYearsDiv">
+    <table class="footerBottomTable">
+    <tbody><tr>
+    <td class="footerBottomTd">
+       Bob Troiano</td>
+    </tr>
+    </tbody></table>
+    </div>
+    <div class="footerItemBottomDiv footerCopyrightDiv">
+    <table class="footerBottomTable">
+    <tbody><tr>
+    <td class="footerBottomRightTd">
+    </td>
+      
+    </tr>
+    </tbody></table>
+    </div>
+</div>
+
+
+
+  
+  <div id="pdrop" style="position:absolute; width:1px; height:1px; z-index:10; left: 1px; top: 1px; layer-background-color: #ffffff; border: 1px none #000000; overflow: hidden; display:none">
+<!-- Boelkein2000DoNotDelete -->
+
+</div></body></html>
