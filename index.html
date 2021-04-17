@@ -31,7 +31,7 @@
 -->
     
     <script type="text/javascript">
-    <!--
+    
 
         function changeEng(num)
         {
@@ -106,7 +106,6 @@
 
     
     <script type="text/javascript">
-    <!--
         function toggleHomeTools() {
             if (document.getElementById("HomeToolsLayerDiv") != null) {
                 if (document.getElementById("HomeToolsLayerDiv").style.display == "none") {
@@ -551,10 +550,10 @@
                 <img src="./images/6.gif" onclick="NumPressed(6);" class="mCalcImg">
                 </td>
 				<td class="mCalcTdMain">
-                <img src="./images/plus.gif" onclick="Operation(&#39;+&#39;);" class="mCalcImg">
+                <img src="./images/plus.gif" onclick="Operation('+');" class="mCalcImg">
                 </td>
                 <td class="mCalcTdMain">
-                <img src="./images/sub.gif" onclick="Operation(&#39;-&#39;);" class="mCalcImg">
+                <img src="./images/sub.gif" onclick="Operation('-');" class="mCalcImg">
                 </td>
                 <td class="mCalcTdMain">
                 <img src="./images/mp.gif" onclick="MP();" class="mCalcImg">
@@ -571,10 +570,10 @@
                 <img src="./images/3.gif" onclick="NumPressed(3);" class="mCalcImg">
                 </td>
                 <td class="mCalcTdMain">
-                <img src="./images/mult.gif" onclick="Operation(&#39;*&#39;);" class="mCalcImg">
+                <img src="./images/mult.gif" onclick="Operation('*&');" class="mCalcImg">
                 </td>
                 <td class="mCalcTdMain">
-                <img src="./images/divide.gif" onclick="Operation(&#39;/&#39;);" class="mCalcImg">
+                <img src="./images/divide.gif" onclick="Operation('/');" class="mCalcImg">
                 </td>
                 <td class="mCalcTdMain">
                 <img src="./images/ms.gif" onclick="MS();" class="mCalcImg">
@@ -591,7 +590,7 @@
                 <img src="./images/point.gif" onclick="idecimal();" class="mCalcImg">
                 </td>
                 <td class="mCalcTdMain">
-                <img src="./images/equal.gif" onclick="Operation(&#39;=&#39;);" class="mCalcImg">
+                <img src="./images/equal.gif" onclick="Operation(''='');" class="mCalcImg">
                 </td>
                 <td class="mCalcTdMain">
                 <img src="./images/sroot.gif" onclick="sroot();" class="mCalcImg">
@@ -604,7 +603,7 @@
                 </table>
                 </form>
                 <script type="text/javascript">
-                <!--                    Begin
+
                     var FKeyPad = document.Keypad;
                     var Accum = 0;
                     var FlagNewNum = false;
@@ -841,7 +840,7 @@
             
             <li class="menuitem_right" style="background-color: #49545e;"><a href="https://www.ceoexpress.com/home#_" target="_self">
                 <div class="AZSearchBox">
-                <script type="text/javascript"><!--
+                <script type="text/javascript">
                     var AZFirst = "Y";
                     var AZSValue = "";
                     function chkAZSearch() {
@@ -853,7 +852,8 @@
                         }
                     }
                 //--></script>
-                <img src="./images/amazon.gif" alt="Amazon" style="border: solid 0px #ffffff; vertical-align: middle; padding: 0px; margin: 0px; border-spacing: 0px; width: 16px; height: 16px;">&nbsp;<form method="get" action="https://www.amazon.com/exec/obidos/external-search" name="amazon" id="amazonMMS" target="_blank" style="display:inline-block; border-spacing: 0px; margin:0px; padding:0px;"><input type="hidden" name="mode" value="blended"><input type="hidden" name="tag" value="ceoexpress"><input type="text" name="keyword" class="AZkeyword" value="Amazon Search" onfocus="chkAZSearch();" style="color:#656565;">&nbsp;<input type="image" name="submitAZ" src="./images/az_go.png" alt="Submit" style="border: solid 0px #ffffff; vertical-align: middle; padding: 0px; margin: 0px; border-spacing: 0px; height: 16px; width: 20px;"></form>
+                <img src="./images/amazon.gif" alt="Amazon" style="border: solid 0px #ffffff; vertical-align: middle; padding: 0px; margin: 0px; border-spacing: 0px; width: 16px; height: 16px;">&nbsp;<form method="get" action="https://www.amazon.com/exec/obidos/external-search" name="amazon" id="amazonMMS" target="_blank" style="display:inline-block; border-spacing: 0px; margin:0px; padding:0px;"><input type="hidden" name="mode" value="blended"><input type="hidden" name="tag" value="ceoexpress"><input type="text" name="keyword" class="AZkeyword" value="Amazon Search" onfocus="chkAZSearch();" style="color:#656565;">&nbsp;
+                    <input type="image" name="submitAZ" src="./icons/az_go.png" alt="Submit" style="border: solid 0px #ffffff; vertical-align: middle; padding: 0px; margin: 0px; border-spacing: 0px; height: 16px; width: 20px;"></form>
 				</div></a>
             </li>
 
@@ -906,8 +906,11 @@
                         <img src="./icons/s5magglass.png" alt="icon" class="SearchImg">
                     </td>
 <td class="SearchWrapTd">
-<table class="SearchNestTable"><tbody><tr><td class="SearchTabTd"><table class="SearchTabTable"><tbody><tr><td class="Eng1Td" id="Eng1" onclick="changeEng(1);">Google</td><td class="SearchSpacer">
-    <img src="./images/c.gif" height="1" width="2"></td><td class="Eng2Td" id="Eng2" onclick="changeEng(2);">Amazon</td><td class="SearchSpacer"><img src="./images/c.gif" height="1" width="2"></td><td class="Eng3Td" id="Eng3" onclick="changeEng(3);">Wikipedia</td><td class="SearchSpacer"><img src="./images/c.gif" height="1" width="2"></td><td class="SearchIcon"><a href="https://www.ceoexpress.com/asp/searchboxselection.aspx" target="_top"><img src="./images/gear_light.gif" border="0"></a></td></tr></tbody></table></td></tr><tr><td class="SearchBoxTd"><form action="https://www.ceoexpress.com/search/searchredir.aspx" method="get" name="ceolink" class="SearchFrm" target="_blank"><div class="SearchBoxDiv" id="searchborder"><input type="text" class="SearchBoxTxt" name="query"><input type="image" src="./images/magsmall.gif" name="inputgraphic" class="searchMagImg"></div><input type="hidden" name="Engine" value="1"></form></td></tr></tbody></table></td>
+<table class="SearchNestTable"><tbody><tr><td class="SearchTabTd"><table class="SearchTabTable">
+    <tbody><tr><td class="Eng1Td" id="Eng1" onclick="changeEng(1);">Google</td><td class="SearchSpacer">
+    <img src="./images/c.gif" height="1" width="2"></td><td class="Eng2Td" id="Eng2" onclick="changeEng(2);">Amazon</td><td class="SearchSpacer">
+        <img src="./images/c.gif" height="1" width="2"></td>
+        <td class="Eng3Td" id="Eng3" onclick="changeEng(3);">Wikipedia</td><td class="SearchSpacer"><img src="./images/c.gif" height="1" width="2"></td><td class="SearchIcon"><a href="https://www.ceoexpress.com/asp/searchboxselection.aspx" target="_top"><img src="./images/gear_light.gif" border="0"></a></td></tr></tbody></table></td></tr><tr><td class="SearchBoxTd"><form action="https://www.ceoexpress.com/search/searchredir.aspx" method="get" name="ceolink" class="SearchFrm" target="_blank"><div class="SearchBoxDiv" id="searchborder"><input type="text" class="SearchBoxTxt" name="query"><input type="image" src="./images/magsmall.gif" name="inputgraphic" class="searchMagImg"></div><input type="hidden" name="Engine" value="1"></form></td></tr></tbody></table></td>
 </tr>
 </tbody></table>
 
@@ -977,7 +980,8 @@
 <div class="tabItemDiv tabHomeDiv">
     <table class="tabItemTable">
     <tbody><tr>
-    <td class="tabItemBody tabHomeBody" onclick="top.location.href=&#39;/home#tabs&#39;;"><a href="https://www.ceoexpress.com/home#tabs" class="tabURL" target="_top">Home</a>
+    <td class="tabItemBody tabHomeBody" onclick="top.location.href='home'">
+        <a href="https://www.ceoexpress.com/home#tabs" class="tabURL" target="_top">Home</a>
     </td>
     </tr>
     <tr>
@@ -990,7 +994,10 @@
 <div class="tabItemDiv tabNewsCenterDiv">
     <table class="tabItemTable">
     <tbody><tr>
-    <td class="tabItemBody tabNewsCenterBody" onclick="top.location.href=&#39;/newsstand#tabs&#39;;"><a href="https://www.ceoexpress.com/newsstand#tabs" class="tabURL" target="_top"><img src="./CEOExpress_ Business portal for executives created b a busy executive_files/news_sm.png" alt="News" title="News" class="tabicon"> News</a>
+    <td class="tabItemBody tabNewsCenterBody" 
+    onclick="top.location.href='/newsstand'">
+    <a href="https://www.ceoexpress.com/newsstand#tabs" class="tabURL" target="_top">
+        <img src="./icons/news_sm.png" alt="News" title="News" class="tabicon"> News</a>
     </td>
     </tr>
     <tr>
@@ -1004,7 +1011,8 @@
     <table class="tabItemTable">
     <tbody>
         <tr>
-    <td class="tabItemBody tabSearchBody" onclick="top.location.href=&#39;/searchapp#tabs&#39;;"><a href="https://www.ceoexpress.com/searchapp#tabs" class="tabURL" target="_top">
+    <td class="tabItemBody tabSearchBody" onclick="top.location.href='searchapp'">
+        <a href="https://www.ceoexpress.com/searchapp#tabs" class="tabURL" target="_top">
         <img src="./icons/Search_sm.png" alt="Search" title="Search" class="tabicon"> Search</a>
     </td>
     </tr>
@@ -1018,7 +1026,7 @@
 <div class="tabItemDiv tabIndustriesDiv">
     <table class="tabItemTable">
     <tbody><tr>
-    <td class="tabItemBody tabIndustriesBody" onclick="top.location.href=&#39;/industries#tabs&#39;;"><a href="https://www.ceoexpress.com/industries#tabs" class="tabURL" target="_top">
+    <td class="tabItemBody tabIndustriesBody" onclick="top.location.href='/industries#tabs';"><a href="https://www.ceoexpress.com/industries#tabs" class="tabURL" target="_top">
         <img src="./icons/industries_sm.png" alt="Industries" title="Industries" class="tabicon"> Industries</a>
     </td>
     </tr>
@@ -1032,7 +1040,7 @@
 <div class="tabItemDiv tabCEOHomeDiv">
     <table class="tabItemTable">
     <tbody><tr>
-    <td class="tabItemBody tabCEOHomeBody" onclick="top.location.href=&#39;/ceoathome#tabs&#39;;"><a href="https://www.ceoexpress.com/ceoathome#tabs" class="tabURL" target="_top"><img src="./icons/CEOatHome_sm.png" alt="CEO at Home Icon" title="CEO@Home" class="tabicon"> CEO@Home</a>
+    <td class="tabItemBody tabCEOHomeBody" onclick="top.location.href='/ceoathome#tabs';"><a href="https://www.ceoexpress.com/ceoathome#tabs" class="tabURL" target="_top"><img src="./icons/CEOatHome_sm.png" alt="CEO at Home Icon" title="CEO@Home" class="tabicon"> CEO@Home</a>
     </td>
     </tr>
     <tr>
@@ -1058,7 +1066,9 @@
 <div class="tabItemDiv tabExecudivaDiv">
     <table class="tabItemTable">
     <tbody><tr>
-    <td class="tabItemBody tabExecudivaBody" onclick="top.location.href=&#39;/execudiva#tabs&#39;;"><a href="https://www.ceoexpress.com/execudiva#tabs" class="tabURL" target="_top"><img src="./icons/execudiva_sm.png" alt="Execudiva High Heel Shoe" title="Execudiva" class="tabicon"> Execudiva</a>
+    <td class="tabItemBody tabExecudivaBody" onclick="top.location.href='/execudiva#tabs';">
+        <a href="https://www.ceoexpress.com/execudiva#tabs" class="tabURL" target="_top">
+            <img src="./icons/execudiva_sm.png" alt="Execudiva High Heel Shoe" title="Execudiva" class="tabicon"> Execudiva</a>
     </td>
     </tr>
     <tr>
@@ -1071,7 +1081,7 @@
 <div class="tabItemDiv tabMarketplaceDiv">
     <table class="tabItemTable">
     <tbody><tr>
-    <td class="tabItemBody tabMarketplaceBody" onclick="top.location.href=&#39;/shop#tabs&#39;;"><a href="https://www.ceoexpress.com/shop#tabs" class="tabURL" target="_top"><img src="./icons/Shop_sm.png" alt="shopping cart" title="Shop" class="tabicon"> Shop</a>
+    <td class="tabItemBody tabMarketplaceBody" onclick="top.location.href='/shop#tabs';"><a href="https://www.ceoexpress.com/shop#tabs" class="tabURL" target="_top"><img src="./icons/Shop_sm.png" alt="shopping cart" title="Shop" class="tabicon"> Shop</a>
     </td>
     </tr>
     <tr>
@@ -1112,7 +1122,7 @@
     <table class="tabItemTable">
     <tbody><tr>
     <td id="tab480DropDownBodyTd" class="tabItemBody tab480DropDownIndustriesBody">
-	<select name="DropDownList480" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;DropDownList480\&#39;,\&#39;\&#39;)&#39;, 0)" id="DropDownList480" style="font-family:Arial,Helvetica,sans-serif;font-size:8px;width:85px;">
+	<select name="DropDownList480" onchange="javascript:setTimeout('__doPostBack(\'DropDownList480\',\'\')', 0)" id="DropDownList480" style="font-family:Arial,Helvetica,sans-serif;font-size:8px;width:85px;">
 	<option selected="selected" value="in">INDUSTRIES</option>
 	<option value="ch">CEO@HOME</option>
 	<option value="ed">EXECUDIVA</option>
